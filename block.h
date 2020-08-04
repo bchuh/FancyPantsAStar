@@ -3,11 +3,15 @@
 
 #include <QGraphicsRectItem>
 #include <QGraphicsPixmapItem>
+#include <QDesktopWidget>
+#include <QApplication>
+
 #include "my_scene.h"
 
-const int F_WIDTH=20;  //field width ,the amount of units
-const int F_HEIGHT=20; //field height ,the amount of units
-const int G_UNIT=70; //grid unit
+
+
+
+
 
 enum Color{
     BLANK,YELLOW,GREEN,BLUE,GRAY,RED
@@ -30,7 +34,7 @@ private:
     QGraphicsPixmapItem*m_child;
     Block* m_lastNode;
     int m_fCost;
-
+    int G_UNIT;
 
 public:
     Block(my_scene*parent,int unitWidth);//The width of a single block

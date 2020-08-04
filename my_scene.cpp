@@ -13,6 +13,7 @@
 
 #include "my_scene.h"
 #include "block.h"
+#include "mainwindow.h"
 
 
 struct Comparator{
@@ -32,7 +33,11 @@ my_scene::my_scene(QObject*parent)
       m_finishB(nullptr),
       isNew(true)
 {
-
+    QDesktopWidget* desktopWidget = QApplication::desktop();
+        //获取可用桌面大小
+        QRect deskRect = desktopWidget->availableGeometry();
+        int   m_nActScreenY = deskRect.height();
+        G_UNIT=90/2160.0*m_nActScreenY;
   // QGraphicsScene*scene=new QGraphicsScene();
 
     for(int i=0; i<F_WIDTH; i++){
@@ -98,6 +103,7 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
     m_grid[sX][sY]->setFCost(fCost);
     m_grid[sX][sY]->setLastNode(nullptr);
     QGraphicsTextItem*text= new QGraphicsTextItem(QString::number(fCost), m_grid[sX][sY]);
+    text->adjustSize();
 //    text->setPos(m_grid[sX][sY]->pos());
     texts.push_back(text);
     OpenList.push_back(m_grid[sX][sY]) ;
@@ -120,9 +126,9 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
         }
         current->setColor(Color::RED);
         update();
-        QTime dieTime=QTime::currentTime().addMSecs(50);
+        QTime dieTime=QTime::currentTime().addMSecs(80);
         while(QTime::currentTime()<dieTime)
-            QCoreApplication::processEvents(QEventLoop::AllEvents,50);
+            QCoreApplication::processEvents(QEventLoop::AllEvents,80);
 
         //temp->set color red
         if(current==m_grid[fX][fY]){
@@ -200,9 +206,9 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
 
         lastNode=current;
         update();
-        dieTime=QTime::currentTime().addMSecs(50);
+        dieTime=QTime::currentTime().addMSecs(80);
         while(QTime::currentTime()<dieTime)
-            QCoreApplication::processEvents(QEventLoop::AllEvents,50);
+            QCoreApplication::processEvents(QEventLoop::AllEvents,80);
 
     }
 }

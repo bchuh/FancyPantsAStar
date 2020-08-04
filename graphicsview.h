@@ -8,6 +8,7 @@ class graphicsView : public QGraphicsView
     Q_OBJECT
 private:
     my_scene*m_scene;
+    int G_UNIT;
 public:
     explicit graphicsView(QWidget *parent = nullptr);
     bool mouseEvent_Blocked;

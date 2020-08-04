@@ -6,7 +6,7 @@
 #include <QToolTip>
 
 #include "block.h"
-
+#include "mainwindow.h"
 
 
 
@@ -23,7 +23,7 @@ Block::Block(my_scene*parent,int unitWidth)
 
 {
   // setRect(0,0,unitWidth,unitWidth);
-
+    G_UNIT=m_parent->G_UNIT;
 
 }
 

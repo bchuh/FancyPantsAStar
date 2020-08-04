@@ -1,12 +1,18 @@
 #include <QMouseEvent>
 #include <iostream>
 #include "graphicsview.h"
+#include "mainwindow.h"
 
 
 graphicsView::graphicsView(QWidget *parent)
     : QGraphicsView(parent),
       mouseEvent_Blocked(false)
 {
+    QDesktopWidget* desktopWidget = QApplication::desktop();
+        //获取可用桌面大小
+        QRect deskRect = desktopWidget->availableGeometry();
+        int   m_nActScreenY = deskRect.height();
+        G_UNIT=90/2160.0*m_nActScreenY;
     std::cout<<"graphcsView constructed"<<std::endl;
     m_scene=new my_scene(this);
     m_scene->setSceneRect(-1,-1,F_WIDTH*G_UNIT+1,F_HEIGHT*G_UNIT+1);

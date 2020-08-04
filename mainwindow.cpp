@@ -13,6 +13,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
 {
     ui->setupUi(this);
+    QDesktopWidget* desktopWidget = QApplication::desktop();
+        //获取可用桌面大小
+        QRect deskRect = desktopWidget->availableGeometry();
+        int   m_nActScreenY = deskRect.height();
+        G_UNIT=90/2160.0*m_nActScreenY;
 /*
     my_scene*scene=new my_scene(this);
     scene->setSceneRect(-1,-1,F_WIDTH*G_UNIT+1,F_HEIGHT*G_UNIT+1);

@@ -15,6 +15,7 @@ private:
     QVector<Block*> m_pathNodes;
     QVector <QGraphicsTextItem*> texts;
 
+
 public:
     bool PathfindState;
     my_scene(QObject*parent=0);
@@ -29,7 +30,7 @@ public:
     void drawPath();
     void findPathEvent();
     bool isNew;
-
+    int G_UNIT;
     // QGraphicsScene interface
 protected:
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
