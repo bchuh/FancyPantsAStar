@@ -1,2 +1,2 @@
 A Complied click-and-run version 
-Note: Remenber to download all the files below and put them into the same folder.
+Note: Remenber to download all the files & sub-folders in the folder above and make sure they are in one main folder.
