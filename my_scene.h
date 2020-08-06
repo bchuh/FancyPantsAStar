@@ -13,7 +13,8 @@ private:
     Block*m_finishB; //finishing block
     std::vector<std::vector<Block*>  > m_grid;
     QVector<Block*> m_pathNodes;
-    QVector <QGraphicsTextItem*> texts;
+
+
 
 
 public:

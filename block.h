@@ -34,6 +34,7 @@ private:
     QGraphicsPixmapItem*m_child;
     Block* m_lastNode;
     int m_fCost;
+    int m_gCost;
     int G_UNIT;
 
 public:
@@ -47,10 +48,13 @@ public:
     void checkIconState();
     Block* lastNode();
     void setLastNode(Block* lastNode);
-
+    QGraphicsPixmapItem*child();
     void setFCost(int fcost);
     int FCost()const;
+    void setGCost(int gcost);
+    int GCost()const;
     bool wallState();
+    bool ischecked;
 
     // QGraphicsItem interface
 public:

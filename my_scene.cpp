@@ -19,7 +19,10 @@
 struct Comparator{
     bool operator()(const Block *t1, const Block *t2)
     {
-        return t1->FCost() < t2->FCost();
+        if(t1->FCost()==t2->FCost())
+            return t1->GCost()>t2->GCost();
+        else
+            return t1->FCost() < t2->FCost();
     }
 
 };
@@ -101,11 +104,14 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
     Block*lastNode=nullptr;
 
     m_grid[sX][sY]->setFCost(fCost);
+    m_grid[sX][sY]->setGCost(gCost);
     m_grid[sX][sY]->setLastNode(nullptr);
     QGraphicsTextItem*text= new QGraphicsTextItem(QString::number(fCost), m_grid[sX][sY]);
+    QGraphicsTextItem*gtext= new QGraphicsTextItem(QString::number(gCost), m_grid[sX][sY]);
     text->adjustSize();
-//    text->setPos(m_grid[sX][sY]->pos());
-    texts.push_back(text);
+    gtext->setPos(m_grid[sX][sY]->rect().topLeft());
+    gtext->adjustSize();
+
     OpenList.push_back(m_grid[sX][sY]) ;
 
     while(0==0){
@@ -134,6 +140,8 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
         if(current==m_grid[fX][fY]){
             return true;
         }
+
+        int gcost_estimated;
         for(int i=1; i<=8;i++){ //number 8 means the 8 neighbours of the current node
 
             int tempx,tempy;
@@ -183,20 +191,51 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
                 }
 
         */
-                if(temp->FCost()==-1 && !temp->wallState()){
+                gcost_estimated=current->GCost()+calCost(current->col(),current->row(),tempx,tempy);
+                if(temp->GCost()>gcost_estimated && !temp->wallState()){
+                    if(temp->ischecked==true){
+                         for(QGraphicsItem*textTemp:temp->childItems()){
+                             delete textTemp;
+                         }
+                         gCost=gcost_estimated;
+                         hCost=calCost(temp->col(),temp->row(),fX,fY);
+                         fCost=gCost+hCost;
+                         temp->setFCost(fCost);
+                         temp->setGCost(gCost);
 
-                    gCost=calCost(sX,sY,temp->col(),temp->row());
-                    hCost=calCost(temp->col(),temp->row(),fX,fY);
-                    fCost=gCost+hCost;
-                    temp->setFCost(fCost);
-                    OpenList.push_back(temp);
-                    temp->setColor(Color::BLUE);
-                    temp->setLastNode(current);
-                    //set color blue
-                    text= new QGraphicsTextItem(QString::number(fCost), temp);
-       //             text->setPos(temp->pos());
-                    texts.push_back(text);
 
+                         temp->setColor(Color::BLUE);
+                         temp->setLastNode(current);
+                         //set color blue
+
+                         text= new QGraphicsTextItem(QString::number(fCost), temp);
+            //             text->setPos(temp->pos());
+
+                         QGraphicsTextItem*gtext= new QGraphicsTextItem(QString::number(gCost),temp);
+                         gtext->setPos(m_grid[sX][sY]->rect().topLeft());
+                         gtext->adjustSize();
+
+                    }else{
+                            temp->ischecked=true;
+                            gCost=gcost_estimated;
+                            hCost=calCost(temp->col(),temp->row(),fX,fY);
+                            fCost=gCost+hCost;
+                            temp->setFCost(fCost);
+                            temp->setGCost(gCost);
+
+                            OpenList.push_back(temp);
+                            temp->setColor(Color::BLUE);
+                            temp->setLastNode(current);
+                            //set color blue
+
+                            text= new QGraphicsTextItem(QString::number(fCost), temp);
+               //             text->setPos(temp->pos());
+
+                            QGraphicsTextItem*gtext= new QGraphicsTextItem(QString::number(gCost),temp);
+                            gtext->setPos(m_grid[sX][sY]->rect().topLeft());
+                            gtext->adjustSize();
+
+                          }
 
                 }
 
@@ -261,14 +300,24 @@ void my_scene::findPathEvent()
             for(int j=0; j<F_WIDTH; j++){
                 if(m_grid[i][j]->wallState()!=true)
                     m_grid[i][j]->setColor(Color::BLANK);
+
+                for(QGraphicsItem*tempT:m_grid[i][j]->childItems()){
+                    if(tempT!=m_grid[i][j]->child()){
+                        delete tempT;
+                    }
+                }
             }
         }
         update();
+        /*
+        texts.squeeze();
         for(QGraphicsTextItem*tempT : texts){
+            if(tempT!=nullptr)
             delete tempT;
 
         }
         texts.squeeze();
+        */
         calPath(m_finishB->col(),m_finishB->row());
     }else
         PathfindState=false;

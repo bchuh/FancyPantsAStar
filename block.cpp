@@ -4,7 +4,7 @@
 #include <QPixmap>
 #include <QGraphicsPixmapItem>
 #include <QToolTip>
-
+#include <climits>
 #include "block.h"
 #include "mainwindow.h"
 
@@ -19,9 +19,11 @@ Block::Block(my_scene*parent,int unitWidth)
     m_parent(parent),
     m_child(nullptr),
     m_lastNode(nullptr),
-    m_fCost(-1)
+    m_gCost(INT_MAX),
+    ischecked(false)
 
 {
+
   // setRect(0,0,unitWidth,unitWidth);
     G_UNIT=m_parent->G_UNIT;
 
@@ -107,6 +109,11 @@ void Block::setLastNode(Block *lastNode)
     m_lastNode=lastNode;
 }
 
+QGraphicsPixmapItem *Block::child()
+{
+    return m_child;
+}
+
 void Block::setFCost(int fcost)
 {
     m_fCost=fcost;
@@ -115,6 +122,16 @@ void Block::setFCost(int fcost)
 int Block::FCost()const
 {
     return m_fCost;
+}
+
+void Block::setGCost(int gcost)
+{
+    m_gCost=gcost;
+}
+
+int Block::GCost() const
+{
+    return  m_gCost;
 }
 
 bool Block::wallState()
