@@ -1,5 +1,5 @@
 # FancyPantsAStar
-A C++ program，which is based on the Qt framework，provides interaction with the pathfinding method and visualization of the A* pathfinding algorism.
++ A C++ program，which is based on the Qt framework，provides interaction with the pathfinding method and visualization of the A* pathfinding algorism.
 
 &emsp;
 <img src="https://github.com/bchuh/ImageLib/blob/master/2020.8.6/pathfinding_capture.gif" width = "500" height = "500" alt="Picture missing" align=center />
