@@ -1,0 +1,96 @@
+{
+    "pages": {
+        "loading": {
+            "name": "loading",
+            "url": "${local}pages/loading/index.html",
+            "resizable": false,
+            "cn": {
+                "width": 1200,
+                "height": 750
+            },
+            "oversea": {
+                "width": 1200,
+                "height": 700
+            }
+        },
+        "market": {
+            "name": "market",
+            "lifeGuard": true,
+            "cn": {
+                "url": "https://imgcache.qq.com/syzs/syzsweb/main.html",
+                "width": 1200,
+                "height": 750,
+                "minWidth": 1200,
+                "minHeight": 750
+            },
+            "oversea": {
+                "url": "https://webapp.gameloop.com/syzs/syzsweb/main.html",
+                "width": 1200,
+                "height": 750,
+                "minWidth": 1200,
+                "minHeight": 750
+            },
+            "edu": {
+                "url": "https://imgcache.qq.com/syzs/syzsedu/main.html",
+                "width": 1200,
+                "height": 716,
+                "minWidth": 1200,
+                "minHeight": 716
+            }
+        },
+        "voice": {
+            "name": "voice",
+            "width": 1096,
+            "height": 656,
+            "minWidth": 1096,
+            "minHeight": 656,
+            "cn": {
+                "url": "https://qzs.qq.com/syzs/voice_tool2/main.html"
+            },
+            "oversea": {
+                "url": "https://qzs.qq.com/syzs/voice_tool2/main.html"
+            }
+        },
+        "voice_mini": {
+            "name": "voice",
+            "width": 252,
+            "height": 600,
+            "minWidth": 252,
+            "minHeight": 600,
+            "resizable": false,
+            "cn": {
+                "url": "https://qzs.qq.com/syzs/voice_sidebar/index.html"
+            },
+            "oversea": {
+                "url": "https://qzs.qq.com/syzs/voice_sidebar/index.html"
+            }
+        },
+        "wechatLogin": {
+            "name": "wechatLogin",
+            "url": "https://syzs.qq.com/wx_login3.html",
+            "width": 604,
+            "height": 386,
+            "resizable": false,
+            "showTitlebar": true
+        }
+    },
+    "market_config": {
+        "local_priority": true,
+        "browser_background": "#26262B",
+        "url": "https://imgcache.qq.com/syzs/syzsweb/main.html",
+        "url_oversea": "https://webapp.gameloop.com/syzs/syzsweb/main.html"
+    },
+    "resouce_urls_market_only": [
+        {
+            "url": "https://imgcache.qq.com/syzs/",
+            "url_oversea": "https://webapp.gameloop.com/syzs/",
+            "url_edu": "https://imgcache.qq.com/syzs/",
+            "path": "${local}pages/"
+        }
+    ],
+    "prefetch_data": {
+        "post_data": "{\"head\":{\"cmd\":\"syzsdynamic\",\"userInfo\":{\"guid\":\"guidjettywang\",\"qimei\":\"\",\"imei\":\"\",\"uuid\":\"\",\"evilScore\":0},\"authInfo\":{\"businessId\":\"AuthName\",\"signature\":\"\",\"appId\":\"0\",\"A2\":[],\"uin\":0,\"qqOpenId\":\"\",\"weixinAccessToken\":\"\",\"weixinOpenId\":\"\",\"nonce\":57351843,\"UserIpv4\":\"\"},\"hostAppInfo\":{\"pkgName\":\"\",\"versionName\":\"\",\"versionCode\":0,\"appKey\":\"\",\"userId\":\"\",\"channel\":\"\",\"appChannelId\":\"\",\"scene\":\"frontpage\"},\"deviceInfo\":{\"mid\":\"\",\"imei1\":\"\",\"imsi1\":\"\",\"imei2\":\"\",\"imsi2\":\"\",\"macAddr\":\"\",\"xResolution\":0,\"yResolution\":0,\"brand\":\"\",\"mode\":\"\",\"manufacturer\":\"\",\"product\":\"\",\"platform\":0,\"phone\":\"\"},\"netInfo\":{\"netType\":0,\"ipv4\":\"\",\"ipv6\":\"\",\"wifiSsid\":\"\",\"wifiBssid\":\"\"},\"httpHeadInfo\":{},\"protocol\":0,\"milliSecond\":0,\"lbsInfo\":{\"latitude\":0,\"longitude\":0,\"accuracy\":0,\"cityCode\":0,\"province\":\"\",\"city\":\"\",\"district\":\"\",\"street\":\"\"},\"qua\":\"\",\"whiteBoard\":0,\"requestId\":\"\"},\"body\":{\"cookies\":{\"\":\"\"},\"layout\":\"\",\"bid\":\"syzsoversea\",\"request_id\":\"\",\"pageIndex\":0,\"scene\":0,\"headers\":{\"\":\"\"},\"context\":{\"list_s\":{\"installedApp\":[],\"trace_id\":[\"\"],\"region\":[\"US\"]},\"list_i\":{\"\":[0]}},\"query\":{\"offset\":\"1\",\"pagecount\":\"20\"},\"pageId\":\"\",\"dynamicLayoutHead\":{\"terminal\":{\"macAdress\":\"\",\"language\":\"\",\"osType\":\"\",\"androidId\":\"\",\"imei\":\"\",\"osVersion\":\"\"},\"entry\":{\"province_code\":0,\"country\":\"\",\"carrier_code\":0,\"longitude\":\"\",\"gateway_ip\":\"\",\"city_code\":0,\"latitude\":\"\",\"timezone\":\"\",\"gateway_ipv6\":\"\"},\"login\":{\"qq\":\"\",\"qua\":\"\",\"guid\":\"\",\"wx_openid\":\"\",\"qq_openid\":\"\"},\"track\":{\"via\":\"\",\"from_scene\":0,\"from_requestid\":0},\"net\":{\"ipType\":2,\"nacMode\":0,\"extNetworkOperator\":\"\",\"isWap\":0,\"nacModeStr\":\"\",\"netType\":0,\"clientIp\":\"\",\"wifiBssid\":\"\",\"clientIpv6\":\"\",\"wifiSsid\":\"\",\"extNetworkType\":0}}}}",
+        "url": "https://yybadaccess.3g.qq.com/v2/syzsdynamic?scene=frontpage",
+        "url_oversea": "https://unifiedaccess.gameloop.com/v2/syzsdynamic?scene=frontpage"
+    }
+}

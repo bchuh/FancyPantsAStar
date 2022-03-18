@@ -1,0 +1,4 @@
+<GameList>
+<game name="com.tencent.tmgp.pubgmhd" display="绝地求生：刺激战场" method="CheckGLESv3Supported" system="win7"/>
+<game name="com.tencent.tmgp.pubgm" display="绝地求生：全军出击" method="CheckGLESv3Supported" system="win7"/>
+</GameList>

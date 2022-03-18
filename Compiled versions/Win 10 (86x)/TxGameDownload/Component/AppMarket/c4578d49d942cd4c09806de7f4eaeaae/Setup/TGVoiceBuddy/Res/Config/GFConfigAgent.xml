@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+	<ConfigAgent name="mainwindow_conf" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:Window\bg.gft"/>
+				</value>
+			</prop>
+			<prop field="size" value="1102,716"/>
+			<prop field="ncArea" value="0,0,0,0"/>
+			<prop field="titleGap" value="3"/>
+			<prop field="sysButtonOffset" value="-37,38"/>
+			<!--prop field="smallIconSize" value="14,14"/>
+			<prop field="smallIcon" value="@thisres:Window\logo.png"/-->
+			<prop field="titleTextActivateColor" value="0xFFFFFF"/>
+			<prop field="titleTextInactivateColor" value="0xD8E8F3"/>
+			<prop field="titleTextFont" value="#@this.Font.Title"/>
+			<!--prop field="titleText" value="$@this:IDS_PRODUCT_TITLE"/>
+			<prop field="titleOffset" value="6, 5"/-->
+			<prop field="sysButtonConfig" value="aesysbutton_full"/>
+			<prop field="border" value="30,30,30,30"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="QuickTeamGuidWnd_conf" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:JoinGame\bg.gft"/>
+				</value>
+			</prop>
+			<prop field="size" value="860,560"/>
+			<prop field="backgroundAnimation" value="false"/>
+			<prop field="border" value="40,40,40,40"/>
+			<prop field="ncArea" value="0,0,0,0"/>
+			<prop field="sysButtonOffset" value="-40,40"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="sysButtonConfig" value="aesysbutton_close"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="TGV_GUID_BTN_CONF" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="highlightColor" value="0xff452b07"/>
+			<prop field="normalColor" value="0xff452b07"/>
+			<prop field="pushedColor" value="0xff452b07"/>
+			<prop field="font">
+				<value>
+					<Font height="12"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:JoinGame\button_n.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:JoinGame\button_h.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:JoinGame\button_d.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="TGV_JOINGAME_BTN_CONF" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="highlightColor" value="0xff452b07"/>
+			<prop field="normalColor" value="0xff452b07"/>
+			<prop field="pushedColor" value="0xff452b07"/>
+			<prop field="font">
+				<value>
+					<Font height="12"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:JoinGame\join_btn_n.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:JoinGame\join_btn_h.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:JoinGame\join_btn_d.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="aesysbutton_full" configType="IGFSysButton">
+		<configProp>
+			<prop field="closeConfig" value="new_Closebutton"/>
+			<prop field="minimizeConfig" value="new_minbutton"/>
+			<prop field="maximizeConfig" value="new_maxbutton"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="aesysbutton_close" configType="IGFSysButton">
+		<configProp>
+			<prop field="closeConfig" value="new_Closebutton"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="new_Closebutton" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="tabOrder" value="106"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="toolTip" value="$@this:CloseWindow"/>
+			<prop field="defaultButton" value="false"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\close_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\close_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+				<Texture file="@thistheme:button\close_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="new_maxbutton" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="tabOrder" value="103"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="toolTip" value="$@this:MaxisizeWindow"/>
+			<prop field="toolTip2" value="$@this:RestoreWindow"/>
+			<prop field="defaultButton" value="false"/>
+			<prop field="style" value="DoubleFace"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thisres:sysbutton\max_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thisres:sysbutton\max_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thisres:sysbutton\max_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground2">
+				<value>
+					<Texture file="@thisres:sysbutton\restore_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground2">
+				<value>
+					<Texture file="@thisres:sysbutton\restore_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground2">
+				<value>
+					<Texture file="@thisres:sysbutton\restore_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="new_minbutton" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="tabOrder" value="100"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="defaultButton" value="false"/>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\min_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\min_normal.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\min_down.png"/>
+				</value>
+			</prop>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="toolTip" value="$@this:MinimizeWindow"/>
+		</configProp>
+	</ConfigAgent>
+  	<ConfigAgent name="conf_feedback_btn" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<!--prop field="zOrder" value="10"/-->
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\feedback_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\feedback_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\feedback_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="webctrl" configType="IGFWebCtrl">
+		<configProp>
+			<!--prop field="loadingGif" value="@thistheme:WebCtrl\\loading.png"/>
+			<prop field="loadingText" value="$@this:IE_LoadingText"/>
+			<prop field="errorText" value="$@this:IE_ErrText"/>
+			<prop field="errorImage" value="@thistheme:WebCtrl\\sysmessagebox_warningFile.png"/-->			
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Conf_NormalButton" configType="IGFButton">
+		<configProp>
+			<prop field="size" value="120,36"/>
+			<prop field="normalColor" value="0xff808493"/>
+			<prop field="highlightColor" value="0xff808493"/>
+			<prop field="pushedColor" value="0xff808493"/>
+			<prop field="font">
+				<value>
+					<Font height="11" value="#platform.Font.Title"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff3a3b3e"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xffa3a3a4"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff525355"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff525355"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="msgsysbutton" configType="IGFSysButton">
+		<configProp>
+			<prop field="closeConfig" value="new_Closebutton"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="gfnewmessagebox" configType="IGFSysMessageBox">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff252830">
+						<fill>
+							<Brush clrFrom="0xff252830"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="true"/>
+			<!--prop field="smallIconSize" value="14,14"/>
+			<prop field="smallIcon" value="@thisres:img\logo.png"/-->
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 33, 0, 50"/>
+			<!--prop field="titleGap" value="8"/-->
+			<prop field="sysButtonOffset" value="-3,3"/>
+			<prop field="titleTextActivateColor" value="0xff7f8392"/>
+			<prop field="titleTextInactivateColor" value="0xff7f8392"/>
+			<prop field="titleTextFont" value="#platform.Font.Title"/>
+			<prop field="titleOffset" value="0,10"/>
+			<prop field="sysButtonConfig" value="msgsysbutton"/>
+			<!--prop field="stopFile" value="commonres:MessageBox\\sysmessagebox_warningFile.png"/>
+			<prop field="warningFile" value="commonres:MessageBox\\sysmessagebox_warningFile.png"/>
+			<prop field="questionFile" value="commonres:MessageBox\\sysmessagebox_questionFile.png"/>
+			<prop field="inforFile" value="commonres:MessageBox\\sysmessagebox_inforFile.png"/-->
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Conf_DefaultButton" configType="IGFButton">
+		<configProp>
+			<prop field="size" value="120,36"/>
+			<prop field="normalColor" value="0xff452b07"/>
+			<prop field="highlightColor" value="0xff452b07"/>
+			<prop field="pushedColor" value="0xff452b07"/>
+			<prop field="font">
+				<value>
+					<Font height="11" value="#platform.Font.Title"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\def_click.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\def_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\def_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:button\def_normal.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="RSBrownBoldTextNodeNormal14" configType="IGFRSETextNode">
+		<configProp>
+			<prop field="color" value="0x33333333"/>
+		</configProp>
+	</ConfigAgent>
+</Config>

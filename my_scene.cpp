@@ -100,7 +100,11 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
     list<Block*> ClosedList;
     gCost=0;
     hCost=calCost(sX,sY,fX,fY);
+    if(method==1)
+        hCost=0;
     fCost=gCost+hCost;
+    if(method==2)
+        gCost=fCost=0;
     Block*lastNode=nullptr;
 
     m_grid[sX][sY]->setFCost(fCost);
@@ -147,6 +151,8 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
             int tempx,tempy;
             switch(i){
                 case 1:
+                    if(method==2)
+                        continue;
                     tempx=current->col()-1;
                     tempy=current->row()-1;
 
@@ -157,6 +163,8 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
 
                     break;
                 case 3:
+                    if(method==2)
+                        continue;
                     tempx=current->col()+1;
                     tempy=current->row()-1;
 
@@ -171,6 +179,8 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
                     tempy=current->row();
                     break;
                 case 6:
+                    if(method==2)
+                        continue;
                     tempx=current->col()-1;
                     tempy=current->row()+1;
                     break;
@@ -179,6 +189,8 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
                     tempy=current->row()+1;
                     break;
                 case 8:
+                    if(method==2)
+                        continue;
                     tempx=current->col()+1;
                     tempy=current->row()+1;
 
@@ -199,7 +211,11 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
                          }
                          gCost=gcost_estimated;
                          hCost=calCost(temp->col(),temp->row(),fX,fY);
+                         if(method==1)
+                             hCost=0;
                          fCost=gCost+hCost;
+                         if(method==2)
+                             gCost=fCost=0;
                          temp->setFCost(fCost);
                          temp->setGCost(gCost);
 
@@ -219,7 +235,12 @@ bool my_scene::findPath(int sX, int sY, int fX, int fY)
                             temp->ischecked=true;
                             gCost=gcost_estimated;
                             hCost=calCost(temp->col(),temp->row(),fX,fY);
+                            if(method==1)
+                                hCost=0;
                             fCost=gCost+hCost;
+                            if(method==2){
+                                gCost=fCost=0;
+                            }
                             temp->setFCost(fCost);
                             temp->setGCost(gCost);
 

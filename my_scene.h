@@ -18,6 +18,7 @@ private:
 
 
 public:
+    int method;//0 means A*, 1 means Dj, 2 means BFS
     bool PathfindState;
     my_scene(QObject*parent=0);
     int checkFlag();

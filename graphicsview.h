@@ -9,6 +9,7 @@ class graphicsView : public QGraphicsView
 private:
     my_scene*m_scene;
     int G_UNIT;
+    int method;
 public:
     explicit graphicsView(QWidget *parent = nullptr);
     bool mouseEvent_Blocked;
@@ -20,7 +21,7 @@ protected:
     void mousePressEvent(QMouseEvent *event);
 public slots:
     void viewReact();
-
+    void setMethod(int);
 };
 
 #endif // GRAPHICSVIEW_H

@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="gb2312"?>
+<XtmlDescription>
+	<list id="eventList" itemtype="BSTR" />
+	<array id="configprop" itemname="prop">
+		<field value="field" type="BSTR" />
+		<field value="value" type="value" />
+	</array>
+	<array id="configeffect" itemtype="IGFElement" />
+	<enum id="EGFComboButtonState">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="Highlight" value="1" />
+			<enum xtmlvalue="Pushed" value="4" />
+			<enum xtmlvalue="ArwPushed" value="8" />
+		</metadata>
+	</enum>
+	<enum id="EGFComboButtonStyle">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="MsgRecord" value="1" />
+			<enum xtmlvalue="Drop" value="2" />
+		</metadata>
+	</enum>
+	<enum id="HorizontalAlignment">
+		<metadata type="enum">
+			<enum xtmlvalue="Left" value="0" />
+			<enum xtmlvalue="Right" value="1" />
+			<enum xtmlvalue="Center" value="2" />
+		</metadata>
+	</enum>
+	<enum id="TextImageRelation">
+		<metadata type="enum">
+			<enum xtmlvalue="Overlay" value="0" />
+			<enum xtmlvalue="ImageAboveText" value="1" />
+			<enum xtmlvalue="TextAboveImage" value="2" />
+			<enum xtmlvalue="ImageBeforeText" value="3" />
+			<enum xtmlvalue="TextBeforeImage" value="4" />
+		</metadata>
+	</enum>
+	<enum id="ButtonStyle">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="PushLike" value="1" />
+			<enum xtmlvalue="DoubleFace" value="2" />
+			<enum xtmlvalue="Tab" value="3" />
+		</metadata>
+	</enum>
+	<enum id="ButtonState">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="Highlight" value="1" />
+			<enum xtmlvalue="Pushed" value="2" />
+		</metadata>
+	</enum>
+	<enum id="EGFCheckButtonState">
+		<metadata type="enum">
+			<enum xtmlvalue="UncheckedNormal" value="0" />
+			<enum xtmlvalue="UncheckedHighlight" value="1" />
+			<enum xtmlvalue="UncheckedPushed" value="2" />
+			<enum xtmlvalue="CheckedNormal" value="3" />
+			<enum xtmlvalue="CheckedHighlight" value="4" />
+			<enum xtmlvalue="CheckedPushed" value="5" />
+			<enum xtmlvalue="HalfCheckedNormal" value="6" />
+			<enum xtmlvalue="HalfCheckedHighlight" value="7" />
+			<enum xtmlvalue="HalfCheckedPushed" value="8" />
+		</metadata>
+	</enum>
+	<enum id="ComboBoxState">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="Highlight" value="1" />
+			<enum xtmlvalue="Pushed" value="2" />
+		</metadata>
+	</enum>
+	<enum id="ComboBoxStyle">
+		<metadata type="enum">
+			<enum xtmlvalue="DropDown" value="0" />
+			<enum xtmlvalue="DropList" value="1" />
+		</metadata>
+	</enum>
+	<enum id="ComboBoxStyle2">
+		<metadata type="enum">
+			<enum xtmlvalue="EGFComboBoxStyle2_DropDown" value="0" />
+			<enum xtmlvalue="EGFComboBoxStyle2_DropDownList" value="1" />
+		</metadata>
+	</enum>
+	<enum id="EGFTabCtrlLayoutType">
+		<metadata type="enum">
+			<enum xtmlvalue="Persent" value="0" />
+			<enum xtmlvalue="AutoSize" value="1" />
+		</metadata>
+	</enum>
+	<enum id="EcomboEditMode">
+		<metadata type="enum">
+			<enum xtmlvalue="Edit" value="0" />
+			<enum xtmlvalue="Display" value="1" />
+		</metadata>
+	</enum>
+	<enum id="EGFShape">
+		<metadata type="enum">
+			<enum xtmlvalue="Rectangle" value="0" />
+			<enum xtmlvalue="RoundRect" value="1" />
+		</metadata>
+	</enum>
+	<enum id="EGFFontEffect">
+		<metadata type="enum">
+			<enum xtmlvalue="Null" value="0" />
+			<enum xtmlvalue="Light" value="1" />
+			<enum xtmlvalue="AutoColor" value="2" />
+			<enum xtmlvalue="AutoLight" value="3" />
+		</metadata>
+	</enum>
+	<enum id="EGFBrushType">
+		<metadata type="enum">
+			<enum xtmlvalue="Solid" value="0" />
+			<enum xtmlvalue="Vertical" value="1" />
+			<enum xtmlvalue="Horizon" value="5" />
+			<enum xtmlvalue="VerticalMiddle" value="6" />
+			<enum xtmlvalue="HorizonMiddle" value="7" />
+			<enum xtmlvalue="VerticalMiddlePixel" value="8" />
+			<enum xtmlvalue="HorizonMiddlePixel" value="9" />
+		</metadata>
+	</enum>
+	<enum id="EGFBlendType">
+		<metadata type="enum">
+			<enum xtmlvalue="Alpha" value="0" />
+			<enum xtmlvalue="Multiply" value="1" />
+			<enum xtmlvalue="LogicOR" value="2" />
+			<enum xtmlvalue="Gray" value="3" />
+			<enum xtmlvalue="DstOver" value="4" />
+		</metadata>
+	</enum>
+	<enum id="EGFButtonState">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="Highlight" value="1" />
+			<enum xtmlvalue="Pushed" value="2" />
+		</metadata>
+	</enum>
+	<bitmask id="editstyle">
+		<bit xtmlvalue="ES_LEFT" value="0x0000" />
+		<bit xtmlvalue="ES_CENTER" value="0x0001" />
+		<bit xtmlvalue="ES_RIGHT" value="0x0002" />
+		<bit xtmlvalue="ES_MULTILINE" value="0x0004" />
+		<bit xtmlvalue="ES_UPPERCASE" value="0x0008" />
+		<bit xtmlvalue="ES_LOWERCASE" value="0x0010" />
+		<bit xtmlvalue="ES_PASSWORD" value="0x0020" />
+		<bit xtmlvalue="ES_AUTOVSCROLL" value="0x0040" />
+		<bit xtmlvalue="ES_AUTOHSCROLL" value="0x0080" />
+		<bit xtmlvalue="ES_NOHIDESEL" value="0x0100" />
+		<bit xtmlvalue="ES_COMBOBOX" value="0x0200" />
+		<bit xtmlvalue="ES_OEMCONVERT" value="0x0400" />
+		<bit xtmlvalue="ES_READONLY" value="0x0800" />
+		<bit xtmlvalue="ES_WANTRETURN" value="0x1000" />
+		<bit xtmlvalue="ES_NUMBER" value="0x2000" />
+	</bitmask>
+	<bitmask id="textformat">
+		<bit xtmlvalue="DT_LEFT" value="0x00000000" />
+		<bit xtmlvalue="DT_TOP" value="0x00000000" />
+		<bit xtmlvalue="DT_CENTER" value="0x00000001" />
+		<bit xtmlvalue="DT_RIGHT" value="0x00000002" />
+		<bit xtmlvalue="DT_VCENTER" value="0x00000004" />
+		<bit xtmlvalue="DT_BOTTOM" value="0x00000008" />
+		<bit xtmlvalue="DT_WORDBREAK" value="0x00000010" />
+		<bit xtmlvalue="DT_SINGLELINE" value="0x00000020" />
+		<bit xtmlvalue="DT_EXPANDTABS" value="0x00000040" />
+		<bit xtmlvalue="DT_TABSTOP" value="0x00000080" />
+		<bit xtmlvalue="DT_NOCLIP" value="0x00000100" />
+		<bit xtmlvalue="DT_EXTERNALLEADING" value="0x00000200" />
+		<bit xtmlvalue="DT_NOPREFIX" value="0x00000800" />
+		<bit xtmlvalue="DT_INTERNAL" value="0x00001000" />
+		<bit xtmlvalue="DT_EDITCONTROL" value="0x00002000" />
+		<bit xtmlvalue="DT_PATH_ELLIPSIS" value="0x00004000" />
+		<bit xtmlvalue="DT_END_ELLIPSIS" value="0x00008000" />
+		<bit xtmlvalue="DT_MODIFYSTRING" value="0x00010000" />
+		<bit xtmlvalue="DT_RTLREADING" value="0x00020000" />
+		<bit xtmlvalue="DT_WORD_ELLIPSIS" value="0x00040000" />
+		<bit xtmlvalue="DT_NOFULLWIDTHCHARBREAK" value="0x00080000" />
+		<bit xtmlvalue="DT_HIDEPREFIX" value="0x00100000" />
+		<bit xtmlvalue="DT_PREFIXONLY" value="0x00200000" />
+	</bitmask>
+	<array id="FSMArcList" itemname="arc">
+		<field value="from" type="BSTR" />
+		<field value="to" type="BSTR" />
+		<field value="action" type="int" />
+	</array>
+	<enum id="EGFStackOrientation">
+		<metadata type="enum">
+			<enum xtmlvalue="Vertical" value="0" />
+			<enum xtmlvalue="Horizontal" value="1" />
+			<enum xtmlvalue="MultiVertical" value="2" />
+			<enum xtmlvalue="MultiHorizontal" value="3" />
+			<enum xtmlvalue="VerticalPercent" value="4" />
+			<enum xtmlvalue="HorizontalPercent" value="5" />
+		</metadata>
+	</enum>
+	<enum id="EGFDockOrientation">
+		<metadata type="enum">
+			<enum xtmlvalue="Left" value="0" />
+			<enum xtmlvalue="Right" value="1" />
+			<enum xtmlvalue="Top" value="2" />
+			<enum xtmlvalue="Bottom" value="3" />
+			<enum xtmlvalue="Fill" value="4" />
+		</metadata>
+	</enum>
+	<enum id="EGFGridSizeMode">
+		<metadata type="enum">
+			<enum xtmlvalue="Absolute" value="0" />
+			<enum xtmlvalue="Percent" value="1" />
+			<enum xtmlvalue="Autosize" value="2" />
+		</metadata>
+	</enum>
+	<array id="rowarray" itemtype="ITXData" itemname="rowInfo">
+		<field value="sizeMode" type="EGFGridSizeMode" />
+		<field value="height" type="double" />
+	</array>
+	<array id="columnarray" itemtype="ITXData" itemname="columnInfo">
+		<field value="sizeMode" type="EGFGridSizeMode" />
+		<field value="width" type="double" />
+	</array>
+	<array id="RadioGroupItems" itemname="RadioItem">
+		<field value="name" type="BSTR" />
+		<field value="text" type="BSTR" />
+		<field value="reportId" type="BSTR" />
+		<field value="tabStop" type="BOOL" />
+		<field value="tabOrder" type="UINT" />
+	</array>
+	<array id="fontMap" itemname="fontLink">
+		<field value="fontSize" type="double" />
+		<field value="codePage" type="DWORD" />
+		<field value="facename" type="BSTR" />
+		<field value="lineSpace" type="int" />
+		<field value="os" type="BSTR" />
+	</array>
+	<enum id="RichStaticLinkStatus">
+		<metadata type="enum">
+			<enum xtmlvalue="Normal" value="0" />
+			<enum xtmlvalue="MouseOn" value="1" />
+			<enum xtmlvalue="MouseDown" value="2" />
+		</metadata>
+	</enum>
+	<enum id="EGFScrollBarType">
+		<metadata type="enum">
+			<enum xtmlvalue="Horz" value="0" />
+			<enum xtmlvalue="Vert" value="1" />
+		</metadata>
+	</enum>
+	<enum id="TabButtonHorizontalAlign">
+		<metadata type="enum">
+			<enum xtmlvalue="Left" value="0" />
+			<enum xtmlvalue="Right" value="1" />
+			<enum xtmlvalue="Center" value="2" />
+		</metadata>
+	</enum>
+	<enum id="TabButtonState">
+		<metadata type="enum">
+			<enum xtmlvalue="UnpushedNormal" value="0" />
+			<enum xtmlvalue="UnpushedHighlight" value="1" />
+			<enum xtmlvalue="UnpushedPushed" value="2" />
+			<enum xtmlvalue="PushedNormal" value="3" />
+			<enum xtmlvalue="PushedHighlight" value="4" />
+			<enum xtmlvalue="PushedPushed" value="5" />
+		</metadata>
+	</enum>
+	<bitmask id="SysButtonStyle">
+		<bit xtmlvalue="Minimize" value="0x0001" />
+		<bit xtmlvalue="Maximize" value="0x0002" />
+		<bit xtmlvalue="Close" value="0x0004" />
+		<bit xtmlvalue="Restore" value="0x0007" />
+	</bitmask>
+	<bitmask id="liststyle">
+		<bit xtmlvalue="LVS_ICON" value="0x0000" />
+		<bit xtmlvalue="LVS_REPORT" value="0x0001" />
+		<bit xtmlvalue="LVS_SMALLICON" value="0x0002" />
+		<bit xtmlvalue="LVS_LIST" value="0x0003" />
+		<bit xtmlvalue="LVS_SINGLESEL" value="0x0004" />
+		<bit xtmlvalue="LVS_SHOWSELALWAYS" value="0x0008" />
+		<bit xtmlvalue="LVS_SORTASCENDING" value="0x0010" />
+		<bit xtmlvalue="LVS_SORTDESCENDING" value="0x0020" />
+		<bit xtmlvalue="LVS_SHAREIMAGELISTS" value="0x0040" />
+		<bit xtmlvalue="LVS_NOLABELWRAP" value="0x0080" />
+		<bit xtmlvalue="LVS_AUTOARRANGE" value="0x0100" />
+		<bit xtmlvalue="LVS_EDITLABELS" value="0x0200" />
+		<bit xtmlvalue="LVS_OWNERDATA" value="0x1000" />
+		<bit xtmlvalue="LVS_NOSCROLL" value="0x2000" />
+		<bit xtmlvalue="LVS_ALIGNTOP" value="0x0000" />
+		<bit xtmlvalue="LVS_ALIGNLEFT" value="0x0800" />
+		<bit xtmlvalue="LVS_ALIGNMASK" value="0x0c00" />
+		<bit xtmlvalue="LVS_OWNERDRAWFIXED" value="0x0400" />
+		<bit xtmlvalue="LVS_NOCOLUMNHEADER" value="0x4000" />
+		<bit xtmlvalue="LVS_NOSORTHEADER" value="0x8000" />
+	</bitmask>
+	<bitmask id="treestyle">
+		<bit xtmlvalue="WS_VISIBLE" value="0x10000000L" />
+		<bit xtmlvalue="TVS_HASBUTTONS" value="0x0001" />
+		<bit xtmlvalue="TVS_HASLINES" value="0x0002" />
+		<bit xtmlvalue="TVS_LINESATROOT" value="0x0004" />
+		<bit xtmlvalue="TVS_EDITLABELS" value="0x0008" />
+		<bit xtmlvalue="TVS_DISABLEDRAGDROP" value="0x0010" />
+		<bit xtmlvalue="TVS_SHOWSELALWAYS" value="0x0020" />
+		<bit xtmlvalue="TVS_RTLREADING" value="0x0040" />
+		<bit xtmlvalue="TVS_NOTOOLTIPS" value="0x0080" />
+		<bit xtmlvalue="TVS_CHECKBOXES" value="0x0100" />
+		<bit xtmlvalue="TVS_TRACKSELECT" value="0x0200" />
+		<bit xtmlvalue="TVS_SINGLEEXPAND" value="0x0400" />
+		<bit xtmlvalue="TVS_INFOTIP" value="0x0800" />
+		<bit xtmlvalue="TVS_FULLROWSELECT" value="0x1000" />
+		<bit xtmlvalue="TVS_NOSCROLL" value="0x2000" />
+		<bit xtmlvalue="TVS_NONEVENHEIGHT" value="0x4000" />
+		<bit xtmlvalue="TVS_NOHSCROLL" value="0x8000" />
+	</bitmask>
+	<metadatatype id="metadatatype">
+		<prop field="type" type="BSTR" />
+	</metadatatype>
+	<enum id="TabButtonTextImageRelation">
+		<metadata type="enum">
+			<enum xtmlvalue="Overlay" value="0" />
+			<enum xtmlvalue="ImageAboveText" value="1" />
+			<enum xtmlvalue="TextAboveImage" value="2" />
+			<enum xtmlvalue="ImageBeforeText" value="3" />
+			<enum xtmlvalue="TextBeforeImage" value="4" />
+		</metadata>
+	</enum>
+	<enum id="EGFSmoothMode">
+		<metadata type="enum">
+			<enum xtmlvalue="None" value="0" />
+			<enum xtmlvalue="Default" value="1" />
+			<enum xtmlvalue="Quick" value="2" />
+			<enum xtmlvalue="Bilinear" value="3" />
+			<enum xtmlvalue="Bicubic" value="4" />
+		</metadata>
+	</enum>
+	<enum id="GifStretchMode">
+		<metadata type="enum">
+			<enum xtmlvalue="Center" value="0" />
+			<enum xtmlvalue="Adjust" value="1" />
+			<enum xtmlvalue="Stretch" value="2" />
+		</metadata>
+	</enum>
+	<enum id="ScriptAniMode">
+		<metadata type="enum">
+			<enum xtmlvalue="Mode_Timer" value="0" />
+			<enum xtmlvalue="Mode_WhileSleep" value="1" />
+		</metadata>
+	</enum>
+	<enum id="EGFImageViewFitType">
+		<metadata type="enum">
+			<enum xtmlvalue="ActualSize" value="0" />
+			<enum xtmlvalue="FullImage" value="1" />
+			<enum xtmlvalue="Auto" value="2" />
+		</metadata>
+	</enum>
+	<enum id="EGFImageViewControlMode">
+		<metadata type="enum">
+			<enum xtmlvalue="None" value="0" />
+			<enum xtmlvalue="Zoom" value="1" />
+			<enum xtmlvalue="Move" value="2" />
+		</metadata>
+	</enum>
+	<interface iid="A1767715-E4D9-464d-B62A-57142C58B9EE" label="Element" id="IGFElement" inherit="IDispatch">
+		<prop field="name" type="BSTR" group="常用" toolTips="BSTR:控件的名称，可以用来在函数Util::GF::GetElementByName和IGFElement的GetElementByName" />
+		<prop field="config" type="BSTR" group="常用" toolTips="BSTR:控件的风格" />
+		<prop field="itemData" type="ITXData" toolTips="ITXData:额外数据存储。用于附带额外的属性，比如 ToolbarItem的strSortKey排序参数，一般由存，取双方协商决定" />
+	</interface>
+	<interface iid="2F2DF1A2-2037-4116-B7A1-D38F87741CA2" label="ConfigAgent" id="IGFConfigAgent" inherit="IGFElement">
+		<prop field="configType" type="BSTR" />
+		<prop field="comboConfig" type="BSTR" />
+		<prop field="configProp" type="configprop" />
+		<prop field="configEffect" type="configeffect" />
+	</interface>
+	<interface iid="A75AA927-727A-4f97-85EF-71565B3D6840" id="IGFDraw" inherit="IGFElement">
+		<prop field="hidden" type="BOOL" />
+		<prop field="alpha" type="BYTE" />
+		<prop field="colorize" type="BOOL" />
+	</interface>
+	<interface iid="84B1812A-F064-453b-B48D-5B61399DAE45" id="IGFEffect" inherit="IGFElement" />
+	<interface iid="208308FE-CD22-4420-BF71-80396E326181" label="Font" id="IGFFont" inherit="IGFElement">
+		<prop field="height" type="double" toolTips="double:字体的高度。详见MSDN函数CreateFont中的参数nHeight解释。默认为9" />
+		<prop field="width" type="double" toolTips="double:字体的宽度。详见MSDN函数CreateFont中的参数nWidth解释。默认为0" />
+		<prop field="orientation" type="int" toolTips="int:字体的方向。详见MSDN函数CreateFont中的参数nOrientation解释。默认为0" />
+		<prop field="weight" type="int" toolTips="int:字体磅数。详见MSDN函数CreateFont中的参数fnWeight解释。默认为FW_NORMAL，即400." />
+		<prop field="italic" type="BOOL" toolTips="BOOL:是否斜体。默认为FALSE" />
+		<prop field="underline" type="BOOL" toolTips="BOOL:是否带下划线。默认为FALSE" />
+		<prop field="charSet" type="BYTE" toolTips="BYTE:字集。详见MSDN函数CreateFont中的参数fdwCharSet解释。默认为DEFAULT_CHARSET" />
+		<prop field="facename" type="BSTR" toolTips="BSTR:字体名。详见MSDN函数CreateFont中的参数lpszFace解释。默认为Tahoma" />
+		<prop field="fontMap" type="fontMap" />
+		<prop field="fontEffect" type="EGFFontEffect" />
+		<prop field="enableClearType" type="BOOL" toolTips="False为关闭cleartype效果" />
+		<prop field="adjustHeight" type="BOOL" toolTips="False不对非936CodePage的字体做高度调整" />
+	</interface>
+	<interface iid="A5DFF81A-B003-4967-A286-87EB38041C7C" label="Frame" id="IGFFrame" inherit="IGFElement" type="frameworkCtrl">
+		<prop field="onInit" type="BSTR" group="高级" toolTips="初始化脚本" />
+		<prop field="classid" type="BSTR" group="高级" toolTips="脚本类名" />
+		<prop field="hidden" type="BOOL" group="常用" toolTips="BOOL:是否隐藏。功能类似windows的 ShowWindow，只是自己，不会受到父亲的影响。默认FALSE" />
+		<prop field="enable" type="BOOL" group="常用" toolTips="BOOL:是否有效，不会受父亲影响。默认为TRUE" />
+		<prop field="client" type="BOOL" group="常用" toolTips="BOOL:是否为客户区。如果为TRUE，则NcHitTest返回HTCLIENT。默认为FALSE" />
+		<prop field="autoWidth" type="BOOL" group="排布" toolTips="BOOL:是否自动计算水平方向大小。默认为FALSE" />
+		<prop field="autoHeight" type="BOOL" group="排布" toolTips="BOOL:是否自动计算垂直方向大小。默认为FALSE" />
+		<prop field="background" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="backgroundAlpha" type="BYTE" group="高级" toolTips="BYTE:背景绘图的alpha值，越小越透明。取值范围为0到255的整数。默认255" />
+		<prop field="backgroundAnimation" type="BOOL" group="高级" toolTips="BOOL:切换背景的动画效果" />
+		<prop field="material" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="topground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="topgroundAlpha" type="BYTE" group="高级" toolTips="BYTE:顶层绘图的alpha值，越小越透明。取值范围为0到255的整数。默认255" />
+		<prop field="toolTip" type="BSTR" mode="字符串" group="常用" toolTips="BSTR:提示信息,当鼠标停留在该Frame上面时会显示。默认为空" />
+		<prop field="toolTipInitialTime" type="UINT" toolTips="UINT:延时多久才弹提示信息,单位为毫秒。默认为500" />
+		<prop field="toolTipAutoPopTime" type="UINT" toolTips="UINT:显示提示信息多久自动关闭提示信息,单位为毫秒。默认为10000" />
+		<prop field="reportId" type="BSTR" group="常用" toolTips="BSTR:数据上报的Id。默认为空" />
+		<prop field="forceLayout" type="BOOL" group="高级" toolTips="BOOL:强制排布，仅当Frame在排布容器内的时候有效，当为 TRUE 的时候，即使隐藏，也会被排布。默认为FALSE" />
+		<prop field="size" type="SIZE" group="排布" toolTips="SIZE:Frame大小，这个值先被缓存，提供给父亲作为排布参考。在autoWidth或autoHeight或sizeAsParent为true时部分失效" />
+		<prop field="location" type="POINT" group="排布" toolTips="POINT:相对父 Frame 的x, y坐标，这个值先被缓存，提供给父亲作为排布参考。注:处于排布Panel中时，该属性无效" />
+		<prop field="maxAutoSize" type="SIZE" group="常用" toolTips="SIZE:设置Frame自动大小时的最大大小,小于=0时不起作用。默认(-1.-1)" />
+		<prop field="minAutoSize" type="SIZE" group="常用" toolTips="SIZE:设置Frame自动大小时的最小大小,小于=0时不起作用。默认(-1.-1)" />
+		<prop field="margin" type="RECT" group="排布" toolTips="RECT:外部间距。默认为(0,0,0,0)" />
+		<prop field="padding" type="RECT" group="排布" toolTips="RECT:内部边框.默认为(0,0,0,0)" />
+		<prop field="anchor" type="BSTR" group="排布" toolTips="BSTR:排布方向" />
+		<prop field="sizeAsParent" type="BOOL" group="排布" toolTips="BOOL:是否和父亲大小保持一致" />
+		<prop field="oleDrag" type="BOOL" group="高级" toolTips="BOOL:是否支持ole拖动。默认FALSE" />
+		<prop field="oleDrop" type="BOOL" group="高级" toolTips="BOOL:是否支持ole放。默认FALSE" />
+		<prop field="dragMove" type="BOOL" group="高级" toolTips="BOOL:是否可以被拖着移动。如果设置它或者oleDrag，则它等于（!oleDrag）。默认为FALSE" />
+		<prop field="dragSizing" type="BOOL" group="高级" toolTips="BOOL:padding区是否可以被拖着改变大小。默认为FALSE" />
+		<prop field="zOrder" type="INT" group="常用" toolTips="INT: z 轴顺序。决定同级Frame的绘图顺序越小的越晚绘制(意味着显示在前面)。注:对真窗口控件无效。默认为10" />
+		<prop field="doubleClick" type="BOOL" group="高级" toolTips="BOOL:是否接收双击消息,默认FALSE" />
+		<prop field="alpha" type="BYTE" toolTips="BYTE:alpha值，越小控件越透明。取值范围为0到255的整数。默认255" />
+		<prop field="disableAlpha" type="BYTE" toolTips="BYTE:alpha值，当控件disable时绘制使用的alpha值， 默认0（不使用） " />
+		<prop field="opaque" type="BOOL" toolTips="BOOL:是否为不透明窗口 设置了这个属性后alpha属性将会无效" />
+		<prop field="paddingDraw" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="cursor" type="BSTR" group="常用" toolTips="BSTR:使用的光标,可以为系统光标或者自定义光标.对于系统光标,该值与系统光标资源对应的关系为:appStarting(IDC_APPSTARTING)、arrow(IDC_ARROW)、cross(IDC_CROSS)、hand(IDC_HAND)、help(IDC_HELP)、iBeam(IDC_IBEAM)、no(IDC_NO)、sizeAll(IDC_SIZEALL)、sizeNESW(IDC_SIZENESW)、sizeNS(IDC_SIZENS)、sizeNWSE(IDC_SIZENWSE)、sizeWE(IDC_SIZEWE)、upArrow(IDC_UPARROW)和wait(IDC_WAIT)。例如该值为wait时，则将鼠标设为IDC_WAIT。对于自定义鼠标，请参考MSDN的LoadCursorFromFile 函数" />
+		<prop field="transparent" type="BOOL" group="常用" toolTips="BOOL:是否透明，如果为TRUE，则消息不可抵达 只对路由消息有效，广播和p2p消息不受该属性影响。例如：为了让一个Frame显示图标，但是不想收到鼠标消息，这时可以设为TRUE。默认为FALSE" />
+		<prop field="layered" type="BOOL" group="高级" />
+		<prop field="transform" type="IGFTransform" group="高级" />
+		<prop field="animation" type="IGFScriptAnimation" group="高级" />
+		<prop field="caption" type="BSTR" group="高级" />
+		<prop field="dispatchPaintRectMsg" type="BOOL" group="高级" />
+	</interface>
+	<interface iid="A4044E0F-74EF-4c51-83A9-A2C35715D6D3" id="IGFFrameLogic" inherit="IGFElement" />
+	<interface iid="627E42F8-6BB1-4D0D-BC05-9BE53F8221F3" label="ListColumnItem" id="IGFListColumn" inherit="IGFElement">
+		<prop field="text" type="BSTR" group="常用" mode="字符串" toolTips="BSTR:文本" />
+		<prop field="width" type="int" group="常用" toolTips="int:列宽" />
+	</interface>
+	<interface iid="8F8937C5-F3F4-4b7c-9C2C-2BBD1957D652" label="ListItem" id="IGFListItem" inherit="IGFElement">
+		<prop field="enable" type="BOOL" group="常用" toolTips="BOOL:Item是否有效，默认为TRUE" />
+		<prop field="clrText" type="ARGB" group="常用" toolTips="ARGB:普通态的字颜色，默认为(0,0,0)，只有设置applyTextColor为TRUE才有效" />
+		<prop field="clrHText" type="ARGB" group="常用" toolTips="ARGB:高亮态的字颜色，默认为(255,255,255)，只有设置applyTextColor为TRUE才有效" />
+		<prop field="clrSelText" type="ARGB" group="常用" toolTips="ARGB:选中态的字颜色" />
+		<prop field="applyTextColor" type="BOOL" group="常用" toolTips="BOOL:是否应用Item的字颜色,默认为FALSE" />
+	</interface>
+	<interface iid="6C75C0AE-217A-41AE-8BB0-05E0C300C84E" label="LinkItem" id="IGFRSLinkItem" inherit="IGFElement">
+		<prop field="text" type="BSTR" mode="字符串" />
+		<prop field="pos" type="POINT" />
+		<prop field="posMode" type="BOOL" />
+		<prop field="color" type="ARGB" mode="主题" />
+		<prop field="colorMouseOn" type="ARGB" mode="主题" />
+		<prop field="colorLButtonDown" type="ARGB" mode="主题" />
+		<prop field="font" type="IGFFont" mode="主题" />
+		<prop field="fontMouseOn" type="IGFFont" mode="主题" />
+		<prop field="fontLButtonDown" type="IGFFont" mode="主题" />
+		<prop field="id" type="BSTR" />
+		<prop field="sink" type="BOOL" />
+	</interface>
+	<interface iid="02E0D433-A732-417b-9109-4054079CDD74" label="Brush" id="IGFBrush" inherit="IGFDraw">
+		<prop field="clrFrom" type="ARGB" />
+		<prop field="clrTo" type="ARGB" />
+		<prop field="clrMiddle" type="ARGB" />
+		<prop field="drawType" type="EGFBrushType" />
+		<prop field="blendType" type="EGFBlendType" />
+		<prop field="percentMiddle" type="double" />
+	</interface>
+
+	<interface iid="0BFBD0C8-507B-46dc-BC8C-D68AF3BAF298" label="Control" id="IGFControl" inherit="IGFFrame" type="frameworkCtrl">
+		<prop field="tabStop" type="BOOL" group="常用" toolTips="BOOL:是否支持TabStop操作,如果设置该属性，该控件就会拥有焦点，从而能够收到键盘消息和鼠标滚轮消息。" />
+		<prop field="tabOrder" type="UINT" group="常用" toolTips="UINT:tab键的序号" />
+		<prop field="tabGroup" type="BOOL" group="常用" toolTips="BOOL:是否属于某一个组。顶层Frame不要设置这个属性" />
+		<prop field="shortcut" type="BSTR" group="常用" toolTips="BSTR:快捷键，格式为[控制键+[...]]字符。例如：ctrl+a、shift+ctrl+a、f1 。在快捷键中会忽略空格。" />
+		<prop field="animate" type="BOOL" group="高级" toolTips="BOOL:状态变化引起背景变化时，是否动画显示。" />
+		<prop field="template" type="BSTR" group="高级" toolTips="使用的UI模版" />
+		<prop field="event" type="eventList" group="高级" toolTips="事件处理列表" />
+	</interface>
+	<interface iid="69AD07EA-62E0-4e59-BC30-2DA4A934A1E5" label="FontString" id="IGFFontString" inherit="IGFDraw">
+		<prop field="height" type="double" />
+		<prop field="width" type="double" />
+		<prop field="orientation" type="int" />
+		<prop field="weight" type="int" />
+		<prop field="italic" type="BOOL" />
+		<prop field="underline" type="BOOL" />
+		<prop field="charSet" type="BYTE" />
+		<prop field="facename" type="BSTR" />
+		<prop field="color" type="ARGB" />
+		<prop field="text" type="BSTR" />
+		<prop field="format" type="textformat" />
+		<prop field="font" type="IGFFont" />
+		<prop field="maxRow" type="int" />
+		<prop field="lineSpace" type="int" group="常用" />
+		<prop field="singleLine" type="BOOL" group="常用" />
+		<prop field="endEllipsis" type="BOOL" group="常用" />
+		<prop field="postFix" type="BSTR" group="常用" />
+		<prop field="indent" type="int" group="常用" />
+		<prop field="fontEffect" type="EGFFontEffect" />
+	</interface>
+	<interface iid="0DCACBBE-9F87-440B-B9A5-0AF837A319F0" id="IGFLayout" inherit="IGFFrame" />
+	<interface iid="0FF9AFEA-5FEF-4184-9A4C-59CE451EFBB1" label="MutexLogic" id="IGFMutexLogic" inherit="IGFFrameLogic" />
+	<interface iid="D74DEF29-7858-41D5-92F3-65E26EBB4E03" id="IGFPaddingEffect" inherit="IGFEffect">
+		<prop field="frame" type="IGFFrame" group="绘图" />
+		<prop field="padding" type="RECT" group="绘图" />
+		<prop field="normalDraw" type="IGFDraw" group="绘图" />
+		<prop field="mouseOnDraw" type="IGFDraw" group="绘图" />
+		<prop field="mouseDownDraw" type="IGFDraw" group="绘图" />
+		<prop field="focusDraw" type="IGFDraw" group="绘图" />
+	</interface>
+	<interface iid="8022E552-1D67-476E-BA6C-2708019781D4" label="FontEffect" id="IGFFontEffect" inherit="IGFEffect">
+		<prop field="normalColor" type="ARGB" />
+		<prop field="highlightColor" type="ARGB" />
+		<prop field="pushedColor" type="ARGB" />
+		<prop field="normalFont" type="IGFFont" />
+		<prop field="highlightFont" type="IGFFont" />
+		<prop field="pushedFont" type="IGFFont" />
+	</interface>
+	<interface iid="6950DFD3-D68D-42CE-B39B-41729EB5E28A" label="SelectLogic" id="IGFSelectLogic" inherit="IGFFrameLogic">
+		<prop field="selectFrame" type="BSTR" />
+	</interface>
+	<interface iid="B0783B2E-669E-41b7-9DF6-659D741105B4" id="IGFPen" inherit="IGFDraw" />	
+	<interface iid="E80B5869-91D5-40e0-A777-E0DC242B8306" label="Shape" id="IGFShape" inherit="IGFDraw">
+		<prop field="shape" type="EGFShape" />
+		<prop field="fill" type="IGFDraw" />
+		<prop field="clrBorder" type="ARGB" />
+		<prop field="borderWidth" type="INT" />
+		<prop field="borderStyle" type="INT" />
+		<prop field="borderExtPen" type="BOOL" />
+		<prop field="roundHeight" type="LONG" />
+		<prop field="roundWidth" type="LONG" />
+	</interface>
+	<interface iid="CCC3CACE-E43D-45DC-A326-548C8FB058B6" label="Canvas" id="IGFCanvas" inherit="IGFDraw">
+		<childprop field="anchor" type="BSTR" />
+		<childprop field="size" type="SIZE" />
+		<childprop field="margin" type="RECT" />
+		<childprop field="autoWidth" type="BOOL" />
+		<childprop field="autoHeight" type="BOOL" />
+		<prop field="background" type="IGFDraw" />
+	</interface>
+	<interface iid="E65F696E-4AF6-49C4-9588-59A6D66BBDFB" id="IGFAnimationDraw" inherit="IGFDraw">
+		<prop field="play" type="BOOL" />
+		<prop field="playCount" type="INT" />
+	</interface>
+	<interface iid="84102DD0-1A02-4B9B-A504-A7A7B39852A9" label="GifDraw" id="IGFGifDraw" inherit="IGFAnimationDraw">
+		<prop field="file" type="BSTR" />
+		<prop field="gray" type="BOOL" />
+		<prop field="smooth" type="EGFSmoothMode" />
+	</interface>
+	<interface iid="B249321D-05FB-412F-B06E-DC4B9450C978" label="FlashDraw" id="IGFFlashDraw" inherit="IGFAnimationDraw">
+		<prop field="file" type="BSTR" group="绘图" mode="图片" />
+	</interface>
+	<interface iid="792E837B-6175-481D-B0FC-064CF5D2B2FF" label="BlendDraw" id="IGFBlendDraw" inherit="IGFAnimationDraw">
+		<prop field="foreground" type="IGFDraw" />
+		<prop field="background" type="IGFDraw" />
+		<prop field="startAlpha" type="BYTE" />
+		<prop field="time" type="DWORD" />
+	</interface>
+	
+	<interface iid="B817533F-4510-4bdc-9B93-D9848696C3A0" label="IconDraw" id="IGFIconDraw" inherit="IGFDraw">
+		<prop field="file" type="BSTR" />
+	</interface>
+	<interface iid="40C0A0B4-33E3-4091-AE36-918F9C09E350" label="Texture" id="IGFTexture" inherit="IGFDraw">
+		<prop field="file" type="BSTR" />
+		<prop field="gray" type="BOOL" />
+		<prop field="trans" type="BOOL" />
+		<prop field="smooth" type="EGFSmoothMode" />
+		<prop field="cache" type="BOOL" />
+		<prop field="autoRotate" type="BOOL" />
+		<prop field="async" type="BOOL" />
+		<prop field="scaleMode" type="DWORD" />
+    <prop field="dpiScale" type="BOOL" />
+	</interface>
+	<interface iid="70551436-19C4-4f25-BFC8-322D86AE1A9C" label="Button" id="IGFButton" inherit="IGFControl" type="basicCtrl">
+		<prop field="text" type="BSTR" group="常用" mode="字符串" defaultValue="按钮" toolTips="BSTR:文字内容。默认为空" />
+		<prop field="text2" type="BSTR" group="高级" mode="字符串" toolTips="BSTR:Double-face风格下的文字内容。默认为空" />
+		<prop field="normalColor" type="ARGB" group="常用" mode="主题" toolTips="ARGB:普通态的文字颜色" />
+		<prop field="highlightColor" type="ARGB" group="常用" mode="主题" toolTips="ARGB:高亮态的文字颜色" />
+		<prop field="pushedColor" type="ARGB" group="常用" mode="主题" toolTips="ARGB:按下态的文字颜色" />
+		<prop field="toolTip2" type="BSTR" mode="字符串" group="高级" toolTips="BSTR:Double-face风格下的提示信息。默认为空" />
+		<prop field="textHidden" type="BOOL" group="高级" toolTips="BOOL:是否隐藏文字。默认为FALSE" />
+		<prop field="textureHidden" type="BOOL" group="高级" toolTips="BOOL:是否隐藏图片。默认为FALSE" />
+		<prop field="textInching" type="POINT" group="高级" toolTips="POINT:文字显示的微调。默认为(0,1)" />
+		<prop field="textureInching" type="POINT" group="高级" toolTips="POINT:图片显示的微调。默认为(0,0)" />
+		<prop field="sinkage" type="POINT" group="高级" toolTips="POINT:下沉的偏移。默认为(1,1)" />
+		<prop field="font" type="IGFFont" group="高级" mode="主题" toolTips="IGFFont:字体相关信息" />
+		<prop field="font2" type="IGFFont" group="高级" mode="主题" toolTips="IGFFont:Double-face风格下字体相关信息" />
+		<prop field="texture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:图标" />
+		<prop field="texture2" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:Double-face风格下的图标" />
+		<prop field="textimagerelation" type="TextImageRelation" group="常用" toolTips="TextImageRelation:图片和文字排布关系。默认为TIR_ImageBeforeText，文字在图像之后" />
+		<prop field="internalGap" type="INT" group="高级" toolTips="INT:图片和文字之间的间隔。默认为3" />
+		<prop field="style" type="ButtonStyle" group="高级" toolTips="ButtonStyle:是否是按下类型的按钮。默认为GBStyle_Normal" />
+		<prop field="face" type="int" group="高级" toolTips="int:Double-Face风格下按钮的状态。默认值为0，即第1面,依次类推,值为n时为第n+1面。 对于n-face按钮，值的范围为0至n-1，其他值会报错。例如对于Double-face风格的按钮，只有0和1" />
+		<prop field="logoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:图标" />
+		<prop field="highlightlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:高亮状态的图标" />
+		<prop field="pushedlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:按下状态的图标" />
+		<prop field="logoDraw2" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:Double-face风格下的图标" />
+		<prop field="highlightlogoDraw2" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:Double-face风格下高亮状态的图标" />
+		<prop field="pushedlogoDraw2" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:Double-face风格下按下状态的图标" />
+		<prop field="normalBackground" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:普通状态的按钮背景" />
+		<prop field="highlightBackground" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:高亮状态的按钮背景" />
+		<prop field="pushedBackground" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:按下状态的按钮背景" />
+		<prop field="normalDefaultBackground" type="IGFDraw" group="绘图" mode="主题" groupEx="3" toolTips="IGFDraw:普通状态的缺省按钮背景" />
+		<prop field="highlightDefaultBackground" type="IGFDraw" group="绘图" mode="主题" groupEx="3" toolTips="IGFDraw:高亮状态的缺省按钮背景" />
+		<prop field="pushedDefaultBackground" type="IGFDraw" group="绘图" mode="主题" groupEx="3" toolTips="IGFDraw:按下状态的缺省按钮背景" />
+		<prop field="normalBackground2" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:Double-face风格下普通状态的按钮背景" />
+		<prop field="highlightBackground2" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:Double-face风格下高亮状态的按钮背景" />
+		<prop field="pushedBackground2" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:Double-face风格下按下状态的按钮背景" />
+		<prop field="state" type="EGFButtonState" group="高级" toolTips="EGFButtonState:按钮当前状态" />
+		<prop field="border" type="RECT" group="常用" toolTips="RECT:边框大小。默认为(5,2,5,2)" />
+		<prop field="horizontalAlignment" type="HorizontalAlignment" group="高级" toolTips="HorizontalAlignment:水平对齐方式。默认为HALIGN_CENTER，即居中" />
+		<prop field="defaultButton" type="BOOL" group="高级" toolTips="BOOL:是否为默认按钮" />
+		<prop field="prefix" type="BOOL" toolTips="BOOL:是否将&amp; 转义。默认为TRUE" />
+		<prop field="textureAlpha" type="BYTE" toolTips="BYTE:图片的透明度。范围为0到255的BYTE值，越小越透明。默认为255" />
+		<prop field="textureGray" type="BOOL" toolTips="BOOL:是否灰显按钮图片。默认为FALSE" />
+		<prop field="face" type="INT" toolTips="INT:Double-Face风格下按钮的状态" />
+		<prop field="postFix" type="BSTR" toolTips="BSTR:文字后缀:用于如[abcd...]中间显示不下打点时，设置postFix为]" />
+	</interface>
+	<interface iid="A51E769A-A00A-4164-93C4-E4042A97B3ED" label="CheckButton" id="IGFCheckButton" inherit="IGFControl" type="basicCtrl">
+		<prop field="uncheckedNormalTexture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:非选中情况下普通态的图片的路径" />
+		<prop field="uncheckedHighlightTexture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:非选中情况下高亮态的图片的路径" />
+		<prop field="uncheckedPushedTexture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:非选中情况下按下态的图片的路径" />
+		<prop field="checkedNormalTexture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:选中情况下普通态的图片的路径" />
+		<prop field="checkedHighlightTexture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:选中情况下高亮态的图片的路径" />
+		<prop field="checkedPushedTexture" type="BSTR" group="绘图" mode="图片" toolTips="BSTR:选中情况下按下态的图片的路径" />
+		<prop field="halfcheckedNormalTexture" type="BSTR" group="绘图" mode="图片" />
+		<prop field="halfcheckedHighlightTexture" type="BSTR" group="绘图" mode="图片" />
+		<prop field="halfcheckedPushedTexture" type="BSTR" group="绘图" mode="图片" />
+		<prop field="radio" type="BOOL" group="高级" toolTips="BOOL:是否用作 radiobutton。默认为FALSE" />
+		<prop field="threeState" type="BOOL" toolTips="BOOL:是否为三态按钮，即不选、选中、半选。默认为FALSE" />
+		<prop field="clrText" type="ARGB" group="高级" mode="主题" toolTips="ARGB:文本字体的颜色" />
+		<prop field="font" type="IGFFont" mode="主题" toolTips="IGFFont:字体" />
+		<prop field="state" type="EGFCheckButtonState" toolTips="EGFCheckButtonState:按扭当前的状态" />
+		<prop field="check" type="BOOL" group="高级" toolTips="BOOL:是否选中状态" />
+		<prop field="text" type="BSTR" group="常用" mode="字符串" toolTips="BSTR:文本内容。默认为空" />
+		<prop field="format" type="textformat" group="常用" toolTips="DWORD:字体绘制的格式。" />
+	</interface>
+	<interface iid="E38394B6-6763-4ce6-ADA2-0D2AA1BF28F5" label="ComboBox" id="IGFComboBox" inherit="IGFControl" type="basicCtrl">
+		<prop field="text" type="BSTR" group="常用" mode="字符串" toolTips="BSTR:文本内容" />
+		<prop field="defaultText" type="BSTR" group="常用" toolTips="BSTR:默认文字，在ComboBox的text为空且焦点不在本控件时显示。" />
+		<prop field="numberOnly" type="BOOL" group="常用" toolTips="BOOL:是否内容只有数字字符" />
+		<prop field="image" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="normalBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="highlightBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="pushedBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="listHeight" type="INT" group="常用" toolTips="INT:下拉列表的高度。默认为100" />
+		<prop field="listBkg" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:下拉列表的背景色" />
+		<prop field="buttonNormalDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:下拉箭头按扭普通态的图形" />
+		<prop field="buttonHighlightDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:下拉箭头按扭高亮态的图形" />
+		<prop field="buttonPushedDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:下拉箭头按扭按下态的图形" />
+		<prop field="itemNormalBkg" type="IGFDraw" group="绘图" groupEx="3" toolTips="IGFDraw:下拉列表项普通态的图形" />
+		<prop field="itemHighlightBkg" type="IGFDraw" group="绘图" groupEx="3" toolTips="IGFDraw:下拉列表项高亮态的图形" />
+		<prop field="itemHeight" type="INT" group="常用" toolTips="INT:下拉列表项普通状态下的高度。注意：下拉列表项高亮状态下的高度可能比其它状态下的高度高。默认为20" />
+		<prop field="multiple" type="double" group="高级" toolTips="double:下拉列表项高亮状态下放大的倍数。高亮状态下的高度=倍数*普通态高度。默认为1.0" />
+		<prop field="style" type="ComboBoxStyle" group="常用" toolTips="ComboBoxStyle:风格,目前的值只有CBOS_DropDown 和 CBOS_DropList。默认为CBOS_DropList" />
+		<prop field="state" type="ComboBoxState" toolTips="ComboBoxState: 控件当前的状态,目前的值有CBOST_Normal,CBOST_Highlight,CBOST_Pushed。" />
+		<prop field="borderSize" type="RECT" toolTips="RECT:四边的大小，left表示左边的偏移，top表示顶部的偏移，right表示右边的偏移，bottom表示底部的偏移。默认为(0,0,0,0)" />
+		<prop field="listBorderSize" type="RECT" group="常用" toolTips="RECT:下拉列表四边的大小，left表示左边的偏移，top表示顶部的偏移，right表示右边的偏移，bottom表示底部的偏移" />
+		<prop field="scrollviewConfig" type="BSTR" group="高级" toolTips="BSTR:下拉列表视图的Config,值为ScrollView的风格名。默认为ComboBoxListView" />
+		<prop field="textFont" type="IGFFont" mode="主题" toolTips="IGFFont:字体" />
+		<prop field="eraseButton" type="BOOL" group="高级" toolTips="BOOL:下拉列表项中是否有删除按钮。默认为FALSE" />
+		<prop field="eraseButtonConfig" type="BSTR" group="高级" toolTips="BSTR:下拉列表项中删除按钮的Config,值为Button的风格名。默认为comboboxEraseButton" />
+		<prop field="eraseButtonTip" type="BSTR" toolTips="BSTR:下拉列表项中删除按钮的的提示信息。默认为空" />
+		<prop field="editStyle" type="editstyle" group="高级" toolTips="DWORD:编辑框的风格，可以为:ES_AUTOHSCROLL,ES_AUTOVSCROLL,ES_CENTER,ES_LEFT,ES_LOWERCASE,ES_MULTILINE,ES_NOHIDESEL, ES_NUMBER,ES_OEMCONVERT,ES_PASSWORD,ES_READONLY,ES_RIGHT,ES_UPPERCASE和ES_WANTRETURN,具体参见MSDN中有关edit的风格" />
+	</interface>
+	<interface iid="5A1B3A40-1618-42d7-9609-EE66DA0F0943" label="ComboBoxItem" id="IGFComboBoxItem" inherit="IGFControl">
+		<prop field="image" type="IGFDraw" mode="主题" />
+		<prop field="normalBkg" type="IGFDraw" mode="主题" />
+		<prop field="highlightBkg" type="IGFDraw" mode="主题" />
+		<prop field="state" type="EGFComboBoxItemState" />
+		<prop field="text" type="BSTR" mode="字符串" />
+		<prop field="eraseButton" type="BOOL" />
+		<prop field="eraseButtonConfig" type="BSTR" />
+		<prop field="eraseButtonTip" type="BSTR" />
+		<prop field="normalTextColor" type="ARGB" />
+		<prop field="highlightTextColor" type="ARGB" />
+		<prop field="endEllipsis" type="BOOL" />
+	</interface>
+	<interface iid="43A46F88-100E-47b9-A23E-9CD5D2D59069" label="ComboButton" id="IGFComboButton" inherit="IGFControl" type="advCtrl">
+		<prop field="text" type="BSTR" mode="字符串" group="常用" />
+		<prop field="font" type="IGFFont" mode="主题" group="高级" />
+		<prop field="clrText" type="ARGB" mode="主题" group="高级" />
+		<prop field="texture" type="BSTR" mode="图片" group="绘图" />
+		<prop field="arrow" type="BSTR" mode="图片" group="绘图" />
+		<prop field="textimagerelation" type="TextImageRelation" group="常用" />
+		<prop field="internalGap" type="INT" group="高级" />
+		<prop field="arrowGap" type="INT" group="高级" />
+		<prop field="normalBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="highlightBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="pushedBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowNormalBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowHighlightBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowPushedBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="buttonNormalBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="buttonHighlightBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="buttonPushedBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowBackground" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="state" type="EGFComboButtonState" />
+		<prop field="border" type="RECT" />
+		<prop field="textHidden" type="BOOL" group="常用" />
+		<prop field="textureHidden" type="BOOL" group="常用" />
+		<prop field="style" type="EGFComboButtonStyle" />
+		<prop field="logoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:图标" />
+		<prop field="highlightlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:高亮状态的图标" />
+		<prop field="pushedlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:按下状态的图标" />
+		<prop field="arrowlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:图标" />
+		<prop field="arrowhighlightlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:高亮状态的arrow图标" />
+		<prop field="arrowpushedlogoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:按下状态的arrow图标" />
+	</interface>
+	<interface iid="FF62B817-6501-45C4-8B30-02187ECFA157" label="ComboEdit" id="IGFComboEdit" inherit="IGFControl" type="advCtrl">
+		<prop field="border" type="RECT" />
+		<prop field="text" type="BSTR" />
+		<prop field="defaultText" type="BSTR" />
+		<prop field="buttonConfig" type="BSTR" />
+		<prop field="textColor" type="ARGB" />
+		<prop field="limitText" type="INT" />
+		<prop field="mode" type="EComboEditMode" />
+		<prop field="editBkg" type="IGFDraw" />
+		<prop field="maxWidth" type="INT" />
+		<prop field="minWidth" type="INT" />
+	</interface>
+	<interface iid="93154F5C-A602-4F3A-9C62-A69C4EF2393C" label="DockPanel" id="IGFDockPanel" inherit="IGFLayout" type="frameworkCtrl">
+		<prop field="minFillSize" type="SIZE" />
+		<childprop field="dock" type="EGFDockOrientation" group="排布" />
+	</interface>
+	<interface iid="0C23E065-7817-4DCF-A9E1-1651951D8F1A" label="Flash" id="IGFFlash" inherit="IGFControl" type="advCtrl">
+		<prop field="backgroundColor" type="ARGB" group="常用" mode="主题" toolTips="ARGB:设置背景颜色，如果不设置，则背景透明" />
+		<prop field="movie" type="BSTR" group="常用" mode="主题" toolTips="BSTR:flash的路径，支持URL及本地路径" />
+		<prop field="errpic" type="BSTR" group="常用" mode="主题" />
+		<prop field="errtip" type="BSTR" group="常用" mode="主题" />
+		<prop field="downloadurl" type="BSTR" group="常用" mode="主题" />
+		<prop field="flashTransparent" type="BOOL" group="常用" mode="主题" />
+	</interface>
+	<interface iid="E24F8CBD-ADFB-468B-BB54-F4301E5C6531" label="GifAnimation" id="IGFGifAnimation" inherit="IGFControl" type="advCtrl">
+		<prop field="image" type="BSTR" group="常用" mode="图片" toolTips="BSTR:动画的文件路径" />
+		<prop field="playCount" type="INT" group="常用" toolTips="INT:播放次数。默认为-1,循环播放" />
+		<prop field="smooth" type="EGFSmoothMode" toolTips="BOOL:是否平滑。默认为Default" />
+		<prop field="stretchMode" type="GifStretchMode" toolTips="GifStretchMode:拉伸模式。默认为Center" />
+	</interface>
+	<interface iid="CB72BBA9-E038-45BE-ABFE-9E56394054BB" label="GridPanel" createorder="FirstCreate" id="IGFGridPanel" inherit="IGFLayout" type="frameworkCtrl">
+		<prop field="rows" type="rowarray" group="排布" />
+		<prop field="columns" type="columnarray" group="排布" />
+		<childprop field="row" type="int" group="排布" />
+		<childprop field="column" type="int" group="排布" />
+	</interface>
+	<interface iid="2A4638B6-EA7C-4D4A-AFEB-47C151B1FF01" label="HotKey" id="IGFHotKey" inherit="IGFControl" type="advCtrl">
+		<prop field="font" type="IGFFont" group="常用" toolTips="IGFFont:字体" />
+	</interface>
+	<interface iid="A280366E-B916-4930-9027-24D7F60134F3" label="ImageStatic" id="IGFImageStatic" inherit="IGFControl" type="basicCtrl">
+		<prop field="file" type="BSTR" group="常用" mode="图片" />
+		<prop field="gray" type="BOOL" group="常用" />
+		<prop field="smooth" type="EGFSmoothMode" group="常用" />
+		<prop field="colorize" type="BOOL" group="常用" />
+		<prop field="cache" type="BOOL" group="常用" />
+		<prop field="autoRotate" type="BOOL" group="常用" />
+	</interface>
+	<interface iid="CAED0474-A9CA-4DB9-9448-868A015448B8" id="IGFElementExtLogic" inherit="IGFElement">
+		<prop field="extPointId" type="REFGUID" />
+		<prop field="extraInfo" type="ITXData" />
+	</interface>
+	<interface iid="9B6C475B-96A1-4C9C-9294-F8B1F3E5609F" id="IGFContainerExtLogic" inherit="IGFElementExtLogic" />
+	<interface iid="4269E471-0179-4752-A366-CB153106C4F4" id="IGFPropertiesExtLogic" inherit="IGFElementExtLogic">
+		<prop field="eventInfo" type="ITXData" />
+	</interface>
+	<interface iid="DDB955F4-E458-4A7F-8700-E4C6140DF501" id="IGFItemPropertiesExtLogic" inherit="IGFPropertiesExtLogic" />
+	<interface iid="6D33F292-903E-4EB3-A998-988BFA99EA34" id="IGFControlExtLogic" inherit="IGFPropertiesExtLogic" />
+	<interface iid="A9DB1DFD-1075-40EA-8368-1B3BA7C4C384" id="IGFMenuExtLogic" inherit="IGFContainerExtLogic" />
+	<interface iid="E37ED0B2-F298-4CA8-AD1C-FEB8931CFADA" id="IGFToolbarExtLogic" inherit="IGFContainerExtLogic" />
+	<interface iid="87ADED84-B0AF-4CDB-828C-D6ABB4A1A31C" id="IGFTabCtrlExtLogic" inherit="IGFElementExtLogic" />
+	<interface iid="64CC7C7B-4751-4EF6-B38F-4493647115B1" label="RadioButtonGroup" id="IGFRadioButtonGroup" inherit="IGFControl" type="advCtrl">
+		<prop field="items" type="RadioGroupItems" />
+		<prop field="itemMargin" type="RECT" group="常用" />
+		<prop field="itemConfig" type="BSTR" group="常用" />
+		<prop field="orientation" type="EGFStackOrientation" group="常用" />
+	</interface>
+	<interface iid="46128912-17E7-4268-83C9-BF20D8D858BA" label="EditBase" id="IGFEditBase" inherit="IGFControl" type="advCtrl">
+	<prop field="text" type="BSTR" group="常用" mode="字符串" toolTips="BSTR:文本内容" />
+		<prop field="multiline" type="BOOL" group="常用" toolTips="BOOL:是否支持多行" />
+		<prop field="password" type="BOOL" group="常用" toolTips="BOOL:是否为密码输入框" />
+		<prop field="defaultText" type="BSTR" group="常用" toolTips="BSTR:默认文字,只在Edit的text为空且焦点不在本Edit时显示" />
+		<prop field="defaultTextFontString" type="IGFFontString" group="常用" toolTips="BSTR:默认文字,只在Edit的text为空且焦点不在本Edit时显示" />
+		<prop field="readOnly" type="BOOL" group="常用" toolTips="BOOL:是否只读" />
+		<prop field="scrollV" type="BOOL" group="高级" toolTips="BOOL:垂直滚动条是否始终显示" />
+		<prop field="style" type="editstyle" group="高级" toolTips="DWORD:风格,可以为:ES_AUTOHSCROLL,ES_AUTOVSCROLL,ES_CENTER,ES_LEFT,ES_LOWERCASE,ES_MULTILINE,ES_NOHIDESEL, ES_NUMBER,ES_OEMCONVERT,ES_PASSWORD,ES_READONLY,ES_RIGHT,ES_UPPERCASE和ES_WANTRETURN,具体参见MSDN中有关CEdit的风格" />
+		<prop field="lostSelect" type="BOOL" group="高级" toolTips="BOOL:是否失去焦点时失去选中" />
+		<prop field="limitType" type="BSTR" group="常用" toolTips="BSTR:限制字符长度的类型，可填的值为：UTF16，UTF8，GBK" />
+ 	</interface>
+	<interface iid="74F415C7-E9E3-4DC8-9117-0B4E9174AD63" label="RichEdit" id="IGFRichEdit" inherit="IGFEditBase" type="advCtrl">
+		<prop field="limitText" type="LONG" group="常用" toolTips="LONG:限定的字符长度" />
+		<prop field="transBackground" type="BOOL" group="常用" toolTips="BOOL:是否为透明的背景" />
+		<prop field="eventMask" type="DWORD" group="高级" toolTips="DWORD:事件掩码，即需要监听的通知事件，值可以为以下的组合：ENM_CHANGE、ENM_CORRECTTEXT、ENM_DRAGDROPDONE、ENM_DROPFILES、ENM_IMECHANGE、ENM_KEYEVENTS、ENM_LINK、ENM_MOUSEEVENTS、ENM_OBJECTPOSITIONS、ENM_PROTECTED、ENM_REQUESTRESIZE、ENM_SCROLL、ENM_SCROLLEVENTS、ENM_SELCHANGE和ENM_UPDATE。具体可以参考MSDN的EM_SETEVENTMASK消息。" />
+		<prop field="modify" type="BOOL" group="高级" toolTips="BOOL:编辑控件是否已经被修改，它表示编辑控件里面的文本内容是否被修改" />
+		<prop field="textMode" type="UINT" group="高级" toolTips="UINT:设置文本模式或RichEdit控件的Undo层次。文本模式的值有：TM_PLAINTEXT和TM_RICHTEXT。Undo层次的值有：TM_SINGLELEVELUNDO和TM_MULTILEVELUNDO。具体可以参考MSDN的EM_SETTEXTMODE消息。" />
+		<prop field="showcaret" type="BOOL" group="高级" toolTips="BOOL:插入标记在屏幕的当前位置上是否可见。当插入标记变为可见时，它自动开始闪烁" />
+		<prop field="disableCursor" type="BOOL" group="高级" toolTips="BOOL:是否禁止出现手形光标" />
+		<prop field="autoLight" type="BOOL" group="高级" toolTips="BOOL:是否背景发光" />
+		<prop field="cleartype" type="BOOL" group="高级" toolTips="BOOL:是否使用clearType文字，这将造成RichEdit背景不可透明" />
+	</interface>
+	<interface iid="8C396638-81AF-42CF-AC98-93E00457D256" label="Edit" id="IGFEdit" inherit="IGFEditBase" type="advCtrl">
+		<prop field="limitLength" type="LONG" group="常用" toolTips="LONG:限定的字符长度" />
+		<prop field="backgroundColor" type="ARGB" group="高级" toolTips="ARGB:背景颜色" />
+		<prop field="textColor" type="ARGB" group="高级" toolTips="ARGB:文字颜色" />
+		<prop field="number" type="BOOL" group="常用" toolTips="BOOL:是否为数字状态" />
+		<prop field="editMargin" type="RECT" group="高级" toolTips="RECT:edit框偏移, 一般用来调整文字的偏移" />
+		<prop field="font" type="IGFFont" group="高级" toolTips="IGFFont:文字选用的font" />
+	</interface>
+	<interface iid="8120B592-654D-4F3D-82EF-0BF35DAA0943" label="RichStatic" id="IGFRichStatic" inherit="IGFControl" type="advCtrl">
+		<prop field="text" type="BSTR" group="常用" mode="字符串" toolTips="BSTR:文本内容" />
+		<prop field="textColor" type="ARGB" group="常用" mode="主题" toolTips="ARGB:文本颜色" />
+		<prop field="textFont" type="IGFFont" group="常用" mode="主题" toolTips="IGFFont:文本字体" />
+		<prop field="endEllipsis" type="BOOL" group="常用" toolTips="BOOL:画不下文字时，结尾是否用省略号。默认为FALSE" />
+		<prop field="handCursor" type="BOOL" group="常用" toolTips="BOOL:鼠标到链接上时是否变为手型。默认为TRUE" />
+		<prop field="singleLine" type="BOOL" group="常用" toolTips="BOOL:是否单行显示。默认为FALSE" />
+		<prop field="lineHeight" type="int" group="常用" toolTips="int:行高，由于支持多字体，所以提供手动设置行高的方法（默认是以所有字体中最高行高为标准）。默认为15" />
+		<prop field="lineLimit" type="UINT" group="常用" toolTips="UINT:最大行数限定。默认为0，即没有限制" />
+		<prop field="noReturn" type="BOOL" group="常用" toolTips="BOOL:是否支持回车换行键盘。默认为FALSE，即支持回车换行键盘" />
+		<prop field="height" type="int" />
+		<prop field="width" type="int" />
+		<prop field="autosize" type="BOOL" />
+	</interface>
+	<interface iid="782BB11C-072F-4575-AA42-7E4A5AA50866" label="ScrollBar" id="IGFScrollBar" inherit="IGFControl" type="basicCtrl">
+		<prop field="type" type="EGFScrollBarType" group="常用" toolTips="EGFScrollBarType:滚动条的方向。默认为GSBT_HORZ，即水平滚动条" />
+		<prop field="scrollStep" type="INT" group="常用" toolTips="INT:滚动步长，不设置此属性默认为10像素。默认为10" />
+		<prop field="arrowBtnLength" type="INT" group="常用" toolTips="INT:滚动条两端箭头按钮长度。默认为15" />
+		<prop field="scrollBarMinLength" type="INT" group="常用" />
+		<prop field="arrowDecreaseNormal" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowDecreaseHalfHover" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowDecreaseHover" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowDecreaseDown" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowIncreaseNormal" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowIncreaseHalfHover" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowIncreaseHover" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="arrowIncreaseDown" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="barNormal" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="barHover" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="barDown" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="bkgNormal" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="bkgHighlight" type="IGFDraw" group="绘图" mode="主题" />
+	</interface>
+	<interface iid="CB4897C9-C0C8-415D-8ECC-901BA31B870F" label="ScrollView" id="IGFScrollView" inherit="IGFControl" type="basicCtrl">
+		<prop field="scrollLimit" type="BOOL" group="高级" />
+		<prop field="enableHorz" type="BOOL" group="常用" />
+		<prop field="enableVert" type="BOOL" group="常用" />
+		<prop field="autoHideHorz" type="BOOL" group="常用" />
+		<prop field="autoHideVert" type="BOOL" group="常用" />
+		<prop field="scrollStep" type="SIZE" group="常用" />
+		<prop field="unitScroll" type="BOOL" group="常用" />
+		<prop field="horzConfig" type="BSTR" group="常用" />
+		<prop field="vertConfig" type="BSTR" group="常用" />
+		<prop field="crossBkg" type="IGFDraw" group="绘图" />
+		<prop field="vertScrollBarDockLeft" type="BOOL" group="常用" />
+		<prop field="horzScrollBarDockTop" type="BOOL" group="常用" />
+		<prop field="enableContentAnimation" type="BOOL" group="高级" />
+	</interface>
+	<interface iid="14953172-B8FB-4751-BF4B-85D8C6CA915D" label="Progress" id="IGFProgress" inherit="IGFControl" type="basicCtrl">
+		<prop field="foreground" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:前景" />
+	</interface>
+	<interface iid="99C51143-F3BB-47EC-8D7D-6156FF1C4B6F" label="Slider" id="IGFSlider" inherit="IGFControl" type="advCtrl">
+		<prop field="foreground" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:前景" />
+		<prop field="dragBackground" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:滑块背景" />
+		<prop field="showDragbar" type="BOOL" group="高级" toolTips="BOOL:是否显示滑块" />
+		<prop field="vertical" type="BOOL" group="高级" toolTips="BOOL:是否竖向滑条" />
+	</interface>
+	<interface iid="FCAA4CE1-0CCE-4D72-BC81-E95F3CCB86D9" label="StackPanel" id="IGFStackPanel" inherit="IGFLayout" type="frameworkCtrl">
+		<prop field="orientation" type="EGFStackOrientation" group="排布" />
+		<prop field="same" type="BOOL" />
+		<prop field="sort" type="BOOL" group="常用" />
+		<prop field="fillItem" type="INT" group="常用" />
+	</interface>
+	<interface iid="CEE5ADED-CDE8-4977-AB89-F83DD988F4B2" label="Static" id="IGFStatic" inherit="IGFControl" type="basicCtrl">
+		<prop field="text" type="BSTR" group="常用" mode="字符串" />
+		<prop field="color" type="ARGB" group="常用" mode="主题" />
+		<prop field="format" type="textformat" group="高级" />
+		<prop field="font" type="IGFFont" mode="主题" />
+		<prop field="maxRow" type="int" group="常用" />
+		<prop field="colorize" type="BOOL" group="常用" />
+		<prop field="maxAutoWidth" type="int" group="常用" />
+		<prop field="lineSpace" type="int" group="常用" />
+		<prop field="indent" type="int" group="常用" />
+		<prop field="singleLine" type="BOOL" group="常用" />
+		<prop field="endEllipsis" type="BOOL" group="常用" />
+		<prop field="postFix" type="BSTR" group="常用" />
+		<prop field="onlyShowTipOnText" type="BOOL" group="高级" />
+	</interface>
+	<interface iid="EB0C3B5C-0E7C-44A7-8037-0F7122632782" label="SysButton" id="IGFSysButton" inherit="IGFControl" type="advCtrl">
+		<prop field="style" type="SysButtonStyle" group="常用" />
+		<prop field="maximizeConfig" type="BSTR" group="常用" />
+		<prop field="minimizeConfig" type="BSTR" group="常用" />
+		<prop field="closeConfig" type="BSTR" group="常用" />
+	</interface>
+	<interface iid="6D8A7D0F-DB2D-431e-B439-0802ECF1AABC" label="TabButton" id="IGFTabButton" inherit="IGFControl" type="basicCtrl">
+		<prop field="state" type="EGFTabButtonState" />
+		<prop field="pushed" type="BOOL" />
+		<prop field="text" type="BSTR" mode="字符串" group="常用" />
+		<prop field="texture" type="BSTR" mode="图片" group="绘图" />
+		<prop field="logoDraw" type="IGFDraw" group="绘图" />
+		<prop field="internalGap" type="INT" group="常用" />
+		<prop field="clrSeperator" type="ARGB" group="常用" />
+		<prop field="unpushedNormalTextColor" type="ARGB" mode="主题" group="绘图" />
+		<prop field="unpushedHighlightTextColor" type="ARGB" mode="主题" group="绘图" />
+		<prop field="unpushedPushedTextColor" type="ARGB" mode="主题" group="绘图" />
+		<prop field="pushedNormalTextColor" type="ARGB" mode="主题" group="绘图" />
+		<prop field="pushedHighlightTextColor" type="ARGB" mode="主题" group="绘图" />
+		<prop field="pushedPushedTextColor" type="ARGB" mode="主题" group="绘图" />
+		<prop field="seperator" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="unpushedNormalBkg" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="unpushedHighlightBkg" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="unpushedPushedBkg" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="pushedNormalBkg" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="pushedHighlightBkg" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="pushedPushedBkg" type="IGFDraw" mode="主题" group="绘图" />
+		<prop field="border" type="RECT" />
+		<prop field="align" type="TabButtonHorizontalAlign" />
+		<prop field="unpushedFont" type="IGFFont" />
+		<prop field="pushedFont" type="IGFFont" />
+		<prop field="textureAlpha" type="BYTE" />
+		<prop field="textimagerelation" type="TabButtonTextImageRelation" />
+	</interface>
+	<interface iid="A11BA3A8-16C1-4686-903E-B981987DD369" label="Toolbar" id="IGFToolbar" inherit="IGFControl" type="basicCtrl">
+		<prop field="textHidden" type="BOOL" group="常用" />
+		<prop field="textureHidden" type="BOOL" group="常用" />
+		<prop field="orientation" type="EGFStackOrientation" group="排布" />
+		<prop field="plusButton" type="BOOL" />
+		<prop field="plusBtnFile" type="BSTR" mode="图片" group="绘图" />
+		<prop field="scrollable" type="BOOL" group="常用" />
+		<prop field="forwardFile" type="BSTR" mode="图片" group="绘图" />
+		<prop field="backwardFile" type="BSTR" mode="图片" group="绘图" />
+		<prop field="forwardConfig" type="BSTR" />
+		<prop field="backwardConfig" type="BSTR" />
+		<prop field="plusButtonConfig" type="BSTR" />
+		<prop field="scrollBeginIndex" type="INT" group="常用" />
+		<prop field="autoSort" type="BOOL" group="常用" />
+		<prop field="scrollStep" type="SIZE" group="常用" />
+	</interface>
+	<interface iid="070D8469-C7A1-489a-ADCD-B234CE528731" id="IGFWin" inherit="IGFControl" type="advCtrl">
+		<prop field="ownerDraw" type="BOOL" group="常用" />
+		<prop field="minSize" type="SIZE" group="常用" />
+		<prop field="maxSize" type="SIZE" group="常用" />
+		<prop field="fixSize" type="BOOL" group="常用" />
+		<prop field="fixPosition" type="BOOL" group="常用" />
+		<prop field="border" type="RECT" group="高级" />
+		<prop field="topmost" type="BOOL" group="高级" />
+		<prop field="toolWindow" type="BOOL" group="高级" />
+		<prop field="centerWindow" type="BOOL" group="高级" />
+	</interface>
+
+	<interface iid="4FF1A1C0-C91E-4322-A068-77DA38B1C3D4" label="PopupWindow" id="IGFPopupWin" inherit="IGFWin">
+		<prop field="aero" type="BOOL" />
+	</interface>
+	<interface iid="7E004DA4-85E2-4e73-A502-8C6B1C1FEC83" label="TabCtrl" id="IGFTabCtrl" inherit="IGFToolbar" type="basicCtrl">
+		<prop field="pageContainer" type="IGFFrame" />
+		<prop field="layoutType" type="EGFTabCtrlLayoutType" />
+		<childprop field="pagePath" type="BSTR" />
+		<prop field="unSelectedBkg" type="IGFDraw" />
+	</interface>
+
+	<interface iid="AC027D52-3C6B-4f51-8BEB-771B6A1C8166" label="FloatingWnd" id="IGFFloatingWnd" inherit="IGFPopupWin">
+		<prop field="hookKeyboard" type="BOOL" toolTips="BOOL:是否当在非本窗口及其孩子控件进行键盘操作时关闭窗口，默认为FALSE" />
+		<prop field="hookMouseMove" type="BOOL" toolTips="BOOL:是否Hook住鼠标移动消息，从而使得没有通过AddUnhookWnd添加的窗口收不到鼠标移动消息，默认为TRUE" />
+	</interface>
+	<interface iid="4DB09794-7AB4-44D9-A74C-FCBF1C31F504" label="Template" id="IGFTemplate" inherit="IGFFrame">
+		<prop field="baseclass" type="BSTR" group="高级" toolTips="基类名称" />
+		<prop field="classfile" type="BSTR" group="高级" toolTips="关联脚本文件" />
+	</interface>
+	<interface iid="5EF9D731-6286-480c-9084-7EED19371A70" label="Window" id="IGFStandardWin" inherit="IGFPopupWin">
+		<prop field="ncArea" type="RECT" group="常用" toolTips="RECT:设置NC区域的大小，分别为四条边到窗口四条边的距离" />
+		<prop field="ownerDrawTitle" type="BOOL" group="常用" toolTips="BOOL:是否自绘title，对于aio，设置这个值为true，titleText和smallIcon 就不会被绘制出来" />
+		<prop field="titleText" type="BSTR" group="常用" mode="字符串" toolTips="BSTR:标题" />
+		<prop field="smallIcon" type="BSTR" group="常用" mode="图片" toolTips="BSTR:小图标" />
+		<prop field="smallIconSize" type="SIZE" group="常用" toolTips="SIZE:小图标显示大小，如果小于等于0 则自动计算大小" />
+		<prop field="bigIcon" type="BSTR" group="常用" mode="图片" toolTips="BSTR:大图标路径" />
+		<prop field="titleGap" type="INT" group="高级" toolTips="INT:标题栏的图标和文字之间的距离" />
+		<prop field="sysButtonOffset" type="POINT" group="高级" toolTips="POINT:SysButton的右上角到窗口右上角的偏移" />
+		<prop field="sysButtonConfig" type="BSTR" group="高级" toolTips="BSTR:SysButton的风格配置" />
+		<prop field="titleTextActivateColor" type="ARGB" group="高级" mode="主题" toolTips="ARGB:标题栏文字在窗口激活状态下的颜色" />
+		<prop field="titleTextInactivateColor" type="ARGB" group="高级" mode="主题" toolTips="ARGB:标题栏文字非激活窗口状态下的颜色" />
+		<prop field="titleTextFont" type="IGFFont" group="高级" toolTips="IGFFont:标题栏文字的字体" />
+		<prop field="showMinButton" type="BOOL" group="高级" toolTips="BOOL:是否显示最小化按钮" />
+		<prop field="showMaxButton" type="BOOL" group="高级" toolTips="BOOL:是否显示最大化按钮" />
+		<prop field="showCloseButton" type="BOOL" group="高级" toolTips="BOOL:是否显示关闭按钮" />
+		<prop field="titleOffset" type="POINT" group="高级" toolTips="POINT:标题的偏移，标题栏的图标和文字会显示在 border + titleoffset 的地方" />
+		<prop field="clientAreaScreenRect" type="RECT" group="高级" toolTips="RECT;窗口客户区所在的位置" />
+		<prop field="clientAreaSize" type="SIZE" group="高级" toolTips="SIZE;窗口客户区的大小" />
+		<prop field="statusBarMargin" type="RECT" group="高级" toolTips="RECT:状态栏内部Frame之间的间距" />
+		<prop field="titleAnchor" type="BSTR" group="高级" tooltips="BSTR:标题的排布方向" />
+		<childprop field="client" type="INT" group="常用" toolTips="INT:是放在窗口的client区或者非client区。它的取值只有0和1，0表示不在client区，1表示在client区" />
+	</interface>
+	<interface iid="22558A5E-1F6A-4FCF-916F-AF7F5CF6D745" lable="BubbleTip" id="IGFBubbleTip" inherit="IGFFloatingWnd">
+		<prop field="icon" type="BSTR" mode="图片" toolTips="BSTR:左边的图标路径" />
+		<prop field="title" type="BSTR" />
+		<prop field="titleColor" type="ARGB" />
+		<prop field="titleFont" type="IGFFont" />
+		<prop field="text" type="BSTR" toolTips="文本内容" />
+		<prop field="textColor" type="ARGB" />
+		<prop field="textFont" type="IGFFont" />
+		<prop field="showCloseButton" type="BOOL" toolTips="BOOL:是否显示关闭按钮" />
+		<prop field="delayDestroy" type="BOOL" toolTips="BOOL:是否延时自动消失" />
+		<prop field="autoDestroy" type="UINT" toolTips="BOOL:延时多久才自动消失，单位毫秒" />
+		<prop field="backgroundTL" type="IGFDraw" />
+		<prop field="backgroundTLAnchor" type="POINT" />
+		<prop field="backgroundTLBorder" type="RECT" />
+		<prop field="backgroundTR" type="IGFDraw" />
+		<prop field="backgroundTRAnchor" type="POINT" />
+		<prop field="backgroundTRBorder" type="RECT" />
+		<prop field="backgroundBL" type="IGFDraw" />
+		<prop field="backgroundBLAnchor" type="POINT" />
+		<prop field="backgroundBLBorder" type="RECT" />
+		<prop field="backgroundBR" type="IGFDraw" />
+		<prop field="backgroundBRAnchor" type="POINT" />
+		<prop field="backgroundBRBorder" type="RECT" />
+		<prop field="backgroundLB" type="IGFDraw" />
+		<prop field="backgroundLBAnchor" type="POINT" />
+		<prop field="backgroundLBBorder" type="RECT" />
+		<prop field="backgroundLT" type="IGFDraw" />
+		<prop field="backgroundLTAnchor" type="POINT" />
+		<prop field="backgroundLTBorder" type="RECT" />
+		<prop field="backgroundRT" type="IGFDraw" />
+		<prop field="backgroundRTAnchor" type="POINT" />
+		<prop field="backgroundRTBorder" type="RECT" />
+		<prop field="backgroundRB" type="IGFDraw" />
+		<prop field="backgroundRBAnchor" type="POINT" />
+		<prop field="backgroundRBBorder" type="RECT" />
+	</interface>
+	<interface iid="ED955FC3-9D20-4d32-BF2E-968E66FA90B5" label="ComboBoxList" id="IGFComboBoxList" inherit="IGFFloatingWnd">
+		<prop field="itemNormalBkg" type="IGFDraw" mode="主题" />
+		<prop field="itemHighlightBkg" type="IGFDraw" mode="主题" />
+		<prop field="itemHeight" type="INT" />
+		<prop field="multiple" type="DOUBLE" />
+		<prop field="borderSize" type="RECT" />
+		<prop field="eraseButton" type="BOOL" />
+		<prop field="eraseButtonConfig" type="BSTR" />
+		<prop field="eraseButtonTip" type="BSTR" />
+	</interface>
+	<interface iid="2DFABA9D-CFC3-4B02-BF50-840B10CCDE51" label="MessageBox" id="IGFMessageBox" inherit="IGFStandardWin">
+		<prop field="title" type="BSTR" mode="字符串" />
+		<prop field="text" type="BSTR" mode="字符串" />
+		<prop field="textPos" type="POINT" />
+		<prop field="image" type="BSTR" mode="图片" />
+		<prop field="imagePos" type="RECT" />
+	</interface>
+	<interface iid="321C8252-8B5D-4178-8944-F39182B725CA" label="SysMessageBox" id="IGFSysMessageBox" inherit="IGFStandardWin">
+		<prop field="text" type="BSTR" group="常用" mode="字符串" />
+		<prop field="type" type="UINT" group="常用" />
+		<prop field="textWidth" type="int" group="常用" />
+		<prop field="warningFile" type="BSTR" group="高级" mode="图片" />
+		<prop field="stopFile" type="BSTR" group="高级" mode="图片" />
+		<prop field="questionFile" type="BSTR" group="高级" mode="图片" />
+		<prop field="inforFile" type="BSTR" group="高级" mode="图片" />
+	</interface>
+	<interface iid="0680574C-AA1A-4FE0-B696-49363A9AFBF0" label="RSETextNode" id="IGFRSETextNode" inherit="IGFElement">
+		<prop field="font" type="IGFFont" />
+		<prop field="color" type="ARGB" />
+		<prop field="cursor" type="BSTR" />
+	</interface>
+	<interface iid="6FA84C91-949E-40A9-A4DB-F058C7153F80" label="RSELinkTextNode" id="IGFRSELinkTextNode" inherit="IGFRSETextNode">
+		<prop field="normalColor" type="ARGB" />
+		<prop field="highlightColor" type="ARGB" />
+		<prop field="pushedColor" type="ARGB" />
+		<prop field="sink" type="BOOL" />
+		<prop field="cursor" type="BSTR" />
+	</interface>
+	<interface iid="8B1DA902-03EC-4B97-A808-C4F4FAC4B478" label="RSEImageNode" id="IGFRSEImageNode" inherit="IGFElement">
+		<prop field="cursor" type="BSTR" />
+	</interface>
+	<interface iid="84C8769A-EEBB-4304-BC37-1420E5766AE9" label="RichStaticEx" id="IGFRichStaticEx" inherit="IGFControl" type="advCtrl">
+		<prop field="content" type="BSTR" group="常用" toolTips="BSTR:文本内容" />
+		<prop field="maxRows" type="INT" group="常用" toolTips="INT:允许的最大行" />
+		<prop field="defaultTextColor" type="ARGB" group="常用" toolTips="ARGB:缺省的字体颜色，它的优先级最低。如果其他地方设置了字体颜色，这个将不被使用" />
+	</interface>
+	<interface iid="5928D9B1-18F4-417B-B688-64058662E768" label="MenuItem" id="IGFMenuItem" inherit="IGFControl" type="advCtrl">
+		<prop field="highlightBackground" type="IGFDraw" />
+		<prop field="text" type="BSTR" group="常用" mode="字符串" />
+		<prop field="shortcut" type="BSTR" group="常用" />
+		<prop field="texture" type="BSTR" group="常用" mode="图片" />
+		<prop field="arrowTexture" type="BSTR" group="常用" mode="图片" />
+		<prop field="checkTexture" type="BSTR" group="常用" mode="图片" />
+		<prop field="textColor" type="ARGB" group="常用" mode="主题" />
+		<prop field="selTextColor" type="ARGB" group="常用" mode="主题" />
+		<prop field="disableTextColor" type="ARGB" group="常用" mode="主题" />
+		<prop field="maskColor" type="ARGB" group="常用" mode="主题" />
+		<prop field="check" type="BOOL" group="常用" />
+		<prop field="enable" type="BOOL" group="常用" />
+		<prop field="subMenu" type="IGFMenu" group="常用" />
+		<prop field="seperator" type="BOOL" group="常用" />
+		<prop field="group" type="BSTR" group="常用" />
+		<prop field="reportId" type="BSTR" />
+		<prop field="imageScalingSize" type="SIZE" group="常用" />
+		<prop field="canDelete" type="BOOL" group="常用" />
+		<prop field="delTexture" type="BSTR" group="常用" />
+		<prop field="delHightlightTexture" type="BSTR" group="常用" />
+		<prop field="seperatorDraw" type="IGFDraw" group="绘图" />
+		<prop field="text2RightSpace" type="INT" group="常用" />
+		<prop field="textLength" type="INT" />
+		<prop field="fixLength" type="INT" />
+		<prop field="fixHeight" type="INT" />
+		<prop field="image2TextSpace" type="INT" />
+		<prop field="image2LeftSpace" type="INT" />
+		<prop field="font" type="IGFFont" mode="主题" />
+		<prop field="logoDraw" type="IGFDraw" group="绘图" mode="主题" toolTips="IGFDraw:图标" />
+	</interface>
+	<interface iid="5FABB7E5-75CC-4306-857C-06492B3F626C" label="MenuWindow" id="IGFMenuWindow" inherit="IGFPopupWin" />
+	<interface iid="99191728-BEDC-4D94-ADB2-B530E6CA691B" label="Menu" id="IGFMenu" inherit="IGFMenuWindow" >
+		<prop field="hightlightFirstItem" type="BOOL" group="常用" />
+		<prop field="autoDestroy" type="BOOL" />
+		<prop field="owner" type="IGFFrame" />
+		<prop field="minMenuWidth" type="INT" />
+		<prop field="maxMenuWidth" type="INT" />
+		<prop field="arrowButtonHeight" type="INT" />
+		<prop field="blockMode" type="BOOL" />
+		<prop field="disableShortcut" type="BOOL" />
+	</interface>
+	<interface iid="03FDC9C5-AB3A-4D72-AE32-7A25F6FAD708" label="RichToolTip" id="IGFRichTip" inherit="IGFFloatingWnd" type="advCtrl">
+		<prop field="initialTime" type="UINT" />
+		<prop field="showTime" type="UINT" />
+	</interface>
+	<interface iid="0BE9108E-D36F-41B2-9FAF-6E0A7D53985F" label="StandardToolbar" id="IGFStandardToolbar" inherit="IGFControl" type="advCtrl">
+		<prop field="textHidden" type="BOOL" group="常用" />
+		<prop field="textureHidden" type="BOOL" group="常用" />
+		<prop field="autoSort" type="BOOL" group="常用" />
+		<prop field="dropButtonConfig" type="BSTR" group="常用" />
+		<prop field="dropMenuConfig" type="BSTR" group="常用" />
+		<prop field="dropMenuListConfig" type="BSTR" group="常用" />
+	</interface>
+	<interface iid="52597663-A284-47dd-A07F-FA8153B88930" label="ComboBoxPearlItem" id="IGFComboBoxPearlItem" inherit="IGFControl" type="advCtrl">
+		<prop field="normalBkg" type="IGFDraw" />
+		<prop field="highlightBkg" type="IGFDraw" />
+		<prop field="normalTextColor" type="ARGB" />
+		<prop field="highlightTextColor" type="ARGB" />
+		<prop field="eraseButtonConfig" type="BSTR" />
+		<prop field="eraseButtonTip" type="BSTR" />
+	</interface>
+	<interface iid="22460970-F3D1-49d3-A90A-C3095D26ACD9" label="ComboBoxPearlList" id="IGFComboBoxPearlList" inherit="IGFFloatingWnd">
+		<prop field="borderSize" type="RECT" />
+		<prop field="itemHeight" type="INT" />
+		<prop field="multiple" type="double" />
+		<prop field="scrollviewConfig" type="BSTR" />
+	</interface>
+	<interface iid="8F4FD874-C21D-4cb4-8F58-1551B005C8FE" label="ComboBoxPearl" id="IGFComboBoxPearl" inherit="IGFControl">
+		<prop field="borderSize" type="RECT" />
+		<prop field="normalBkg" type="IGFDraw" />
+		<prop field="highlightBkg" type="IGFDraw" />
+		<prop field="pushedBkg" type="IGFDraw" />
+		<prop field="textFont" type="IGFFont" />
+		<prop field="buttonNormalDraw" type="IGFDraw" />
+		<prop field="buttonHighlightDraw" type="IGFDraw" />
+		<prop field="buttonPushedDraw" type="IGFDraw" />
+		<prop field="defaultText" type="BSTR" />
+		<prop field="imageHidden" type="BOOL" />
+		<prop field="listHeight" type="INT" />
+	</interface>
+	<interface iid="1F6C05A1-D8A8-4C9B-A841-27CF176B97E7" label="MonthCalCtrl" id="IGFMonthCalCtrl" inherit="IGFControl" type="basicCtrl">
+		<prop field="onlyHotDateCanSel" type="BOOL" />
+		<prop field="showHelpBtn" type="BOOL" />
+		<prop field="showCloseBtn" type="BOOL" />
+	</interface>
+	<interface iid="59F54859-D96C-4817-A078-BD6B60B3A877" id="IGFSpinQuery" />
+	<interface iid="8B116334-5DBD-4A73-9840-A00E42A1BB9D" label="SpinControl" id="IGFSpinControl" inherit="IGFEdit" type="basicCtrl">
+		<prop field="basePos" type="int" group="常用" />
+		<prop field="accel" type="int" group="常用" />
+		<prop field="lowerPos" type="int" group="常用" />
+		<prop field="upperPos" type="int" group="常用" />
+		<prop field="queryMethod" type="IGFSpinQuery" />
+		<prop field="upbuttonConfig" type="BSTR" />
+		<prop field="downbuttonConfig" type="BSTR" />
+	</interface>
+	<interface iid="BB289019-22FA-476B-B104-D88E58EDDD53" label="NumberSpinQuery" id="IGFNumberSpinQuery" inherit="IGFElement">
+		<prop field="step" type="double" group="常用" />
+		<prop field="baseNumber" type="double" group="常用" />
+		<prop field="supportDouble" type="BOOL" group="常用" />
+	</interface>
+	<interface iid="CDF73A5D-3387-42EC-8C5F-607B6FB61EEE" label="HorzSplitter" id="IGFHorzSplitter" inherit="IGFControl" type="advCtrl">
+		<prop field="upperCtrl" type="BSTR" />
+		<prop field="belowCtrl" type="BSTR" />
+		<prop field="upperCtrlMinHeight" type="INT" />
+		<prop field="belowCtrlMinHeight" type="INT" />
+		<prop field="upperCtrlMaxHeight" type="INT" />
+		<prop field="belowCtrlMaxHeight" type="INT" />
+	</interface>
+	<interface iid="222607B2-5923-474E-8365-4A6D7B4B438F" label="VertSplitter" id="IGFVertSplitter" inherit="IGFControl" type="advCtrl">
+		<prop field="leftCtrl" type="BSTR" />
+		<prop field="rightCtrl" type="BSTR" />
+		<prop field="leftCtrlMinWidth" type="INT" />
+		<prop field="rightCtrlMinWidth" type="INT" />
+		<prop field="leftCtrlMaxWidth" type="INT" />
+		<prop field="rightCtrlMaxWidth" type="INT" />
+	</interface>
+	<interface iid="0A2F76EC-4335-41A6-BD7E-4877B81A1D49" label="ComboBox2" id="IGFComboBox2" inherit="IGFControl" type="basicCtrl">
+		<prop field="normalBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="highlightBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="pushedBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="buttonNormal" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="buttonHighlight" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="buttonPushed" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="listBkg" type="IGFDraw" group="绘图" mode="主题" />
+		<prop field="listBorderSize" type="RECT" group="常用" />
+		<prop field="scrollviewConfig" type="BSTR" group="高级" />
+		<prop field="style" type="ComboBoxStyle2" group="常用" />
+		<prop field="listHeight" type="INT" group="常用" />
+		<prop field="itemNormalBkg" type="IGFDraw" group="绘图" />
+		<prop field="itemHighlightBkg" type="IGFDraw" group="绘图" />
+		<prop field="itemNormalTextColor" type="ARGB" group="绘图" />
+		<prop field="itemHighlightTextColor" type="ARGB" group="绘图" />
+		<prop field="itemBorder" type="RECT" group="绘图" />
+		<prop field="itemHeight" type="int" group="绘图" />
+		<prop field="strings" type="BSTR" group="常用" />
+		<prop field="editNumberOnly" type="BOOL" />
+	</interface>
+	<interface iid="965F1AFD-9A4B-4537-9682-8E0B099B6708" label="MessageBox2" id="IGFMessageBox2" inherit="IGFStandardWin">
+		<prop field="warningFile" type="BSTR" />
+		<prop field="questionFile" type="BSTR" />
+		<prop field="informationFile" type="BSTR" />
+		<prop field="errorFile" type="BSTR" />
+		<prop field="okString" type="BSTR" />
+		<prop field="cancelString" type="BSTR" />
+		<prop field="retryString" type="BSTR" />
+		<prop field="yesString" type="BSTR" />
+		<prop field="noString" type="BSTR" />
+		<prop field="abortString" type="BSTR" />
+		<prop field="ignoreString" type="BSTR" />
+		<prop field="continueString" type="BSTR" />
+		<prop field="helpString" type="BSTR" />
+	</interface>
+	<interface iid="9FE11845-2315-467A-84CF-4F7FDCAA2BAA" id="IGFAnimation" inherit="IGFElement">
+		<prop field="frames" type="UINT" />
+		<prop field="acceleration" type="BYTE" />
+		<prop field="delay" type="UINT" />
+		<prop field="reverse" type="BOOL" />
+		<prop field="restore" type="BOOL" />
+		<prop field="repeats" type="UINT" />
+		<prop field="activeTimeUnit" type="UINT" />
+	</interface>
+	<interface iid="602B722E-E4E6-4FFE-9BA7-DCAFAD47FCD5" label="FrameAnimation" id="IGFFrameAnimation" inherit="IGFAnimation" />
+	<interface iid="C1F3F914-6A39-46AF-9CAE-C3C8D7B9BCEE" label="BlendAnimation" id="IGFBlendAnimation" inherit="IGFFrameAnimation">
+		<prop field="startAlpha" type="BYTE" />
+		<prop field="endAlpha" type="BYTE" />
+	</interface>
+	<interface iid="3A65DB35-505A-4F46-A939-9BFB4D2475E9" label="TopgroundAnimation" id="IGFTopgroundAnimation" inherit="IGFAnimation">
+		<prop field="startAlpha" type="BYTE" />
+		<prop field="endAlpha" type="BYTE" />
+	</interface>
+	<interface iid="D77F45C3-46C1-4C43-9B49-49A5616B28F8" label="ResizeAnimation" id="IGFResizeAnimation" inherit="IGFFrameAnimation">
+		<prop field="startSize" type="SIZE" />
+		<prop field="endSize" type="SIZE" />
+	</interface>
+	<interface iid="87257417-7F10-4FDC-A940-F83A8AE00CB5" label="MoveAnimation" id="IGFMoveAnimation" inherit="IGFFrameAnimation">
+		<prop field="startPos" type="POINT" />
+		<prop field="endPos" type="POINT" />
+	</interface>
+	<interface iid="94AEFEFC-8664-47A1-88F2-E3DE03BB3B39" label="RectChangeAnimation" id="IGFRectChangeAnimation" inherit="IGFFrameAnimation">
+		<prop field="startRect" type="RECT" />
+		<prop field="endRect" type="RECT" />
+	</interface>
+	<interface iid="B3F779A2-9344-4f86-94F1-2145A95EE3B7" label="ListView" id="IGFListView" inherit="IGFControl" type="advCtrl">
+		<prop field="wheelStep" type="INT" />
+		<prop field="itemOffset" type="INT" />
+		<prop field="itemCount" type="INT" />
+		<prop field="imageToText" type="INT" />
+		<prop field="itemHeightNormal" type="INT" group="绘图" />
+		<prop field="itemHeightHighlight" type="INT" group="绘图" />
+		<prop field="itemHeightCustomDraw" type="INT" group="绘图" />
+		<prop field="itemBgSelect" type="IGFDraw" group="绘图" />
+		<prop field="itemBgOdd" type="IGFDraw" group="绘图" />
+		<prop field="itemBgEven" type="IGFDraw" group="绘图" />
+		<prop field="itemBgMouseOver" type="IGFDraw" group="绘图" />
+		<prop field="style" type="liststyle" group="常用" />
+		<prop field="marqueeEffect" type="IGFDraw" group="绘图" />
+		<prop field="clrText" type="ARGB" />
+		<prop field="clrSelText" type="ARGB" />
+	</interface>
+	<interface iid="B54D1278-B198-466a-9207-57D5AC7782E1" label="HeaderCtrl" id="IGFHeaderCtrl" inherit="IGFControl" type="advCtrl">
+		<prop field="titleLine" type="IGFDraw" group="绘图" />
+		<prop field="arrowUp" type="IGFDraw" group="绘图" />
+		<prop field="arrowDown" type="IGFDraw" group="绘图" />
+		<prop field="itemBgNormal" type="IGFDraw" group="绘图" />
+		<prop field="itemBgHighlight" type="IGFDraw" group="绘图" />
+	</interface>
+	<interface iid="132CF683-05A7-47c3-AF41-D5959D43D127" label="TreeCtrl" id="IGFTreeCtrl" inherit="IGFControl" type="advCtrl">
+		<prop field="enableImage" type="BOOL" group="常用" toolTips="BOOL:树的项(ITEM)是否支持显示图标" />
+		<prop field="imageSize" type="SIZE" toolTips="SIZE:树的项的图标大小。默认16 X 16" />
+		<prop field="itemSelBk" type="IGFDraw" group="绘图" />
+		<prop field="multiSelect" type="BOOL" group="常用" toolTips="BOOL:是否支持多选。默认为FALSE" />
+		<prop field="itemHeight" type="UINT" group="常用" toolTips="UINT:项(ITEM)的高度。" />
+		<prop field="style" type="treestyle" toolTips="DWORD:风格。值可以为以下组合：TVS_CHECKBOXES、TVS_DISABLEDRAGDROP、TVS_EDITLABELS、TVS_FULLROWSELECT、TVS_HASBUTTONS、TVS_HASLINES、TVS_INFOTIP、TVS_LINESATROOT、TVS_NOHSCROLL等。具体参考MSDN的CTreeCtrl的Create成员函数" />
+		<prop field="bkColor" type="ARGB" mode="主题" toolTips="ARGB:背景色" />
+		<prop field="indent" type="UINT" toolTips="UINT:左边的偏移" />
+		<prop field="textColor" type="ARGB" mode="主题" toolTips="ARGB:文本颜色" />
+		<prop field="lineColor" type="ARGB" mode="主题" toolTips="ARGB:行色彩" />
+		<prop field="expandIcon" type="IGFDraw" group="绘图" />
+		<prop field="unExpandIcon" type="IGFDraw" group="绘图" />
+	</interface>
+	<interface iid="198C8612-FA64-4986-9B55-25E80987C961" label="TreeItem" id="IGFTreeItem" inherit="IGFElement">
+		<prop field="text" type="BSTR" />
+		<prop field="image" type="IGFDraw" />
+		<prop field="imageSel" type="IGFDraw" />
+		<prop field="data" type="ITXData" />
+		<prop field="check" type="BOOL" />
+		<prop field="gray" type="BOOL" />
+		<prop field="textColor" type="ARGB" />
+	</interface>
+
+	<!-- 3D -->
+	<interface iid="160F3D68-DBCF-445a-9404-ACC8632CDA56" label="Transform" id="IGFTransform" inherit="IGFElement">
+		<prop field="originOffset" type="POINT" group="高级" toolTips="POINT:移动坐标原点到原坐标原点的偏移位置。默认(0,0)" />
+		<prop field="backfaceVisible" type="BOOL" group="高级" toolTips="BOOL:旋转到背面时，背面是否可见。默认TRUE" />
+		<prop field="rotateX" type="DOUBLE" group="高级" toolTips="DOUBLE:绕X轴旋转的角度。默认为0.0" />
+		<prop field="rotateY" type="DOUBLE" group="高级" toolTips="DOUBLE:绕Y轴旋转的角度。默认为0.0" />
+		<prop field="rotateZ" type="DOUBLE" group="高级" toolTips="DOUBLE:绕Z轴旋转的角度。默认为0.0" />
+		<prop field="scaleX" type="DOUBLE" group="高级" toolTips="DOUBLE:沿X轴缩放系数。默认为1.0，即不缩放。" />
+		<prop field="scaleY" type="DOUBLE" group="高级" toolTips="DOUBLE:沿Y轴缩放系数。默认为0.0，即不缩放。" />
+	</interface>
+
+	<!-- Script -->
+	<interface iid="84F7EE3D-4482-4179-B6A1-FFE522AC6877" label="ScriptAnimation" id="IGFScriptAnimation" inherit="IGFElement">
+		<prop field="name" type="BSTR" />
+		<prop field="interval" type="DWORD" group="高级" toolTips="DWORD:动画刷新的间隔时间，以毫秒为单位。" />
+		<prop field="mode" type="ScriptAniMode" group="高级" toolTips="ScriptAniMode:工作模式,Timer或者While-Sleep。" />
+	</interface>
+	<interface iid="C10F0353-D791-4C20-BA0A-3310103FA9E9" label="CanvasControl" id="IGFCanvasControl" inherit="IGFControl" type="advCtrl">
+		<prop field="fillColor" type="ARGB" />
+		<prop field="strokeColor" type="ARGB" />
+		<prop field="drawColor" type="ARGB" />
+		<prop field="fillGradient" type="IGFGradient" />
+		<prop field="strokeGradient" type="IGFGradient" />
+		<prop field="drawGradient" type="IGFGradient" />
+		<prop field="strokeWidth" type="FLOAT" />
+		<prop field="strokeCap" type="BYTE" />
+		<prop field="strokeJoin" type="BYTE" />
+		<prop field="drawMode" type="BYTE" />
+		<prop field="globalBlendValue" type="BYTE" />
+		<prop field="globalBlendMode" type="BYTE" />
+	</interface>
+	<interface iid="82C6E3DD-4BA9-4655-8944-96B9207696AB" label="WebKitCtrl" id="IGFWebKitCtrl" inherit="IGFControl">
+		<prop field="url" type="BSTR" />
+		<prop field="loadingGif" type="BSTR" group="常用" mode="图片" />
+		<prop field="loadingText" type="BSTR" group="常用" />
+		<prop field="errorText" type="BSTR" group="常用" />		
+		<prop field="errorImage" type="BSTR" group="常用" mode="图片" />
+		<prop field="fontQuality" type="DWORD" group="常用" />
+	</interface>
+	<interface iid="E35BA31E-8553-46ec-A9CD-70445B7C5E54" label="OPWebKitCtrl" id="IGFOPWebKitCtrl" inherit="IGFControl">
+		<prop field="url" type="BSTR" />
+		<prop field="loadingGif" type="BSTR" group="常用" mode="图片" />
+		<prop field="loadingText" type="BSTR" group="常用" />
+		<prop field="errorText" type="BSTR" group="常用" />		
+		<prop field="errorImage" type="BSTR" group="常用" mode="图片" />
+		<prop field="fontQuality" type="DWORD" group="常用" />
+		<prop field="group" type="BSTR" />
+	</interface>
+	<interface iid="2E9028FA-E320-4f46-BF87-1CF3FA04EE8A" label="WebCtrl" id="IGFWebCtrl" inherit="IGFControl">
+		<prop field="url" type="BSTR" />
+		<prop field="loadingGif" type="BSTR" group="常用" mode="图片" />
+		<prop field="loadingText" type="BSTR" group="常用" />
+		<prop field="errorText" type="BSTR" group="常用" />
+		<prop field="errorImage" type="BSTR" group="常用" mode="图片" />
+		<prop field="fontQuality" type="DWORD" group="常用" />
+		<prop field="group" type="BSTR" />
+		<prop field="windowless" type="BOOL" group="常用" />
+		<prop field="blendnone" type="BOOL" group="常用" />
+		<prop field="cachePath" type="BSTR" />
+		<prop field="encodingDetect" type="BOOL"/>
+		<prop field="UA" type="BSTR"/>
+	</interface>
+	<interface iid="38C6FC5E-14A8-4a82-B778-13C5C25BC6BE" label="AnimationCtrl" id="IGFAnimationCtrl" inherit="IGFControl" type="advCtrl">
+		<prop field="image" type="BSTR" group="常用" mode="图片" toolTips="BSTR:动画的文件路径" />
+		<prop field="smooth" type="EGFSmoothMode" toolTips="BOOL:是否平滑。默认为Default" />
+		<prop field="stretchMode" type="GifStretchMode" toolTips="GifStretchMode:拉伸模式。默认为Center" />
+		<prop field="playCount" type="INT" group="常用" toolTips="INT:播放次数。默认为0,循环播放" />
+	</interface>
+	<interface iid="34D624B3-A9F5-49b5-AD9F-E97907020202" label="ImageView" id="IGFImageView" inherit="IGFControl" type="advCtrl">
+		<prop field="file" type="BSTR" group="常用" mode="图片" />
+		<prop field="autoRotate" type="BOOL" group="常用" />
+		<prop field="fitType" type="EGFImageViewFitType" group="常用" />
+		<prop field="controlMode" type="EGFImageViewControlMode" group="常用" />
+	</interface>
+	<interface iid="15AA8793-980B-41E8-AA0F-ACE0D2A3C74E" label="FlashControl" id="IFlashControl" inherit="IGFControl">
+		<prop field="movie" type="BSTR" group="常用" />
+		<prop field="flashTransparent" type="BOOL" group="常用" />
+		<prop field="allowScriptAccess" type="BSTR" group="常用" />
+		<prop field="allowNetworking" type="BSTR" group="常用" />
+	</interface>
+	<interface iid="3A37C73C-8702-410B-8BA5-9377CE54FB26" label="GFRichControl" id="IGFRichControl" inherit="IGFControl">
+		<prop field="src" type="BSTR" group="常用" />
+		<prop field="renderExeName" type="BSTR" group="常用" />
+		<prop field="appID" type="UINT" group="常用" />
+		<prop field="userData" type="ITXData" toolTips="ITXData:额外数据存储。一般由存，取双方协商决定" />
+	</interface>
+</XtmlDescription>

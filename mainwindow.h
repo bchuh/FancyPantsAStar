@@ -20,7 +20,6 @@ private:
     int G_UNIT;
 public:
     explicit MainWindow(QWidget *parent = nullptr);
-
     ~MainWindow();
 
 

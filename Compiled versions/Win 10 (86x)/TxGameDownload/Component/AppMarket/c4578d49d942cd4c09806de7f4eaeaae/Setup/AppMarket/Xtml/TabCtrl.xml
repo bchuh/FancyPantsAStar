@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UI>
+	<Frame name="TabPageFrame3" sizeAsParent="true">
+		<background>
+			<Brush clrFrom="FFFFFF"/>
+		</background>
+	</Frame>
+	<Frame name="TabPageFrame4" sizeAsParent="true">
+		<background>
+			<Brush clrFrom="FFFFFF"/>
+		</background>
+	</Frame>
+	<Frame name="InstallProgress" size="1110,46" anchor="BOTTOMCENTER" margin="0,0,0,0" zOrder="1" hidden="true">
+		<background>
+			<Brush clrFrom="0xff1f212c"/>
+		</background>
+		<Progress name="progress" size="1110,4" anchor="TOPLEFT,RIGHT">
+			<background>
+				<Brush clrFrom="0x1affffff"/>
+			</background>
+			<foreground>
+				<Brush drawType="Horizon" clrFrom="0xe52660ff" clrTo="0xe52660ff"/>
+			</foreground>
+		</Progress>
+		<Button size="60,20" name="xbutton" config="retrybutton" text="$@this:SYS_MESSAGEBOX_RETRY" location="367,48" anchor="RIGHTCENTER" margin="0,6,60,0" hidden="true" cursor="hand"/>
+		<StackPanel autoHeight="true" autoWidth="true" orientation="Horizontal" anchor="BOTTOMLEFT" margin="30,0,0,14">
+			<Static name="text_tip" text="$@this:IDS_APPMARKET_ENGINE_READY" autoHeight="true" autoWidth="true" anchor="BOTTOMLEFT" margin="0,0,0,0" color="0xbfffffff"/>
+			<Static name="text_progress" text="" autoHeight="true" autoWidth="true" anchor="BOTTOMLEFT" margin="6,0,0,-2" color="0xbfffffff">
+				<font>
+					<Font height="13"/>
+				</font>
+			</Static>
+			<Static name="text_speed" text="$@this:IDS_APPMARKET_DOWNLOAD_SPEED_1" autoHeight="true" autoWidth="true" anchor="BOTTOMLEFT" margin="30,0,0,0" color="0x59ffffff"/>
+		</StackPanel>
+	</Frame>
+	<Window name="Wnd_QqLogon" size="604,386" location="0,0" config="LOGON_WINDOW" ownerDrawTitle="true" layered="true" showMinButton="false">
+		<background>
+			<Texture file="@thistheme:Logon\logon_wnd_bkg.png"/>
+		</background>
+		<!--ImageStatic location="10,7" name="img_Title" autoHeight="true" autoWidth="true" file="@thistheme:Logon\title.png" zOrder="1"/>
+		<ImageStatic location="0,0" name="img_Banner" autoHeight="true" autoWidth="true" file="@thistheme:Logon\banner.png" zOrder="9"/-->
+		<Frame name="sp_LogonArea" sizeAsParent="true" anchor="TOPLEFT" margin="220,0,0,0">
+			<ImageStatic margin="0,41,0,0" anchor="TOPCENTER" name="img_LogonType" autoHeight="true" autoWidth="true" file="@thistheme:Logon\logontype_bkg.png"/>
+			<StackPanel name="Frm_GiftTip" autoHeight="true" autoWidth="true" orientation="Horizontal" anchor="TOPLEFT" margin="45,90,0,0" hidden="true" zOrder="8">
+				<ImageStatic margin="0,0,0,0" anchor="LEFTCENTER" name="img_GiftTip" autoHeight="true" autoWidth="true" file="@thistheme:Logon\InfoTip.png"/>
+				<Static name="Static_GiftTip" text="请尽快登录账号，便于领取超级大礼包" anchor="LEFTCENTER" margin="8,0,0,0" autoHeight="true" autoWidth="true" color="0xffa2afc7"/>
+			</StackPanel>
+			<Frame name="Frm_NormalLogon" size="250,188" anchor="TOPCENTER" margin="0,114,0,0" hidden="true"/>
+			<Frame name="Frm_QuickLogon" size="250,188" anchor="TOPCENTER" margin="0,114,0,0" hidden="true"/>
+			<Button name="static_LogonType" text="快速登录" anchor="BOTTOMCENTER" margin="0,0,0,29" autoHeight="true" autoWidth="true" cursor="hand" normalColor="0xccffffff" pushedColor="0x99ffffff" highlightColor="0xffffffff"/>
+		</Frame>
+	</Window>
+	<Window name="Wnd_MarketLogin" size="604,386" location="0,0" config="LOGON_WINDOW" ownerDrawTitle="true" layered="true" showMinButton="false">
+		<background>
+			<Texture file="@thistheme:Logon\logon_wnd_bkg.png"/>
+		</background>
+		<TabCtrl anchor="TOPCENTER" margin="220,0,0,0" name="TabCtrl" orientation="Horizontal" autoHeight="true" autoWidth="true" zOrder="2" client="false">
+			<TabButton config="QQLogin_Conf" anchor="TOPLEFT" margin="0,40,0,0" name="QQLoginTabBtn" cursor="hand"/>
+			<TabButton config="WXLogin_Conf" anchor="TOPLEFT" margin="0,40,0,0" name="WXLoginTabBtn" cursor="hand"/>
+		</TabCtrl>
+		<StackPanel name="Frm_GiftTip" autoHeight="true" autoWidth="true" orientation="Horizontal" anchor="TOPLEFT" margin="265,88,0,0" hidden="true" zOrder="8">
+			<ImageStatic margin="0,0,0,0" anchor="LEFTCENTER" name="img_GiftTip" autoHeight="true" autoWidth="true" file="@thistheme:Logon\InfoTip.png"/>
+			<Static name="Static_GiftTip" text="请尽快登录账号，便于领取超级大礼包" anchor="LEFTCENTER" margin="8,0,0,0" autoHeight="true" autoWidth="true" color="0xffa2afc7"/>
+		</StackPanel>
+		<Frame name="QQLogonArea" sizeAsParent="true" anchor="TOPLEFT" margin="220,0,0,0">
+			<Frame name="QQAccountLogin_frame" size="250,188" anchor="TOPCENTER" margin="0,114,0,0" hidden="true"/>
+			<Frame name="QQQuickLogin_frame" size="250,188" anchor="TOPCENTER" margin="0,114,0,0" hidden="true"/>
+			<Button name="QQLoginType_btn" text="快速登录" anchor="BOTTOMCENTER" margin="0,0,0,29" autoHeight="true" autoWidth="true" cursor="hand" normalColor="0xccffffff" pushedColor="0x99ffffff" highlightColor="0xffffffff"/>
+		</Frame>
+	</Window>
+	<StackPanel name="Panel_NormalLogon" orientation="Vertical" sizeAsParent="true" location="0,0">
+		<Edit name="Edit_Count" config="AM_Edit" defaultText="QQ账号" anchor="TOPLEFT" margin="0,0,0,0" size="250,32" textColor="0xffffffff" editMargin="3,4,0,0">
+			<font>
+				<Font height="12" weight="400"/>
+			</font>
+		</Edit>
+		<Edit name="Edit_Password" config="AM_Edit" anchor="TOPLEFT" margin="0,10,0,0" size="250,32" password="true" textColor="0xffffffff" editMargin="3,4,0,0" tabStop="false"/>
+		<!--Button name="Btn_CountList_Down" config="Am_Arrow_Down_Btn" anchor="TOPLEFT" margin="270,35,0,0"/>
+		<Button name="Btn_CountList_Up" config="Am_Arrow_Up_Btn" anchor="TOPLEFT" margin="270,35,0,0" hidden="true"/-->
+		<StackPanel name="Frm_Opt" autoHeight="true" autoWidth="true" orientation="Horizontal" anchor="TOPLEFT" margin="0,5,0,0">
+			<!--CheckButton name="Check_SavePsw" text="保存密码" config="AM_Checkbutton" enable="true" autoHeight="true" autoWidth="true" anchor="TOPLEFT" margin="0,0,0,0" check="true"/-->
+			<CheckButton name="Check_AutoLogon" text="自动登录" config="AM_Checkbutton" enable="true" autoHeight="true" autoWidth="true" anchor="LEFTCENTER" margin="0,0,0,0" check="true"/>
+			<Static name="Static_Logon_Error" text="输入的密码不正确" anchor="LEFTCENTER" margin="10,0,0,0" autoHeight="true" autoWidth="true" color="0xffca3f49" hidden="true"/>
+		</StackPanel>
+		<Button name="Btn_Logon" config="LOGON_BOTTUN" anchor="TOPLEFT" margin="0,15,0,0" defaultButton="true"/>
+	</StackPanel>
+	<StackPanel name="Panel_QuickLogon" orientation="Vertical" sizeAsParent="true" location="0,0">
+		<Static text="选择需要快速登录的QQ帐号" singleLine="true" anchor="TOPLEFT" margin="0,0,0,0" autoHeight="true" autoWidth="true" color="0x7fffffff"/>
+		<ListView name="lst_Count" anchor="TOPLEFT" margin="0,8,0,0" config="AM_LISTVIEW" size="249,135"/>
+	</StackPanel>
+	<Frame name="Frm_ListItem" autoHeight="true" sizeAsParent="true" location="0,0">
+		<StackPanel name="Panel_Detail" anchor="LEFTCENTER" orientation="Horizontal" autoHeight="true" autoWidth="true" margin="0,2,0,0" transparent="true">
+			<GifAnimation name="img_CountIcon" size="37,37" image="@thistheme:Logon\default_face.png" zOrder="9" anchor="LEFTCENTER" margin="4,4,0,4"/>
+			<Static name="Static_CountName" autoHeight="true" autoWidth="true" endEllipsis="true" anchor="LEFTCENTER" margin="10,4,0,4" singleLine="true" maxAutoWidth="180" color="0x7fffffff"/>
+		</StackPanel>
+		<!--Frame name="ListItemLine" anchor="BOTTOMLEFT,RIGHT" autoWidth="true" size="0,1" transparent="true">
+			<background>
+				<Brush clrFrom="0x15000000"/>
+			</background>
+		</Frame-->
+	</Frame>
+	<Window name="Wnd_Confirm" size="480,172" fixSize="true" location="150,23" config="AM_Confirm_Window_Conf" titleText="$@this:IDS_APPMARKET_PRODUCT_TITLE">
+		<StackPanel orientation="Horizontal" anchor="BOTTOMRIGHT" margin="0,0,20,20" autoWidth="true" autoHeight="true">
+			<Button anchor="LEFTCENTER" margin="0,0,0,0" name="IDC_BTN_OK" text="$@this:SYS_MESSAGEBOX_OK" config="msgbutton_default"/>
+			<Button anchor="LEFTCENTER" margin="20,0,0,0" name="IDC_BTN_CANCEL" text="$@this:SYS_MESSAGEBOX_CANCEL" config="msgbutton1"/>
+		</StackPanel>
+		<Button anchor="TOPRIGHT" margin="0,3,3,0" autoWidth="true" autoHeight="true" config="new_Closebutton" Window.client="0" name="IDC_BTN_CLOSE"/>
+		<Static anchor="TOPLEFT" margin="20,20,0,0" text="" color="0xffffffff" name="IDC_STC_CONTEXT" singleLine="false" maxAutoWidth="440" autoWidth="true" autoHeight="true">
+			<font>
+				<Font height="11"/>
+			</font>
+		</Static>
+	</Window>
+	<Frame name="hardware_check" size="1110,46" anchor="BOTTOMCENTER" margin="0,0,0,0" zOrder="1" hidden="true"/>
+		<!--background>
+			<Brush clrFrom="2e3a50"/>
+		</background>
+		<Button name="btn_fold" size="23,15" anchor="TOPRIGHT" margin="0,8,10,0" cursor="hand" config="fold_button" zOrder="8" hidden="true"/>
+		<Frame name="frm_chk_container" sizeAsParent="true" hidden="true">
+			<Frame name="frm_gl" location="151, 373" size="200, 93">
+				<Static name="static_gl_h1" autoHeight="true" autoWidth="true" text="OpenGL版本" anchor="RIGHTCENTER" margin="0,0,93,0" color="0x8f9db1"/>
+				<Static name="static_gl_h2" autoHeight="true" autoWidth="true" text="提示" color="0xffffffff" hidden="true" endEllipsis="true" maxAutoWidth="100"/>
+				<ImageStatic name="img_gl" size="93,93" anchor="RIGHTCENTER" margin="0,0,0,0" file="@thistheme:hardwarecheck\gl.png"/>
+				<AnimationCtrl size="93,93" name="ani_gl" image="@thistheme:hardwarecheck\animation\opengl.apng" playCount="1" anchor="RIGHTCENTER" margin="0,0,0,0" hidden="true" zOrder="9"/>
+			</Frame>
+			<ImageStatic name="img_transition1" autoHeight="true" autoWidth="true" location="245,244" file="@thistheme:hardwarecheck\transition1.png"/>
+			<AnimationCtrl size="47,132" name="ani_transition1" image="@thistheme:hardwarecheck\animation\transition1.apng" playCount="1" location="245,244" hidden="true" zOrder="9"/>
+			<Frame name="frm_color" location="157, 160" size="170, 93">
+				<Static name="static_color_h1" autoHeight="true" autoWidth="true" text="系统颜色质量" anchor="RIGHTCENTER" margin="0,0,93,0" color="0x8f9db1"/>
+				<Static name="static_color_h2" autoHeight="true" autoWidth="true" color="0xffffffff" hidden="true"/>
+				<ImageStatic name="img_color" size="93,93" file="@thistheme:hardwarecheck\color.png" anchor="RIGHTCENTER" margin="0,0,0,0"/>
+				<AnimationCtrl size="93,93" name="ani_color" image="@thistheme:hardwarecheck\animation\color.apng" playCount="1" anchor="RIGHTCENTER" margin="0,0,0,0" hidden="true" zOrder="9"/>
+			</Frame>
+			<ImageStatic name="img_transition2" autoHeight="true" autoWidth="true" location="316,68" file="@thistheme:hardwarecheck\transition2.png"/>
+			<AnimationCtrl size="122,108" name="ani_transition2" image="@thistheme:hardwarecheck\animation\transition2.apng" playCount="1" location="316,68" hidden="true" zOrder="9"/>
+			<Frame name="frm_vt" anchor="TOPCENTER" margin="0,20,0,0" size="93, 150">
+				<StackPanel orientation="Horizontal" anchor="TOPCENTER" margin="0,100,0,0" autoHeight="true" autoWidth="true">
+					<Static name="static_vt_h1" autoHeight="true" autoWidth="true" text="VT" anchor="LEFTCENTER" color="0x8f9db1"/>
+					<ImageStatic name="img_vttip" size="15,15" anchor="LEFTCENTER" margin="10,0,0,0" file="@thistheme:hardwarecheck\tip.png"/>
+				</StackPanel>
+				<StackPanel orientation="Horizontal" anchor="TOPCENTER" margin="0,125,0,0" autoHeight="true" autoWidth="true">
+					<Static name="static_vt_h2" autoHeight="true" autoWidth="true" anchor="LEFTCENTER" color="0xffffffff" hidden="true"/>
+					<Static name="static_vt_open" text="如何开启?" autoHeight="true" autoWidth="true" anchor="LEFTCENTER" config="Link_Static_NoLine" hidden="true" margin="5,0,0,0" cursor="hand"/>
+				</StackPanel>
+				<ImageStatic name="img_vt" size="93,93" file="@thistheme:hardwarecheck\vt.png" anchor="TOPCENTER" margin="0,0,0,0"/>
+				<AnimationCtrl size="93,93" name="ani_vt" image="@thistheme:hardwarecheck\animation\vt.apng" playCount="1" anchor="TOPCENTER" margin="0,0,0,0" hidden="true" zOrder="9"/>
+			</Frame>
+			<ImageStatic name="img_transition3" autoHeight="true" autoWidth="true" location="584,68" file="@thistheme:hardwarecheck\transition3.png"/>
+			<AnimationCtrl size="122,108" name="ani_transition3" image="@thistheme:hardwarecheck\animation\transition3.apng" playCount="1" location="584,68" hidden="true" zOrder="9"/>
+			<Frame name="frm_mem" location="688, 160" size="240, 93">
+				<Static name="static_mem_h1" autoHeight="true" autoWidth="true" text="内存大小" anchor="LEFTCENTER" margin="100,0,0,0" color="0x8f9db1"/>
+				<ImageStatic name="img_memtip" size="15,15" anchor="LEFTCENTER" margin="158,0,0,0" file="@thistheme:hardwarecheck\tip.png"/>
+				<Static name="static_mem_h2" autoHeight="true" autoWidth="true" color="0xffffffff" hidden="true" anchor="TOPLEFT" margin="100,59,0,0"/>
+				<ImageStatic name="img_mem" autoHeight="true" autoWidth="true" file="@thistheme:hardwarecheck\mem.png" anchor="LEFTCENTER" margin="0,0,0,0"/>
+				<ImageStatic name="img_mem_err" autoHeight="true" autoWidth="true" file="@thistheme:hardwarecheck\error.png" anchor="LEFTCENTER" margin="0,0,0,0" hidden="true"/>
+				<AnimationCtrl autoWidth="true" autoHeight="true" name="ani_mem1" image="@thistheme:hardwarecheck\animation\mem.apng" playCount="1" anchor="LEFTCENTER" margin="0,0,0,0" hidden="true" zOrder="9"/>
+			</Frame>
+			<ImageStatic name="img_transition4" autoHeight="true" autoWidth="true" location="720,244" file="@thistheme:hardwarecheck\transition4.png"/>
+			<AnimationCtrl size="47,132" name="ani_transition4" image="@thistheme:hardwarecheck\animation\transition4.apng" playCount="1" location="720,244" hidden="true" zOrder="9"/>
+			<Frame name="frm_engine" location="675, 373" size="200, 93">
+				<Static name="static_engine_h1" autoHeight="true" autoWidth="true" text="游戏引擎" anchor="LEFTCENTER" margin="100,0,0,0" color="0x8f9db1"/>
+				<ImageStatic name="img_enginetip" size="15,15" anchor="LEFTCENTER" margin="158,0,0,0" file="@thistheme:hardwarecheck\tip.png"/>
+				<Static name="static_engine_h2" autoHeight="true" autoWidth="true" color="0xffffffff" hidden="true" anchor="LEFTCENTER" margin="100,30,0,0"/>
+				<ImageStatic name="img_engine" size="93,93" file="@thistheme:hardwarecheck\engine.png" anchor="LEFTCENTER" margin="0,0,0,0"/>
+				<ImageStatic name="img_engine_err" autoHeight="true" autoWidth="true" file="@thistheme:hardwarecheck\error.png" anchor="LEFTCENTER" margin="0,0,0,0" hidden="true"/>
+				<AnimationCtrl size="93,93" name="ani_engine1" image="@thistheme:hardwarecheck\animation\engine1.apng" playCount="1" anchor="LEFTCENTER" margin="0,0,0,0" hidden="true" zOrder="9"/>
+				<AnimationCtrl size="93,93" name="ani_engine2" image="@thistheme:hardwarecheck\animation\engine2.apng" playCount="1" anchor="LEFTCENTER" margin="0,0,0,0" hidden="true" zOrder="9"/>
+			</Frame>
+			<Frame name="frm_progress" anchor="CENTER" autoWidth="true" autoHeight="true" margin="0,10,0,0">
+				<ImageStatic size="342, 265" anchor="CENTER" file="@thistheme:hardwarecheck\center.png"/>
+				<ImageStatic size="146, 146" anchor="CENTER" file="@thistheme:hardwarecheck\progress.png"/>
+				<StackPanel orientation="Horizontal" anchor="CENTER" autoHeight="true" autoWidth="true">
+					<ImageStatic name="p1_img" autoWidth="true" autoHeight="true" anchor="LEFTCENTER" hidden="true" margin="9,0,0,0"/>
+					<ImageStatic name="p2_img" autoWidth="true" autoHeight="true" anchor="LEFTCENTER" file="@thistheme:hardwarecheck\progress\1.png"/>
+					<ImageStatic name="p_sign" autoWidth="true" autoHeight="true" anchor="LEFTCENTER" file="@thistheme:hardwarecheck\progress\persent.png"/>
+					<Static name="static_progress" autoHeight="true" autoWidth="true" color="0xf5f5f5" anchor="BOTTOMLEFT">
+						<font>
+							<Font height="40" weight="100"/>
+						</font>
+					</Static>
+				</StackPanel>
+			</Frame>
+			<Static text="正在检测OpenGL版本" name="static_h1" autoHeight="true" autoWidth="true" anchor="BOTTOMCENTER" margin="0,0,0,95" color="0xffffff">
+				<font>
+					<Font height="15.5"/>
+				</font>
+			</Static>
+			<StackPanel orientation="Horizontal" autoHeight="true" autoWidth="true" anchor="BOTTOMCENTER" margin="0,0,0,62">
+				<Static name="static_h2" autoHeight="true" autoWidth="true" text="整个过程大概需要5-10分钟，建议你先逛逛" anchor="LEFTCENTER" color="0x8f9db1"/>
+				<Static name="static_h2tip" autoHeight="true" autoWidth="true" text="游戏中心" cursor="hand" anchor="LEFTCENTER" color="0x00c249" margin="5,0,0,0"/>
+			</StackPanel>
+		</Frame>
+		<ResizeAnimation name="ANI_RESIZE" frames="24" startSize="1000, 580" endSize="1000, 30" hidden="true"/>
+	</Frame-->
+	<FloatingWnd name="floatingwnd_vt" size="213, 92" layered="true" fixSize="true">
+		<background>
+			<Texture file="@thistheme:hardwarecheck\vt_tip.png"/>
+		</background>
+	</FloatingWnd>
+	<FloatingWnd name="floatingwnd_engine" size="174, 93" layered="true" fixSize="true">
+		<background>
+			<Texture file="@thistheme:hardwarecheck\egine_tip.png"/>
+		</background>
+	</FloatingWnd>
+	<FloatingWnd name="floatingwnd_mem" size="174, 74" layered="true" fixSize="true">
+		<background>
+			<Texture file="@thistheme:hardwarecheck\mem_tip.png"/>
+		</background>
+	</FloatingWnd>
+	<Window name="wnd_openvt" size="560,731" fixSize="true" showCloseButton="true" config="mainwindow" showMaxButton="false" showMinButton="false" sysButtonOffset="-4,4" border="0,0,0,0">
+		<background>
+			<Texture file="@thistheme:hardwarecheck\vt_open.png"/>
+		</background>
+	</Window>
+	<Window name="RemoteControlWnd" location="50,50" size="366,210" config="RemoteControlWnd_Conf">
+		<background>
+			<Texture file="@thistheme:RemoteControl\open_bkg.png"/>
+		</background>
+		<Static name="st_disconnect" text="断开" anchor="TOPLEFT" margin="80,47,0,0" autoWidth="true" autoHeight="true" config="Link_Static_NoLine_remotecontrol" hidden="true" zOrder="2" color="0x52bcf"/>
+		<StackPanel orientation="Vertical" anchor="TOPLEFT" margin="0,0,0,0" size="184,153">
+			<StackPanel orientation="Horizontal" anchor="TOPCENTER" margin="0,102,0,0" autoWidth="true" autoHeight="true">
+				<ImageStatic name="is_icon" file="@thistheme:RemoteControl\error.png" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true"/>
+				<Static name="st_tip" text="远程控制功能已关闭" anchor="LEFTCENTER" margin="4,0,0,0" autoWidth="true" autoHeight="true" color="0xffffffff"/>
+			</StackPanel>
+			<Static name="st_open" text="立即开启" anchor="TOPCENTER" margin="0,7,0,0" autoWidth="true" autoHeight="true" config="Link_Static_NoLine_remotecontrol" hidden="false"/>
+			<Static name="st_setting" text="设置" anchor="TOPCENTER" margin="0,7,0,0" autoWidth="true" autoHeight="true" config="Link_Static_NoLine_remotecontrol" hidden="true"/>
+		</StackPanel>
+		<ImageStatic name="is_qrcode" file="@thistheme:RemoteControl\qrcode.png" anchor="TOPRIGHT" margin="0,18,17,0" autoWidth="true" autoHeight="true"/>
+		<Frame name="LogonFrame" anchor="TOPRIGHT" margin="0,0,0,0" size="136,153" zOrder="1" hidden="true">
+			<background>
+				<Texture file="@thistheme:RemoteControl\logon_mask.png"/>
+			</background>
+			<Button name="btn_logon" config="RemoteLogonBtn_Conf" anchor="BOTTOMCENTER" margin="0,0,0,20"/>
+		</Frame>
+	</Window>
+	<Window name="Wnd_Update" size="486,166" fixSize="true" location="157,23" ownerDrawTitle="true" border="30,30,30,30" layered="true">
+		<background>
+			<Texture file="@thistheme:update\bg.gft"/>
+		</background>
+		<Button size="80,26" location="319,53" name="IDC_BTN_OK" config="msgbutton_default" text="立即更新"/>
+		<Static size="200,25" location="12,10" text="游戏更新" color="0xacb8c9" name="IDC_STC_TITLE">
+			<font>
+				<Font height="11"/>
+			</font>
+		</Static>
+		<Button size="30,30" anchor="TOPRIGHT" margin="0,0,0,0" name="IDC_BTN_CLOSE" config="new_Closebutton"/>
+		<ImageStatic name="Img_Icon" size="16,16" location="22,58" file="@thistheme:img\msgboxicon.png"/>
+		<Static location="48,56" text="发现新版本，更新客户端才能继续游戏。" color="0xffffffff" name="IDC_STC_CONTEXT" singleLine="false" maxAutoWidth="300" autoWidth="true" autoHeight="true">
+			<font>
+				<Font height="11"/>
+			</font>
+		</Static>
+		<Progress size="394,8" location="14,54" name="IDC_PROGRES_DOWNLOADING">
+			<background>
+				<Texture file="@thistheme:update\loading_1.png"/>
+			</background>
+			<foreground>
+				<Texture file="@thistheme:update\loading_2.png"/>
+			</foreground>
+		</Progress>
+		<Static location="14,72" text="正在下载更新包 速度0KB/s" color="0xffffffff" name="IDC_STC_STATUS" singleLine="false" maxAutoWidth="300" autoWidth="true" autoHeight="true">
+			<font>
+				<Font height="10"/>
+			</font>
+		</Static>
+		<Static location="369,75" text="10%" color="0xffffffff" name="IDC_STC_PERCENT" singleLine="false" maxAutoWidth="30" autoWidth="true" autoHeight="true" anchor="TOPRIGHT" margin="0,72,14,0">
+			<font>
+				<Font height="10"/>
+			</font>
+		</Static>
+	</Window>
+	<Window name="Wnd_AERequire" size="536,366" location="0,0" config="AEREQUIRE_WINDOW" ownerDrawTitle="true" layered="true">
+		<ImageStatic name="Img_Icon" size="72,72" location="209,66" file="@thistheme:AERequire\warning.png"/>
+		<Static anchor="TOPCENTER" margin="0,166,0,0" text="$@this:IDS_APPMARKET_REQUIRE_VDI" color="0xffffffff" name="IDC_REQUIRE_WARNING" singleLine="true" maxAutoWidth="400" autoWidth="true" autoHeight="true">
+			<font>
+				<Font height="12"/>
+			</font>
+		</Static>
+		<Static anchor="TOPCENTER" margin="0,190,0,0" text="$@this:IDS_APPMARKET_VDIGAME_DESC" color="0x4cffffff" name="IDC_REQUIRE_INFO" singleLine="true" maxAutoWidth="400" autoWidth="true" autoHeight="true">
+			<font>
+				<Font height="10"/>
+			</font>
+		</Static>
+		<Button size="110,30" location="190,252" name="IDC_REQUIRE_INSTALL" highlightColor="0xffffffff" normalColor="0xe6ffffff" pushedColor="0xccffffff" text="$@this:IDS_APPMARKET_QUICK_INSTALL">
+			<pushedBackground>
+				<Texture file="@thistheme:AERequire\install_down.png"/>
+			</pushedBackground>
+			<normalDefaultBackground>
+				<Texture file="@thistheme:AERequire\install_normal.png"/>
+			</normalDefaultBackground>
+			<normalBackground>
+				<Texture file="@thistheme:AERequire\install_normal.png"/>
+			</normalBackground>
+			<highlightBackground>
+				<Texture file="@thistheme:AERequire\install_hover.png"/>
+			</highlightBackground>
+			<font>
+				<Font height="10"/>
+			</font>
+		</Button>
+		<Button size="110,30" location="130,252" name="IDC_FAILED_FEEDBACK" highlightColor="0xffffffff" normalColor="0xe6ffffff" pushedColor="0xccffffff" text="$@this:IDS_APPMARKET_FORUM_FEEDBACK">
+			<pushedBackground>
+				<Texture file="@thistheme:AERequire\feedback_down.png"/>
+			</pushedBackground>
+			<normalDefaultBackground>
+				<Texture file="@thistheme:AERequire\feedback_normal.png"/>
+			</normalDefaultBackground>
+			<normalBackground>
+				<Texture file="@thistheme:AERequire\feedback_normal.png"/>
+			</normalBackground>
+			<highlightBackground>
+				<Texture file="@thistheme:AERequire\feedback_hover.png"/>
+			</highlightBackground>
+			<font>
+				<Font height="10"/>
+			</font>
+		</Button>
+		<Button size="110,30" location="258,252" name="IDC_FAILED_RETRY" highlightColor="0xffffffff" normalColor="0xe6ffffff" pushedColor="0xccffffff" text="$@this:SYS_MESSAGEBOX_RETRY">
+			<pushedBackground>
+				<Texture file="@thistheme:AERequire\install_down.png"/>
+			</pushedBackground>
+			<normalDefaultBackground>
+				<Texture file="@thistheme:AERequire\install_normal.png"/>
+			</normalDefaultBackground>
+			<normalBackground>
+				<Texture file="@thistheme:AERequire\install_normal.png"/>
+			</normalBackground>
+			<highlightBackground>
+				<Texture file="@thistheme:AERequire\install_hover.png"/>
+			</highlightBackground>
+			<font>
+				<Font height="10"/>
+			</font>
+		</Button>
+	</Window>
+</UI>

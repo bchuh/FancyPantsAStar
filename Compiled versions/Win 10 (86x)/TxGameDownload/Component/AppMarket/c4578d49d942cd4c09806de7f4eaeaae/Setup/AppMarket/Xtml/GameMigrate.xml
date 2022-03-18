@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UI>
+	<Window name="GameMigrateWnd" size="542,342" location="0,0" config="GAME_MIGRATE" ownerDrawTitle="false" layered="true" showMinButton="false">
+		<background>
+			<Texture file="@thistheme:gamemigrate\wndbg.png"/>
+		</background>
+		<Frame name="GameViewFrame" sizeAsParent="true" anchor="TOPLEFT" margin="0,0,0,0">
+			<Static name="game_tip" text="建议将以下游戏升级为傲引擎版本，提速400%，告别卡顿！" autoHeight="true" autoWidth="true" anchor="TOPLEFT" margin="0,13,0,0" color="0xffffffff" >
+				<font>
+					<Font height="10"/>
+				</font>
+			</Static>
+			<Frame name="FrameGames" size="500,150" anchor="TOPLEFT" margin="0,52,0,0">
+				<background>
+					<Brush clrFrom="0x282a37"/>
+				</background>
+				<ScrollView name="GameScrollView" margin="0,0,0,0" scrollStep="0,10" sizeAsParent="true" config="scrollview" enableVert="true" autoHideVert="true">
+					<GridPanel name="GameGridPanel" margin="0,0,0,0" size="500,120"  autoHeight="true" autoWidth="false"/>
+				</ScrollView>
+			</Frame>
+			<Static name="games_statistics" text="已选中0款游戏，总大小0.0G" autoHeight="true" autoWidth="true" anchor="TOPCENTER" margin="0,230,0,0" color="0xbfffffff"/>
+			<Button name="no_update" text="以后再说" config="qrcode_refresh_Conf" anchor="BOTTOMLEFT" hidden="false" margin="150,30,0,0" normalColor="0xccffffff" pushedColor="0xccffffff" highlightColor="0xccffffff"/>
+			<Button name="do_update" text="开始升级" config="qrcode_refresh_Conf" anchor="BOTTOMLEFT" hidden="false" margin="280,30,0,0" normalColor="0xff266cff" pushedColor="0xff266cff" highlightColor="0xff266cff"/>
+		</Frame>
+		<Frame name="GameProgressFrame" sizeAsParent="true" anchor="TOPLEFT" margin="0,0,0,0">
+			<ImageStatic name="lightning_icon" size="90,90" anchor="TOPLEFT" margin="200,42,0,0" smooth="Bilinear">
+				<background>
+					<Texture file="@thistheme:gamemigrate\icon.png"/>
+				</background>
+			</ImageStatic>
+			<Static name="progress_statistics" text="正在将 手游助手引擎 升级为傲引擎版本，请耐心等待...(1/1)" autoHeight="true" autoWidth="true" anchor="TOPLEFT" margin="25,182,0,0" color="0xbfffffff"/>
+			<Progress size="500,8" location="14,210" name="IDC_PROGRES_MIGRATE">
+				<background>
+					<Texture file="@thistheme:gamemigrate\progress_bg.png"/>
+				</background>
+				<foreground>
+					<Texture file="@thistheme:gamemigrate\progress_fg.png"/>
+				</foreground>
+			</Progress>
+			<Button name="stop_update" text="停止升级" config="qrcode_refresh_Conf" anchor="BOTTOMLEFT" hidden="false" margin="150,30,0,0" normalColor="0xccffffff" pushedColor="0xccffffff" highlightColor="0xccffffff"/>
+			<Button name="backend_update" text="后台升级" config="qrcode_refresh_Conf" anchor="BOTTOMLEFT" hidden="false" margin="280,30,0,0" normalColor="0xff266cff" pushedColor="0xff266cff" highlightColor="0xff266cff"/>
+		</Frame>
+	</Window>
+	<Frame name="GameGridItem" size="94,120">
+		<ImageStatic file="@thistheme:gamemigrate\appdefault.png" name="game_icon" size="64,64" anchor="TOPCENTER" margin="0,25,0,0" smooth="Bilinear">
+			<CheckButton name="game_check" config="GM_Checkbutton" size="16,16" enable="true" anchor="BOTTOMRIGHT" margin="0,0,-6,0" zOrder="1" check="true"/>
+			<ImageStatic file="@thistheme:gamemigrate\failed_icon.png" name="failed_icon" size="18,18" anchor="BOTTOMRIGHT" margin="0,0,0,0" smooth="Bilinear" zOrder="1" hidden="true"/>
+			<ImageStatic file="@thistheme:gamemigrate\mask.png" name="mask_icon" sizeAsParent="true" anchor="CENTER" margin="0,0,0,0" smooth="Bilinear" zOrder="9" hidden="false"/>
+		</ImageStatic>
+		<Static name="game_display" location="0,0" text="game app" anchor="TOPCENTER" margin="0,100,0,0" color="a1a2b2" maxAutoSize="70,0" autoWidth="true" autoHeight="true" endEllipsis="true">
+			<font>
+				<Font height="10"/>
+			</font>
+		</Static>
+	</Frame>
+</UI>

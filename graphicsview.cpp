@@ -16,6 +16,7 @@ graphicsView::graphicsView(QWidget *parent)
     std::cout<<"graphcsView constructed"<<std::endl;
     m_scene=new my_scene(this);
     m_scene->setSceneRect(-1,-1,F_WIDTH*G_UNIT+1,F_HEIGHT*G_UNIT+1);
+    method=0;
     setScene(m_scene);
     setDragMode(QGraphicsView::ScrollHandDrag);
     setAlignment(Qt::AlignTop | Qt::AlignLeft);
@@ -46,9 +47,15 @@ void graphicsView::viewReact()
         mouseEvent_Blocked=false;
     }else{
         mouseEvent_Blocked=true;
+        m_scene->method=this->method;
         m_scene->findPathEvent();
         m_scene->isNew=false;
         emit pathFindingFinished(m_scene->PathfindState);
     }
 }
 
+void graphicsView::setMethod(int method)
+{
+    this->method=method;
+    std::cout<<method<<std::endl;
+}

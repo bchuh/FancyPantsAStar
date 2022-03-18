@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>加载中</title>
+    <style>
+        *{
+            margin:0;border:0;padding:0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background:#282a36;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading {
+             background: url("loading.png")
+             no-repeat;
+             width: 160px;
+             height: 160px;
+         }
+
+    </style>
+</head>
+<body>
+<div class="loading"></div>
+<script>
+    document.addEventListener( "DOMContentLoaded", function(){
+        var times = 0;
+        setInterval(() => {
+            if (times > 25) {
+                times = 0;
+            }
+            var x;
+            var y = 0;
+            x = times % 13;
+            if (times > 12) {
+                y = 1;
+            }
+            times++;
+            x = -x * 160;
+            y = -y * 160;
+            document.querySelector('.loading').style.backgroundPositionX = x+"px";
+            document.querySelector('.loading').style.backgroundPositionY = y+"px";
+        }, 60);
+    });
+</script>
+</body>
+</html>

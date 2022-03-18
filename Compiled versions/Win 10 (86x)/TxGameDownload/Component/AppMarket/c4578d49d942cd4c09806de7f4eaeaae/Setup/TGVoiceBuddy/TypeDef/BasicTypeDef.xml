@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XtmlDescription>
+  <simpleType id="BSTR" mdtype="BSTR"/>
+  <simpleType id="value" mdtype="value"/>
+  <simpleType id="int" mdtype="int"/>
+  <simpleType id="INT" mdtype="int"/>
+  <simpleType id="BOOL" mdtype="bool"/>
+  <simpleType id="bool" mdtype="bool"/>
+  <simpleType id="COLORREF" mdtype="COLORREF"/>
+  <simpleType id="ARGB" mdtype="ARGB"/>
+  <simpleType id="LONG" mdtype="long"/>
+  <simpleType id="UINT" mdtype="DWORD"/>
+  <simpleType id="double" mdtype="double"/>
+  <simpleType id="DOUBLE" mdtype="double"/>
+  <simpleType id="RECT" mdtype="RECT"/>
+  <simpleType id="POINT" mdtype="POINT"/>
+  <simpleType id="SIZE" mdtype="SIZE"/>
+  <simpleType id="ITXArray" mdtype="ITXArray"/>
+  <simpleType id="ITXData" mdtype="ITXData"/>
+  <simpleType id="BYTE" mdtype="BYTE"/>
+  <simpleType id="DWORD" mdtype="DWORD"/>
+  <interface  label = "NullValue" id="IGFNullValue" iid="00000000-0000-0000-0000-000000000000"/>
+</XtmlDescription>

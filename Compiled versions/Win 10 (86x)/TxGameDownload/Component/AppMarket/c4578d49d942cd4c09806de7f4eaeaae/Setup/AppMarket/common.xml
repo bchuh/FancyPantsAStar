@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<core-config>
+  <services>
+    <service id="19D267E3-6D41-42A2-8F8C-3241F070F68E" name="ITXRegistryCenter" clsname="CTXRegistryCenter"/>  
+    <service id="253DF367-686F-4E92-845D-407C1FD70689" name="ITXInfoStorage" clsname="CTXInfoStorage"/>
+    <service id="CC23EE54-D907-47BD-8223-2F590B62B37A" name="ITXImageStorage" clsname="CTXImageStorage"/>
+    <service id="ABC5EE50-D991-4EE0-A96B-3512397EDBA1" name="ITXDataRouteCenter" clsname="CTXDataRouteCenter"/>
+    <service id="CDFF14D5-A8C0-4E5F-AF15-567654C0DD5C" name="ITXNetworkEnv" clsname="CTXNetworkEnv"/>
+    <service id="23640512-B079-4a19-9AC8-E51FB7F53257" name="ITXConnectionMgr" clsname="CTXConnectionMgr"/>
+    <service id="7992FE3F-D7F3-4988-B6FB-BAA37C86D758" clsname="CCoXtmlTypeDefMgr"/>
+    <service id="70C0DD58-34C9-450f-99BF-AAE0253ABC27" clsname="CGFCoModeMgr"/>
+    <service id="9F414A8A-1D5E-4aff-A60E-CFD65155ABB6" clsname="CGFCoCursorMgr"/>
+    <service id="D6E60C5F-8E5D-439D-B26F-DDB3C5E3530F" clsname="CGFCoDataSourceMgr"/>
+    <service id="A6DAC8F7-B3A9-48c2-997D-15F0549E3165" clsname="CGFCoThemeMgr"/>
+    <service id="1D873997-47E5-423c-956D-7ACBB4FC7F49" clsname="CGFCoConfigAgentMgr"/>
+    <service id="AD7C9A17-BD7E-466E-B662-2A794D8572EB" clsname="CGFCoEnvironmentMgr"/>
+    <service id="C8F782ED-C100-411F-B936-C02D6A432587" name="ITXSkinMgr"  clsname="CGFCoSkinMgr"/>
+    <service id="FCBAEEE8-B4FE-40c2-871B-2834EACC90A1" name="ISetModChk" clsname="CSetModChk"/>
+  </services>
+
+  <components path="" path-debug="">   
+    <component clsname="CGFCoCursorMgr" clsid="20BB9542-E499-4618-9E2D-079A06FD99B0" dllname="GF.dll"/>
+    <component clsname="CGFCoDataSourceMgr" clsid="51C4C9AF-6E7E-4C6B-AFA1-9632415E3758" dllname="GF.dll"/>
+    <component clsname="CCoXtmlTypeDefMgr" clsid="AF80613D-5698-4610-8FCF-1DF2303E5AF7" dllname="GF.dll"/>
+    <component clsname="CGFCoModeMgr" clsid="BB34FEA8-180A-4641-B6CB-F8AFD0E0B7BC" dllname="GF.dll"/>
+    <component clsname="CTXRegistryCenter" clsid="BEA07E3C-31B4-4F13-B8AA-BDBE0B8CCF43" dllname="Common.dll"/> 
+    <component clsname="CTXInfoStorage" clsid="3827D31F-3BC9-4A9A-BFA1-700608CF109E" dllname="Common.dll"/>
+    <component clsname="CTXImageStorage" clsid="A42D4F4C-941B-4cd8-A7A1-16ACD78599B7" dllname="Common.dll"/>
+    <component clsname="CTXDataRouteCenter" clsid="6B83EE97-EF5D-4FFD-9F20-6F200D9D82EA" dllname="Common.dll"/>
+    <component clsname="CTXExtensionPointKeyType" clsid="F59AD71C-F3EA-4cad-8C1C-7EF04161D5E9" dllname="Common.dll"/>
+    <component clsname="CTXNetworkEnv" clsid="6F029A4E-0F0D-4715-B397-AE9591A65D67" dllname="Common.dll"/>
+    <component clsname="CTXConnectionMgr" clsid="10ED59DB-C503-4CB7-AF4C-5935B7D6AFFE" dllname="Common.dll"/>
+    <component clsname="CGFCoWinSBService" clsid="A679BC8F-A6C7-4702-9901-D96C37618F4C" dllname="GF.dll" exit-order="1"/>
+    <component clsname="CGFCoConfigAgentMgr" clsid="449FAEC7-C59F-40BD-BAC8-DCB34DED20AE" dllname="GF.dll"/>
+    <component clsname="CGFCoThemeMgr" clsid="F830C011-494F-41ac-84CB-C7EECB281EE9" dllname="GF.dll"/>
+    <component clsname="CGFCoEnvironmentMgr" clsid="58F43596-1B05-4716-8E98-B653244EABC1" dllname="GF.dll"/>
+    <component clsname="CGFCoSkinMgr" clsid="C03678F9-52EB-4943-9D14-1D0351A2F458" dllname="GF.dll"/>
+    <component clsname="CSetModChk" clsid="45C3D31C-4CF0-4ede-8475-592E300ADD7C" dllname="Common.dll"/>
+  </components>
+
+  <core-services>
+    <core-service id="1258C474-2C71-4799-8B31-DF04076C510B" clsname="CGFCoMetadataMgr"/>
+    <core-service id="36E6FF01-0B47-460C-83F8-D7FE4628D3EE" clsname="CTXRegistry"/>
+    <core-service id="6C1F3073-19C0-47F5-AAC8-8F30381D1B73" clsname="CGFCoGuiFoundationMgr"/>
+    <core-service id="BC980E35-8F56-43E1-8785-5EFECC5D8787" clsname="CGFElementCacheMgr"/>
+  </core-services>
+
+  <core-components path="" path-debug="">
+    <core-component clsname="CGFCoMetadataMgr" clsid="FE6962DE-F924-49f2-97C0-5E3AC8771285" dllname="GF.dll"/>
+    <core-component clsname="CTXRegistry" clsid="9345FD1F-B52D-41A8-9065-7162910EC54E" dllname="Common.dll"/>
+    <core-component clsname="CGFCoGuiFoundationMgr" clsid="11C4ADE5-4C37-4C45-97C3-A4E6C5C59B0F" dllname="GF.dll"/>
+    <core-component clsname="CGFElementCacheMgr" clsid="5CF82E92-2CDF-44EA-9C43-9F5A367044C2" dllname="GF.dll"/>
+  </core-components>
+
+  <objects path="" path-debug="">
+    <object name="ITXBuffer" id="04AD9AE4-F179-4A7B-A640-0CB8EA74A071" clsid="CF98441B-260E-4AB1-9E97-694D5B4C9E0F" dllname="Common.dll"/>
+    <object name="ITXData" id="2C3F29CA-F983-4897-A545-2221773BC5A6" clsid="198F7F68-44F2-47EF-9C48-D3503C91251B" dllname="Common.dll"/>
+    <object name="ITXDataArray" id="45B22163-C1A9-483D-9657-0B6E8CA607C9" clsid="1208A6B6-FA16-47AB-B9F8-110AD79BAC3E" dllname="Common.dll"/>
+
+    <object name="GFPopupWin" id="4FF1A1C0-C91E-4322-A068-77DA38B1C3D4" clsid="B35C3214-2BBD-4cc4-9DC5-B9E5036C586B" dllname="GF.dll"/>
+    <object name="GFMessageDispatcher" id="5BD8EBC3-33A0-4e05-BDBE-AC549D5D3366" clsid="863307CD-C66F-47a8-9C48-50A479B24853" dllname="GF.dll"/>
+    <object name="GFFrame" id="A5DFF81A-B003-4967-A286-87EB38041C7C" clsid="DDA0ED51-B482-4A5B-A2B4-31A31768CD1D" dllname="GF.dll"/>
+    <object name="GFFocusMgr" id="00E37139-1A24-44e8-9183-B21D09FD1799" clsid="90E26A07-C160-4222-BE15-6B4346FA5998" dllname="GF.dll"/>
+
+    <object name="GFGridPanel" id="CB72BBA9-E038-45BE-ABFE-9E56394054BB" clsid="8F9A3BC7-AEFB-4B17-8D02-27D8965B8E24" dllname="GF.dll"/>
+    <object name="GFButton" id="70551436-19C4-4f25-BFC8-322D86AE1A9C" clsid="915F0272-71D6-47c0-9816-E75F70439EFC" dllname="GF.dll"/>
+    <object name="GFEdit" id="735539FB-8C18-4b58-8E7A-553D709999FF" clsid="70B659EC-9B52-49d7-991D-5464B7880EC2" dllname="GF.dll"/>
+    <object name="GFRichStatic" id="8120B592-654D-4F3D-82EF-0BF35DAA0943" clsid="A9D98E2C-E9CB-434E-8A22-4BBC5AA7893C" dllname="GF.dll"/>
+
+    <object name="GFFontString" id="69AD07EA-62E0-4e59-BC30-2DA4A934A1E5" clsid="C6352C08-0E5F-4ADE-AB65-9410436ADCC5" dllname="GF.dll"/>
+    <object name="GFBrush" id="02E0D433-A732-417b-9109-4054079CDD74" clsid="CCB86BCE-EE11-4b77-8C56-76646F125005" dllname="GF.dll"/>
+    <object name="GFShape" id="E80B5869-91D5-40e0-A777-E0DC242B8306" clsid="2EDC4C5C-0438-4f5f-BD1D-23C6B95E8723" dllname="GF.dll"/>
+    <object name="GFTexture" id="40C0A0B4-33E3-4091-AE36-918F9C09E350" clsid="E1982C26-091F-460e-A6E3-FF6DAA9B9F5B" dllname="GF.dll"/>
+    <object name="GFPwdSafeEdit" id="EA032D33-A375-4A02-A139-1EA5B5A9052F" clsid="0632BEC2-04CF-4318-93EE-AE7A46B9CA47" dllname="GF.dll"/>
+    
+    <object name="Menu" id="99191728-BEDC-4D94-ADB2-B530E6CA691B" clsid="8190C729-D41B-4EC4-802F-324C62032E85" dllname="GF.dll"/>
+    <object name="MenuItem" id="5928D9B1-18F4-417B-B688-64058662E768" clsid="7870ECBF-B3E0-4869-AF87-115CD895E188" dllname="GF.dll"/>
+    <object name="RichToolTip" id="03FDC9C5-AB3A-4D72-AE32-7A25F6FAD708" clsid="E4307974-D2EB-41D4-9A4D-C6E783333F32" dllname="GF.dll"/>
+    <object name="CTXOPCallClassBase" id="BBFE98BF-B108-4AC6-B9EA-FD2A1B968931" clsid="E426D170-02E3-4639-9984-6A55C75ED73D" dllname="Common.dll"/>
+    <object name="COPTestClass1" id="42F8A090-BAD6-477B-8F6B-A5071E928006" clsid="42F8A090-BAD6-477B-8F6B-A5071E928006" dllname="OPCallTest.dll"/>
+
+    <object name="CTestClass1Imp" id="800E2AB3-6F48-4169-918A-EF76201967C1" clsid="42F8A090-BAD6-477B-8F6B-A5071E928006" dllname="OPCallTest.dll"/>
+    <object name="CTXP2PDownloadParam" id="80F3C706-3439-4AA0-B793-FA30514012F8" clsid="971F49A3-76EC-4E71-BBAA-A7CAC4E7456B" dllname="Common.dll"/>
+    <object name="CTXHttpP2PDownloader" id="FE4A5C5F-9A70-4773-AD56-A0CBAF92A62C" clsid="73B5D93A-B385-4B12-9A05-26EB992723D5" dllname="Common.dll"/>
+    <object name="COleTimer" id="3050f360-98b5-11cf-bb82-00aa00bdce0b" clsid="87D795F2-317D-4476-8A42-EC3104364AFE" dllname="Common.dll"/>
+    <object name="CTXMemFileSystem" id="1180A563-C168-4545-9C00-9DC6B1C79F34" clsid="BC0666B9-88A6-4A72-9D9D-CCDD33643275" dllname="Common.dll"/>
+	
+    <object name="IGFWebKitCtrl" id="82C6E3DD-4BA9-4655-8944-96B9207696AB" clsid="CEEAE961-C0AB-484d-AD64-B71E4048EDEB" dllname="WebKitCtrl.dll"/>
+    <object name="IGFOPWebKitCtrl" id="E35BA31E-8553-46ec-A9CD-70445B7C5E54" clsid="BEAB6A31-FC35-4e60-BD52-87B13BCD6B3B" dllname="OPWebKitCtrl.dll"/>
+    <object name="IGFWebCtrl" id="2E9028FA-E320-4f46-BF87-1CF3FA04EE8A" clsid="03794F11-7B59-423d-9F93-B2453CDF61F5" dllname="WebCtrl.dll"/>
+    <object name="IWebkitGFContainer" id="BDD4F593-74F5-4FA1-8614-DC9D8D78405D" clsid="92FC2FF5-5F8A-4ED9-B22C-8EE041D8A8B7" dllname="WebKitCtrl.dll"/>
+    <object name="IWebGFContainer" id="65B25EB5-2031-4873-91FA-1995A145B799" clsid="F4BB8868-56C1-410e-8079-BE149F7D3305" dllname="WebCtrl.dll"/>
+    <object name="IFlashControl" id="15AA8793-980B-41E8-AA0F-ACE0D2A3C74E" clsid="36946381-46C2-4E05-8F41-6036712A5CBC" dllname="FlashControl.dll"/>
+    <object name="IRichControlObj" id="4685030C-ED28-4CE3-96DA-519C8AAE1A92" clsid="7BA33C60-7BBF-4A47-BDD4-19D0F5614643" dllname="RichControlOle.dll"/>
+    <object name="IGFRichControl" id="3A37C73C-8702-410B-8BA5-9377CE54FB26" clsid="F99DF3CB-A73F-4498-9C29-8C978576E3F4" dllname="GFRichControl.dll"/>
+    <object name="IGFRichAppClient" id="61FD85DB-8432-45E6-AD36-07CFAFE2BD55" clsid="59BA81D2-EDE3-4A0C-873D-C96E1A84F617" dllname="GFRichControl.dll"/>
+  </objects>
+</core-config>

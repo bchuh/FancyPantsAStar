@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StringBundle version="1.0">
+<String id="IDS_PRODUCT_TITLE">Bạn bè</String>
+<String id="IDS_PRODUCT_FEEDBACK">Phản hồi</String>
+<String id="IDS_PRODUCT_NETWORK_DISCONNECTION">Rất tiếc, đã xảy ra lỗi mạng!</String>
+<String id="IDS_PRODUCT_WEB_RECONNECT">Kết nối lại</String>
+<String id="IDS_TIPS_REMIND">LỜI KHUYÊN</String>
+<String id="IDS_MSG_QUIT_MAIN_WND">Bạn có chắc chắn bỏ thuốc lá?</String>
+<String id="IDS_JOINGAME_TITLE">房主邀请你加入游戏队伍</String>
+<String id="IDS_JOINGAME_DESCRIPTION">确认后将直接进入房主组建的开黑队伍，无需添加游戏好友ID</String>
+<String id="IDS_JOINGAME_NOW">立即加入</String>
+<String id="IDS_JOINGAME_GOTIT">知道了</String>
+<String id="IDS_JOINGAME_USAGE_TITLE">吃鸡开黑友情提示</String>
+<String id="IDS_TGV_HOST_TITLE_MAIN">一键组队房主须知</String>
+<String id="IDS_TGV_HOST_TITLE_QQ">（QQ区）</String>
+<String id="IDS_TGV_HOST_SETP_1_1">1.点击房间内的</String>
+<String id="IDS_TGV_HOST_SETP_1_2">[一键组队]</String>
+<String id="IDS_TGV_HOST_SETP_2_1">2.点击</String>
+<String id="IDS_TGV_HOST_SETP_2_2">[邀请好友]→[当面开黑]，</String>
+<String id="IDS_TGV_HOST_SETP_2_3">调起开黑二维码</String>
+<String id="IDS_NO_REMIND_MORE">不再提示</String>
+<String id="IDS_TGV_MEMBER_SETP1_1_1">[等待队长启动]</String>
+<String id="IDS_TGV_MEMBER_SETP1_1_2">表示队长还没有在游戏中建好队伍</String>
+<String id="IDS_TGV_MEMBER_SETP1_2_1">[加入队伍]</String>
+<String id="IDS_TGV_MEMBER_SETP1_2_2">代表可一键加入到游戏队伍</String>
+<String id="IDS_TGV_MEMBER_SETP2_1_1">房主在游戏中建好队伍后，将会发送一条邀请通知</String>
+<String id="IDS_TGV_MEMBER_SETP2_2_1">点击后立即加入！</String>
+</StringBundle>

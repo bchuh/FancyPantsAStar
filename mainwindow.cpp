@@ -31,7 +31,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->graphicsView1,SIGNAL(flagChanged(bool,bool)),ui->checkBox2,SLOT(checkState(bool,bool)));
     connect(ui->graphicsView1,SIGNAL(flagChanged(bool,bool)),ui->pushButton1,SLOT(checkButtonState(bool,bool)));
     connect(ui->pushButton1,&pushButton::clicked,ui->graphicsView1,&graphicsView::viewReact);
-    connect(ui->graphicsView1,&graphicsView::pathFindingFinished,ui->pushButton1,&pushButton::checkButtonState_finished);    /*
+    connect(ui->graphicsView1,&graphicsView::pathFindingFinished,ui->pushButton1,&pushButton::checkButtonState_finished);
+    connect(ui->comboBox,SIGNAL(currentIndexChanged(int)),ui->graphicsView1, SLOT(setMethod(int)));
+    /*
     my_scene scene;
  //   QGraphicsRectItem it(0,0,8,8);
 

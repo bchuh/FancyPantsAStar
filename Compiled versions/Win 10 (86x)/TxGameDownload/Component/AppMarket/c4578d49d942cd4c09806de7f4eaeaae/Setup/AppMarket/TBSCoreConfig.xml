@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<core-config>
+  <objects path="." path-debug=".">
+    <object name="IGFTBSWebCtrl" id="B0D6B39E-D0A5-4551-8599-196B8D7D627A" clsid="02D09220-5A84-4ADC-A3C7-0D5951AB35CD" dllname="TBSCore.dll"/>
+  </objects>
+</core-config>

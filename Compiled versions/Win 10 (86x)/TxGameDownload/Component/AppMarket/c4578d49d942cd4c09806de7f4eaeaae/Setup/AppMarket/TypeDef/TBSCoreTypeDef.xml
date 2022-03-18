@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XtmlDescription>
+	<interface iid="B0D6B39E-D0A5-4551-8599-196B8D7D627A" id="IGFTBSWebCtrl" label="TBSWebCtrl" inherit="IGFControl">
+    <prop field="url" type="BSTR" />
+    <prop field="windowless" type="BOOL" group="常用" />
+    <prop field="cachePath" type="BSTR" />
+    <prop field="UA" type="BSTR" />
+  </interface>
+</XtmlDescription>

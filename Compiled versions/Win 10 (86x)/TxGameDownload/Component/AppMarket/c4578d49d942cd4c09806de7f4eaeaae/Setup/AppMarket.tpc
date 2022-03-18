@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tpc version="1.0.0">
+	<file-systems>
+		<file-system name="@this:" path="AppMarket"/>
+		<file-system name="@thisxtml:" path="AppMarket\Xtml"/>
+		<file-system name="@thistheme:" path="AppMarket\Res"/>
+		<file-system name="@thisres:" path="AppMarket\Res"/>
+		<file-system name="@thisbundle:" path="AppMarket\I18N" />
+	</file-systems>
+	<core-configs>
+		<core-config file="@this:common.xml"/>
+		<core-config file="@this:TBSCoreConfig.xml"/>
+	</core-configs>
+	<gf-config file="@this:gf-config.xml"/>
+	<i18n-config file="@this:I18N\config.xml" />
+</tpc>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Theme>
+	<TG name="TextColor" comment="文字颜色分类">
+		<TV name="Text" value="0x000000" type="color" comment="正文颜色"/>
+		<TV name="UI" value="0x001c30" type="color" comment="界面文字颜色"/>
+		<TV name="Disable" value="0xBABABA" type="color" comment="disable"/>
+		<TV name="Reverse" value="0xFFFFFF" type="color" comment="反色"/>
+		<TV name="Gray" value="0x808080" type="color" comment="灰度颜色"/>
+		<TV name="LowLink" value="0x002d4d" type="color" comment="低调链接文字颜色"/>
+		<TV name="HighLink" value="0x1670eb" type="color" comment="强调链接文字颜色，普通"/>
+    <TV name="HighLinkTips" value="0xeb2c00" type="color" comment="强调链接文字颜色，红色"/>
+    <TV name="HighLinkVip" value="0xf58a6e" type="color" comment="强调链接文字颜色，粉红色"/>
+		<TV name="HighLinkHighlight" value="0x1670eb" type="color" comment="强调链接文字颜色，高亮"/>
+    <TV name="HighLinkHighlightVip" value="0xf58a6e" type="color" comment="强调链接文字颜色，高亮粉红色"/>
+		<TV name="HighLinkPushed" value="0x1670eb" type="color" comment="强调链接文字颜色，按下"/>
+    <TV name="HighLinkPushedVip" value="0xf58a6e" type="color" comment="强调链接文字颜色，按下粉红色"/>
+		<TV name="NormalLink" value="0x0072C1" type="color" comment="普通链接文字颜色，普通"/>
+		<TV name="NormalLinkHighlight" value="0x1670eb" type="color" comment="普通链接文字颜色，高亮"/>
+		<TV name="NormalLinkPushed" value="0x1670eb" type="color" comment="普通链接文字颜色，按下"/>
+		<TV name="Menu" value="0x001524" type="color" comment="菜单文字颜色"/>
+	</TG>
+	<TG name="Color" comment="边框颜色">
+		<TV name="MaskColor" value="0xFF00FF" type="color" comment="图片屏蔽色，透明色"/>
+		<TV name="Background" value="0xFFFFFF" type="color" comment="控件底色"/>
+		<TV name="OuterBorder" value="0x8ab0de" type="color" comment="外框颜色"/>
+		<TV name="CtrlBorderNormal" value="0x6e9ad0" type="color" comment="控件边框色"/>
+		<TV name="CtrlBorderHoverGlow" value="0x98e8ff" type="color" comment="控件移上边框发光色"/>
+		<TV name="CtrlBorderPushedGlow" value="0x98e8ff" type="color" comment="控件按下边框发光色"/>
+		<TV name="CtrlBorderHover" value="0x438ace" type="color" comment="控件移上边框色"/>
+		<TV name="CtrlBorderPushed" value="0x438ace" type="color" comment="控件按下边框色"/>
+		<TV name="SelectedOuterBorder" value="0x0087c5" type="color" comment="选中外框"/>
+		<TV name="SelectedInnerBorder" value="0x81b6e4" type="color" comment="选中内框"/>
+		<TV name="SelectedBackground" value="0x68a7de" type="color" comment="选中底色"/>
+		<TV name="SelectedOuterBorder2" value="0xffd5a7" type="color" comment="选中外框2"/>
+		<TV name="SelectedInnerBorder2" value="0xfffcf7" type="color" comment="选中内框2"/>
+		<TV name="SelectedBackground2" value="0xffefd8" type="color" comment="选中底色2"/>
+		<TV name="IconButtonInnerBorder" value="0xf0f9fe" type="color" comment="图标按钮内边框"/>
+		<TV name="IconButtonOuterBorder" value="0x438ace" type="color" comment="图标按钮外边框"/>
+		<TV name="IconButtonGradualTop" value="0xc6ebfd" type="color" comment="图标渐变上缘"/>
+		<TV name="IconButtonGradualBottom" value="0x8bd3f7" type="color" comment="图标按钮渐变下缘"/>
+		<TV name="ImageOuterBorder" value="0xafcaed" type="color" comment="图片外边框"/>
+		<TV name="ImageInnerBorder" value="0x000000" type="color" comment="图片内边框"/>
+		<TV name="ImageSelectedInnerBorder" value="0x008cff" type="color" comment="图片选中内边框"/>
+		<TV name="ListItemBackground1" value="0xf2f7fd" type="color" comment="列表分隔底色(深)"/>
+		<TV name="ListItemBackground2" value="0xf9fbfe" type="color" comment="列表分隔底色(浅)"/>
+		<TV name="ClientAreaGradualTop" value="0x000000" type="color" comment="界面内底上缘色"/>
+		<TV name="ClientAreaGradualBottom" value="0xf1f8fa" type="color" comment="界面内底下缘色"/>
+		<TV name="MenuInnerBorder" value="0xb4dbff" type="color" comment="菜单内框"/>
+		<TV name="MenuOuterBorder" value="0x4879b8" type="color" comment="菜单外框"/>
+		<TV name="MenuLeftBar" value="0xc6e1fc" type="color" comment="菜单左侧底色"/>
+		<TV name="EditDisableBackground" value="0xF0F0F0" type="color" comment="菜单左侧底色"/>
+	</TG>
+	<TG name="BorderColor">
+		<TV name="Normal" value="0xC3CFE2" type="color" comment="普通状态的边框颜色"/>
+		<TV name="Focus" value="0x8CB5DE" type="color" comment="得到焦点的边框颜色"/>
+		<TV name="Highlight" value="0x5799DC" type="color" comment="高亮边框色"/>
+		<TV name="UI" value="0x90B1D8" type="color" comment="内部边框色"/>
+		<TV name="Tab" value="0x90B1D8" type="color" comment="Tab页的边框色"/>
+	</TG>
+	<TG name="Font">
+	    <TV name="Normal" type="rich">
+			<!-- 默认字体 -->
+			<Value>
+				<Font height="9"/>
+			</Value>
+		</TV>
+		<TV name="Logo" type="rich">
+			<!-- 大字体，加粗 -->
+			<Value>
+				<Font height="11" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Title" type="rich">
+			<!-- 界面 Title 字体加粗 -->
+			<Value>
+				<Font height="10" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Link" type="rich">
+			<!-- 普通链接文字字体 -->
+			<Value>
+				<Font height="9" underline="true"/>
+			</Value>
+		</TV>
+		<TV name="Bold" type="rich">
+			<!-- 粗体 -->
+			<Value>
+				<Font height="9" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Big" type="rich">
+			<!-- 大字体 -->
+			<Value>
+				<Font height="10"/>
+			</Value>
+		</TV>
+				<TV name="VeryBig" type="rich">
+			<!-- 大字体，加粗 -->
+			<Value>
+				<Font height="11"/>
+			</Value>
+		</TV>
+		<TV name="Logo" type="rich">
+			<!-- 大字体，加粗 -->
+			<Value>
+				<Font height="11" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Account" type="rich">
+			<!-- 登录帐号字体 -->
+			<Value>
+				<Font height="10"/>
+			</Value>
+		</TV>
+		<TV name="Password" type="rich">
+			<!-- 密码框的字体，为了纵向居中 -->
+			<Value>
+				<Font height="6"/>
+			</Value>
+		</TV>
+		<TV type="rich" name="TitleLink">
+			<Value>
+				<Font weight="600" underline="true"/>
+			</Value>
+		</TV>
+		<TV type="rich" name="BoldLink">
+			<Value>
+				<Font weight="600" underline="true"/>
+			</Value>
+		</TV>
+		<TV type="rich" name="MailFontBold">
+			<Value>
+				<Font weight="600" height="11"/>
+			</Value>
+		</TV>
+    <TV name="BigBold" type="rich">
+      <Value>
+        <Font weight="900" height="11"/>
+      </Value>
+    </TV>
+       <TV name="TempFont" type="rich">
+      <Value>
+       <Font height="14" weight="600" facename="Tahoma">
+			<fontMap>
+				<fontLink codePage="936" facename="SimSun" fontSize="14" lineSpace="2"/>
+				<fontLink codePage="936" facename="Tahoma" fontSize="14"/>
+				<fontLink codePage="1252" facename="Tahoma" fontSize="14"/>
+				<fontLink codePage="-1" facename="Sylfaen" fontSize="8"/>
+			</fontMap>
+		  </Font>
+      </Value>
+    </TV>
+           <TV name="MailFont" type="rich">
+      <Value>
+       <Font height="9" weight="400" facename="Tahoma">
+			<fontMap>
+				<fontLink codePage="936" facename="Microsoft YaHei" fontSize="9" os="vista" lineSpace="-2"/>
+        <fontLink codePage="936" facename="SimSun" fontSize="9" lineSpace="2"/>
+        <fontLink codePage="936" facename="Gulim" fontSize="9" lineSpace="-2"/>
+        <fontLink codePage="1252" facename="Segoeui" fontSize="8" lineSpace="-2"/>
+        <fontLink codePage="1252" facename="Tahoma" fontSize="8" lineSpace="-2"/>
+			</fontMap>
+		  </Font>
+      </Value>
+    </TV>  
+       <TV name="MailFontBoldSmall" type="rich">
+      <Value>
+       <Font height="9" weight="600" facename="Tahoma">
+			    <fontMap>
+				    <fontLink codePage="936" facename="Microsoft YaHei" fontSize="9" os="vista" lineSpace="-2"/>
+            <fontLink codePage="936" facename="SimSun" fontSize="9" lineSpace="2"/>
+            <fontLink codePage="936" facename="Gulim" fontSize="9" lineSpace="-2"/>
+            <fontLink codePage="1252" facename="Segoeui" fontSize="8" lineSpace="-2"/>
+            <fontLink codePage="1252" facename="Tahoma" fontSize="8" lineSpace="-2"/>
+			    </fontMap>
+		  </Font>
+      </Value>
+    </TV>  
+    <TV name="MailFontBold" type="rich">
+      <Value>
+       <Font height="11" weight="600" facename="Tahoma">
+			    <fontMap>
+				    <fontLink codePage="936" facename="Microsoft YaHei" fontSize="11" os="vista" lineSpace="-2"/>
+            <fontLink codePage="936" facename="SimSun" fontSize="11" lineSpace="2"/>
+            <fontLink codePage="936" facename="Gulim" fontSize="11" lineSpace="-2"/>
+            <fontLink codePage="1252" facename="Segoeui" fontSize="10" lineSpace="-2"/>
+            <fontLink codePage="1252" facename="Tahoma" fontSize="10" lineSpace="-2"/>
+			    </fontMap>
+		  </Font>
+      </Value>
+    </TV>    
+	</TG>
+	<TG name="ContactTipsFont">
+		<TV name="Normal" type="rich">
+			<!-- 默认字体 -->
+			<Value>
+				<Font height="9"/>
+			</Value>
+		</TV>
+		<TV name="Title" type="rich">
+			<!-- 界面 Title 字体加粗 -->
+			<Value>
+				<Font height="9.5" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Link" type="rich">
+			<!-- 普通链接文字字体 -->
+			<Value>
+				<Font underline="true"/>
+			</Value>
+		</TV>
+		<TV name="Bold" type="rich">
+			<!-- 粗体 -->
+			<Value>
+				<Font weight="600"/> 
+			</Value>
+		</TV>
+	</TG>
+</Theme>

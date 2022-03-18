@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UI>
+	<Window name="MainWnd" location="50,50" config="mainwindow_conf" fixSize="true" showMaxButton="false" showMinButton="true" showCloseButton="true">
+		<Frame name="frm_model_msg_mask" sizeAsParent="true" transparent="true" anchor="TOPCENTER" margin="0,0,0,0" zOrder="1" hidden="true">
+			<background>
+				<Brush clrFrom="0x3F000000"/>
+			</background>
+		</Frame>
+		<Static name="TVoiceClientTitle" text="$@this:IDS_PRODUCT_TITLE" autoHeight="true" autoWidth="true" anchor="TOPLEFT" margin="10,11,0,0" color="0xffFFFFFF">
+			<font>
+				<Font height="11"/>
+			</font>
+		</Static>
+		<Button config="conf_feedback_btn" anchor="TOPRIGHT" margin="0,8,42,0" name="FeedbackBtn" toolTip="$@this:IDS_PRODUCT_FEEDBACK" zOrder="2" client="true" hidden="true"/>
+		<GifAnimation name="WebLoadingGif" anchor="TOPCENTER" margin="0,105,0,0" autoHeight="true" autoWidth="true" image="@thistheme:window\loading.gif"/>
+		<Static name="Web404Tip" text="$@this:IDS_PRODUCT_NETWORK_DISCONNECTION" autoHeight="true" autoWidth="true" anchor="TOPCENTER" margin="0,265,0,0" color="0xd88b8f9d" hidden="true">
+			<font>
+				<Font height="10"/>
+			</font>
+		</Static>
+		<Button name="WebReconnectBtn" config="Conf_NormalButton" text="$@this:IDS_PRODUCT_WEB_RECONNECT" anchor="TOPCENTER" margin="0,325,0,0" size="114,36" hidden="true" sizeAsParent="false"/>
+		<Frame name="FrmDragBar" anchor="TOPLEFT" margin="35,0,0,0" size="179,42" client="true" zOrder="3" transparent="false" dragMove="true"/>
+		<TBSWebCtrl name="WebBrowserHall" UA="Tencent GVoice/1.0 Hall" cachePath="%appdata%\Tencent\TGVoice\WebkitCache\MainT" zOrder="4" sizeAsParent="true" anchor="TOPLEFT" margin="0,0,0,0" client="true"/>
+	</Window>
+	<Window name="TGVQuickTeamGuidWnd" config="QuickTeamGuidWnd_conf">
+		<StackPanel name="sp_titile" orientation="Horizontal" anchor="TOPCENTER" margin="0,47,0,0" autoWidth="true" autoHeight="true">
+			<Static name="st_title_main" text="$@this:IDS_TGV_HOST_TITLE_MAIN" anchor="BOTTOMCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffccd2e8">
+				<font>
+					<Font height="17"/>
+				</font>
+			</Static>
+			<Static name="st_title_sub" text="$@this:IDS_TGV_HOST_TITLE_QQ" anchor="BOTTOMCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffccd2e8">
+				<font>
+					<Font height="12"/>
+				</font>
+			</Static>
+		</StackPanel>
+		<StackPanel orientation="Horizontal" anchor="TOPCENTER" margin="0,106,0,0" size="780,0" autoHeight="true">
+			<StackPanel name="guid1" orientation="Vertical" anchor="LEFTCENTER" margin="45,0,0,0" autoWidth="true" autoHeight="true">
+				<ImageStatic name="is_guid1" autoWidth="true" autoHeight="true" anchor="TOPCENTER" margin="0,0,0,0" file="@thisres:JoinGame\host_1.png"/>
+				<StackPanel name="sp_guid1_text" orientation="Horizontal" anchor="TOPCENTER" margin="0,20,0,0" autoWidth="true" autoHeight="true">
+					<Static name="st_guid1_text_1" text="$@this:IDS_TGV_HOST_SETP_1_1" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xff808493">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+					<Static name="st_guid1_text_2" text="$@this:IDS_TGV_HOST_SETP_1_2" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffffcf27">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel name="guid2" orientation="Vertical" anchor="LEFTCENTER" margin="30,0,0,0" autoWidth="true" autoHeight="true">
+				<ImageStatic name="is_guid2" autoWidth="true" autoHeight="true" anchor="TOPCENTER" margin="0,0,0,0" file="@thisres:JoinGame\host_2.png"/>
+				<StackPanel name="sp_guid2_text" orientation="Horizontal" anchor="TOPCENTER" margin="0,20,0,0" autoWidth="true" autoHeight="true">
+					<Static name="st_guid2_text_1" text="$@this:IDS_TGV_HOST_SETP_2_1" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xff808493">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+					<Static name="st_guid2_text_2" text="$@this:IDS_TGV_HOST_SETP_2_2" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffffcf27">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+					<Static name="st_guid2_text_3" text="$@this:IDS_TGV_HOST_SETP_2_3" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xff808493">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+		<Button name="btn_OK" text="$@this:IDS_JOINGAME_GOTIT" anchor="BOTTOMCENTER" margin="0,0,0,48" config="TGV_GUID_BTN_CONF"/>
+	</Window>
+	<Window name="Wnd_JoinGameTip" size="470,278" config="QuickTeamGuidWnd_conf">
+		<StackPanel orientation="Vertical" anchor="TOPCENTER" margin="0,35,0,0" size="390,0" autoHeight="true">
+			<Static name="JoinGameTitle" text="$@this:IDS_JOINGAME_TITLE" autoHeight="true" autoWidth="true" anchor="TOPCENTER" margin="0,0,0,0" color="0xffccd2e8">
+				<font>
+					<Font height="13"/>
+				</font>
+			</Static>
+			<Static name="JoinGameDescription" text="$@this:IDS_JOINGAME_DESCRIPTION" autoHeight="true" autoWidth="true" anchor="TOPCENTER" margin="0,20,0,0" color="0xff808493">
+				<font>
+					<Font height="10"/>
+				</font>
+			</Static>
+		</StackPanel>
+		<Button name="JoinGameNowBtn" config="TGV_JOINGAME_BTN_CONF" text="$@this:IDS_JOINGAME_NOW" anchor="BOTTOMCENTER" margin="0,0,0,32"/>
+	</Window>
+	<Window name="Wnd_JoinGameUsage" config="QuickTeamGuidWnd_conf">
+		<Static name="st_title_main" text="$@this:IDS_JOINGAME_USAGE_TITLE" anchor="TOPCENTER" margin="0,47,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffccd2e8">
+			<font>
+				<Font height="17"/>
+			</font>
+		</Static>
+		<StackPanel orientation="Horizontal" anchor="TOPCENTER" margin="0,106,0,0" size="780,0" autoHeight="true">
+			<StackPanel name="guid1" orientation="Vertical" anchor="LEFTCENTER" margin="45,0,0,0" autoWidth="true" autoHeight="true">
+				<ImageStatic name="is_guid1" autoWidth="true" autoHeight="true" anchor="TOPCENTER" margin="0,0,0,0" file="@thistheme:JoinGame\usage1.png"/>
+				<StackPanel orientation="Vertical" anchor="TOPCENTER" margin="0,20,0,0" autoWidth="true" autoHeight="true">
+					<StackPanel name="sp_guid1_text_1" orientation="Horizontal" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true">
+						<Static name="st_guid1_text_1_1" text="$@this:IDS_TGV_MEMBER_SETP1_1_1" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffffcf27">
+							<font>
+								<Font height="11"/>
+							</font>
+						</Static>
+						<Static name="st_guid1_text_2_1" text="$@this:IDS_TGV_MEMBER_SETP1_1_2" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xff808493">
+							<font>
+								<Font height="11"/>
+							</font>
+						</Static>
+					</StackPanel>
+					<StackPanel orientation="Vertical" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true">
+						<StackPanel name="sp_guid1_text_2" orientation="Horizontal" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true">
+							<Static name="st_guid1_text_2_1" text="$@this:IDS_TGV_MEMBER_SETP1_2_1" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffffcf27">
+								<font>
+									<Font height="11"/>
+								</font>
+							</Static>
+							<Static name="st_guid1_text_2_2" text="$@this:IDS_TGV_MEMBER_SETP1_2_2" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xff808493">
+								<font>
+									<Font height="11"/>
+								</font>
+							</Static>
+						</StackPanel>
+					</StackPanel>
+				</StackPanel>
+			</StackPanel>
+			<StackPanel name="guid2" orientation="Vertical" anchor="LEFTCENTER" margin="30,0,0,0" autoWidth="true" autoHeight="true">
+				<ImageStatic name="is_guid2" autoWidth="true" autoHeight="true" anchor="TOPCENTER" margin="0,0,0,0" file="@thistheme:JoinGame\usage2.png"/>
+				<StackPanel name="sp_guid2_text" orientation="Vertical" anchor="TOPCENTER" margin="0,20,0,0" autoWidth="true" autoHeight="true">
+					<Static name="st_guid2_text_1" text="$@this:IDS_TGV_MEMBER_SETP2_1_1" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xff808493">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+					<Static name="st_guid2_text_2" text="$@this:IDS_TGV_MEMBER_SETP2_2_1" anchor="LEFTCENTER" margin="0,0,0,0" autoWidth="true" autoHeight="true" singleLine="true" color="0xffffcf27">
+						<font>
+							<Font height="11"/>
+						</font>
+					</Static>
+				</StackPanel>
+			</StackPanel>
+		</StackPanel>
+		<Button name="btn_OK" text="$@this:IDS_JOINGAME_GOTIT" anchor="BOTTOMCENTER" margin="0,0,0,48" config="TGV_GUID_BTN_CONF"/>
+	</Window>
+</UI>

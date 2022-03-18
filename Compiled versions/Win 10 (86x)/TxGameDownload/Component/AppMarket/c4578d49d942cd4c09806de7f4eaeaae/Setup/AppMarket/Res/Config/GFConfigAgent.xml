@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+<ConfigAgent name="menu" configType="IGFMenu">
+		<configProp>
+			<prop field="border" value="7,7,7,7"/>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:menu\menu_bkg.gft"/>
+				</value>
+			</prop>
+			<prop field="layered" value="true"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="menuItem" configType="IGFMenuItem">
+		<configProp>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:menu\\menu_highlight.gft"/>
+				</value>
+			</prop>
+			<prop field="seperatorDraw">
+				<value>
+					<Texture file="@thistheme:menu\\menu_cutling.gft"/>
+				</value>
+			</prop>
+			<prop field="image2TextSpace" value="10"/>
+			<prop field="imageScalingSize" value="25,20"/>
+			<prop field="textColor" value="#@this.TextColor.Menu"/>
+			<prop field="maskColor" value="#@this.Color.MaskColor"/>
+			<prop field="disableTextColor" value="#@this.TextColor.Disable"/>
+			<prop field="arrowTexture" value="@thistheme:menu\\menu_arrow.gft"/>
+			<prop field="checkTexture" value="@thistheme:menu\\menu_check.gft"/>
+			<prop field="delTexture" value="@thistheme:menu\\close_normal.gft"/>
+			<prop field="delHightlightTexture" value="@thistheme:menu\\close_highlight.gft"/>
+		</configProp>
+	</ConfigAgent>
+		<ConfigAgent name="MenuArrowUp" configType="IGFButton">
+		<configProp>
+			<prop field="texture" value="@thistheme:menu\\menu_arrow_up.gft"/>
+			<prop field="background">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="MenuArrowDown" configType="IGFButton">
+		<configProp>
+			<prop field="texture" value="@thistheme:menu\\menu_arrow_down.gft"/>
+			<prop field="background">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Brush clrFrom="0x96D5DA"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="ae_connect_server_button" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_connect_server_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_connect_server_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_connect_server_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="ae_disconnect_server_button" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_disconnect_server_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_disconnect_server_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_disconnect_server_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="ae_connect_app_button" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_connect_app_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_connect_app_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\ae_connect_app_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="webctrl" configType="IGFWebCtrl">
+		<configProp>
+			<!--prop field="loadingGif" value="@thistheme:WebCtrl\\loading.png"/>
+			<prop field="loadingText" value="$@this:IE_LoadingText"/>
+			<prop field="errorText" value="$@this:IE_ErrText"/>
+			<prop field="errorImage" value="@thistheme:WebCtrl\\sysmessagebox_warningFile.png"/-->			
+		</configProp>
+	</ConfigAgent>
+	
+	<ConfigAgent name="iconbutton" configType="IGFButton" forCommon="TRUE">
+		<configProp>
+			<prop field="animate" value="true"/>
+			<prop field="normalColor" value="#@this.TextColor.UI"/>
+			<prop field="highlightColor" value="#@this.TextColor.UI"/>
+			<prop field="pushedColor" value="#@this.TextColor.UI"/>
+		
+		</configProp>
+	</ConfigAgent>
+	
+<ConfigAgent name="font" configType="IGFFont">
+		<configProp>
+			<prop field="height" value="9"/>
+			<prop field="weight" value="400"/>
+			<prop field="facename" value="Tahoma"/>
+			<prop field="fontMap">
+				<value>
+					<fontLink codePage="936" facename="Microsoft YaHei" os="vista" fontSize="9" lineSpace="-2"/>
+					<fontLink codePage="936" facename="SimSun" fontSize="9" lineSpace="3"/>
+					<fontLink codePage="936" facename="Gulim" fontSize="9"/>
+					<fontLink codePage="1252" facename="Segoeui" os="vista" fontSize="8"/>
+					<fontLink codePage="1252" facename="Tahoma" fontSize="8"/>
+					<fontLink codePage="-1" facename="Arial Unicode MS"/>
+					<!--os="vista"-->
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	
+	<ConfigAgent name="mainwindow_Overseas_conf" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:Window\window_bkg_Overseas.gft"/>
+				</value>
+				<!--这个背景图跟随主面板默认底图-->
+			</prop>
+			<prop field="size" value="1166,826"/>
+			<prop field="ncArea" value="0, 0, 0, 0"/>
+			<prop field="titleGap" value="3"/>
+			<!--prop field="sysButtonOffset" value="-37,38"/-->
+			<prop field="titleTextActivateColor" value="0xFFFFFF"/>
+			<prop field="titleTextInactivateColor" value="0xD8E8F3"/>
+			<prop field="titleTextFont" value="#@this.Font.Title"/>
+			<prop field="titleOffset" value="6, 5"/>
+			<!--prop field="sysButtonConfig" value="aesysbutton_full"/-->
+			<prop field="border" value="28,28,28,28"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="mainwindow" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:Window\window_bkg_Overseas.gft"/>
+				</value>
+				<!--这个背景图跟随主面板默认底图-->
+			</prop>
+			<prop field="size" value="1316,826"/>
+			<prop field="ncArea" value="0, 0, 0, 0"/>
+			<prop field="titleGap" value="3"/>
+			<prop field="sysButtonOffset" value="-37,38"/>
+			<prop field="titleTextActivateColor" value="0xFFFFFF"/>
+			<prop field="titleTextInactivateColor" value="0xD8E8F3"/>
+			<prop field="titleTextFont" value="#@this.Font.Title"/>
+			<prop field="titleOffset" value="6, 5"/>
+			<prop field="sysButtonConfig" value="aesysbutton_full"/>
+			<prop field="border" value="28,28,28,28"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="mainwindow_small" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:Window\window_bkg_noshader.gft"/>
+				</value>
+				<!--这个背景图跟随主面板默认底图-->
+			</prop>
+			<prop field="size" value="1260,770"/>
+			<prop field="ncArea" value="0, 0, 0, 0"/>
+			<prop field="titleGap" value="3"/>
+			<prop field="sysButtonOffset" value="-9,10"/>
+			<prop field="titleTextActivateColor" value="0xFFFFFF"/>
+			<prop field="titleTextInactivateColor" value="0xD8E8F3"/>
+			<prop field="titleTextFont" value="#@this.Font.Title"/>
+			<prop field="titleOffset" value="6, 5"/>
+			<prop field="sysButtonConfig" value="aesysbutton_full"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+
+	<ConfigAgent name="new_minbutton" configType="IGFButton">
+    <configProp>
+      <prop field="tabGroup" value="true"/>
+      <prop field="tabStop" value="false"/>
+      <prop field="tabOrder" value="100"/>
+      <prop field="autoHeight" value="true"/>
+      <prop field="autoWidth" value="true"/>
+      <prop field="animate" value="true"/>
+	  <prop field="defaultButton" value="false"/>
+      <prop field="highlightBackground">
+        <value>
+           <Texture file="@thistheme:button\min_hover.png"/>
+        </value>
+      </prop>
+      <prop field="normalBackground">
+        <value>
+           <Texture file="@thistheme:button\min_normal.png"/>
+        </value>
+      </prop>
+      <prop field="pushedBackground">
+        <value>
+           <Texture file="@thistheme:button\min_down.png"/>
+        </value>
+      </prop>
+      <prop field="border" value="0,0,0,0"/>
+      <prop field="toolTip" value="$@this:MinimizeWindow"/>
+    </configProp>
+  </ConfigAgent>
+
+  <ConfigAgent name="new_Closebutton" configType="IGFButton">
+    <configProp>
+      <prop field="tabGroup" value="true"/>
+      <prop field="tabStop" value="false"/>
+      <prop field="tabOrder" value="106"/>
+      <prop field="autoWidth" value="true"/>
+      <prop field="autoHeight" value="true"/>
+      <prop field="animate" value="true"/>
+      <prop field="border" value="0,0,0,0"/>
+      <prop field="zOrder" value="10"/>
+      <prop field="toolTip" value="$@this:CloseWindow"/>
+	  <prop field="defaultButton" value="false"/>
+      <prop field="normalBackground">
+        <value>
+         <Texture file="@thistheme:button\close_normal.png"/>
+        </value>
+      </prop>
+      <prop field="highlightBackground">
+        <value>
+         <Texture file="@thistheme:button\close_hover.png"/>
+        </value>
+      </prop>
+      <prop field="pushedBackground">
+        <value>
+          <Texture file="@thistheme:button\close_down.png"/>
+        </value>
+      </prop>
+    </configProp>
+  </ConfigAgent>
+	<ConfigAgent name="new_maxbutton" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="tabOrder" value="103"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="toolTip" value="$@this:MaxisizeWindow"/>
+			<prop field="toolTip2" value="$@this:RestoreWindow"/>
+			<prop field="defaultButton" value="false"/>
+			<prop field="style" value="DoubleFace"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\max_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\max_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\max_down.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground2">
+				<value>
+					<Texture file="@thistheme:button\restore_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground2">
+				<value>
+					<Texture file="@thistheme:button\restore_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground2">
+				<value>
+					<Texture file="@thistheme:button\restore_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+  
+  <ConfigAgent name="aesysbutton" configType="IGFSysButton">
+    <configProp>
+      <prop field="closeConfig" value="new_Closebutton"/>
+      <prop field="minimizeConfig" value="new_minbutton"/>
+    </configProp>
+  </ConfigAgent>
+  <ConfigAgent name="aesysbutton_full" configType="IGFSysButton">
+    <configProp>
+      <prop field="closeConfig" value="new_Closebutton"/>
+      <prop field="minimizeConfig" value="new_minbutton"/>
+	  <prop field="maximizeConfig" value="new_maxbutton"/>
+    </configProp>
+  </ConfigAgent>
+  
+  	<ConfigAgent name="menubutton" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<!--prop field="zOrder" value="10"/-->
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\menu_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\menu_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\menu_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+
+	<ConfigAgent name="tvoice_tips_button" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\tvoice_tips.png"/>
+				</value>
+			</prop>
+			
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\tvoice_tips.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\tvoice_tips.png"/>
+				</value>
+			</prop>
+			
+		</configProp>
+	</ConfigAgent>
+
+	<ConfigAgent name="menubutton_reddot" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<!--prop field="zOrder" value="10"/-->
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\reddot_menu_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\reddot_menu_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\reddot_menu_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+  	<ConfigAgent name="qqfeedbackbutton" configType="IGFButton">
+		<configProp>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="false"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\qqfeedback_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\qqfeedback_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\qqfeedback_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>	
+	<ConfigAgent name="No_Title_Window" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="topmost" value="false"/>
+			<prop field="smallIcon" value=""/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+		</configProp>
+	</ConfigAgent>
+	<!--ConfigAgent name="radiobutton" configType="IGFCheckButton" forCommon="TRUE">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="@thistheme:radiobutton\radiobutton_checkedhoverTexture.gft"/>
+			<prop field="checkedNormalTexture" value="@thistheme:radiobutton\radiobutton_checkedNormalTexture.gft"/>
+			<prop field="checkedPushedTexture" value="@thistheme:radiobutton\radiobutton_checkedPushedTexture.gft"/>
+			<prop field="uncheckedHighlightTexture" value="@thistheme:radiobutton\radiobutton_uncheckedhoverTexture.gft"/>
+			<prop field="uncheckedNormalTexture" value="@thistheme:radiobutton\radiobutton_uncheckedNormalTexture.gft"/>
+			<prop field="uncheckedPushedTexture" value="@thistheme:radiobutton\radiobutton_uncheckedPushedTexture.gft"/>
+			<prop field="radio" value="true"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+		</configProp>
+	</ConfigAgent-->
+	
+	<!--ConfigAgent name="install_minbutton" configType="IGFButton">
+    <configProp>
+      <prop field="tabGroup" value="true"/>
+      <prop field="tabStop" value="false"/>
+      <prop field="autoHeight" value="true"/>
+      <prop field="autoWidth" value="true"/>
+      <prop field="animate" value="true"/>
+      <prop field="highlightBackground">
+        <value>
+           <Texture file="@thistheme:button\pmin_hover.png"/>
+        </value>
+      </prop>
+      <prop field="normalBackground">
+        <value>
+           <Texture file="@thistheme:button\pmin_normal.png"/>
+        </value>
+      </prop>
+      <prop field="pushedBackground">
+        <value>
+           <Texture file="@thistheme:button\pmin_hover.png"/>
+        </value>
+      </prop>
+    </configProp>
+	</ConfigAgent-->
+	
+	<ConfigAgent name="retrybutton" configType="IGFButton">
+    <configProp>
+      <prop field="tabGroup" value="true"/>
+      <prop field="tabStop" value="false"/>
+      <prop field="autoHeight" value="true"/>
+      <prop field="autoWidth" value="true"/>
+      <prop field="animate" value="true"/>
+	  <prop field="normalColor" value="0xffffffff"/>
+		<prop field="highlightColor" value="0xffffffff"/>
+		<prop field="pushedColor" value="0xffffffff"/>
+      <prop field="highlightBackground">
+        <value>
+           <Texture file="@thistheme:button\retry_hover.png"/>
+        </value>
+      </prop>
+      <prop field="normalBackground">
+        <value>
+           <Texture file="@thistheme:button\retry_normal.png"/>
+        </value>
+      </prop>
+      <prop field="pushedBackground">
+        <value>
+           <Texture file="@thistheme:button\retry_hover.png"/>
+        </value>
+      </prop>
+    </configProp>
+  </ConfigAgent>
+  <ConfigAgent name="button" configType="IGFButton" forCommon="TRUE">
+		<configProp>
+			<!--普通按钮控件config-->
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="true"/>
+			<!--prop field="highlightColor" value="#@this.TextColor.BtnText"/>
+			<prop field="normalColor" value="#@this.TextColor.BtnText"/>
+			<prop field="pushedColor" value="#@this.TextColor.BtnText"/-->
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:Button\btn_down.gft"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:Button\btn_hover.gft"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:Button\btn_normal.gft"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:Button\btn_focus.gft"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="checkbutton" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="@thistheme:CheckButton\checkbutton_checkedhoverTexture.gft"/>
+			<prop field="checkedNormalTexture" value="@thistheme:CheckButton\checkbutton_checkedNormalTexture.gft"/>
+			<prop field="checkedPushedTexture" value="@thistheme:CheckButton\checkbutton_checkedPushedTexture.gft"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+			<prop field="uncheckedHighlightTexture" value="@thistheme:CheckButton\checkbutton_uncheckedhoverTexture.gft"/>
+			<prop field="uncheckedNormalTexture" value="@thistheme:CheckButton\checkbutton_uncheckedNormalTexture.gft"/>
+			<prop field="uncheckedPushedTexture" value="@thistheme:CheckButton\checkbutton_uncheckedPushedTexture.gft"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="@thistheme:CheckButton\halfcheckbutton_checkedhoverTexture.gft"/>
+			<prop field="halfcheckedNormalTexture" value="@thistheme:CheckButton\halfcheckbutton_checkedNormalTexture.gft"/>
+			<prop field="halfcheckedPushedTexture" value="@thistheme:CheckButton\halfcheckbutton_checkedPushedTexture.gft"/>
+		</configProp>
+	</ConfigAgent>
+	
+	<ConfigAgent name="radiobuttonEx" configType="IGFCheckButton" forCommon="TRUE">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="@thistheme:radiobutton\radiobutton_checkedhoverTexture.png"/>
+			<prop field="checkedNormalTexture" value="@thistheme:radiobutton\radiobutton_checkedNormalTexture.png"/>
+			<prop field="checkedPushedTexture" value="@thistheme:radiobutton\radiobutton_checkedPushedTexture.png"/>
+			<prop field="uncheckedHighlightTexture" value="@thistheme:radiobutton\radiobutton_uncheckedhoverTexture.png"/>
+			<prop field="uncheckedNormalTexture" value="@thistheme:radiobutton\radiobutton_uncheckedNormalTexture.png"/>
+			<prop field="uncheckedPushedTexture" value="@thistheme:radiobutton\radiobutton_uncheckedPushedTexture.png"/>
+			<prop field="radio" value="true"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+		</configProp>
+	</ConfigAgent>
+	
+	<ConfigAgent name="checkbuttonEx" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="@thistheme:CheckButton\checkbutton_checkedhoverTexture.png"/>
+			<prop field="checkedNormalTexture" value="@thistheme:CheckButton\checkbutton_checkedNormalTexture.png"/>
+			<prop field="checkedPushedTexture" value="@thistheme:CheckButton\checkbutton_checkedPushedTexture.png"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+			<prop field="uncheckedHighlightTexture" value="@thistheme:CheckButton\checkbutton_uncheckedhoverTexture.png"/>
+			<prop field="uncheckedNormalTexture" value="@thistheme:CheckButton\checkbutton_uncheckedNormalTexture.png"/>
+			<prop field="uncheckedPushedTexture" value="@thistheme:CheckButton\checkbutton_uncheckedPushedTexture.png"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="@thistheme:CheckButton\halfcheckbutton_checkedhoverTexture.gft"/>
+			<prop field="halfcheckedNormalTexture" value="@thistheme:CheckButton\halfcheckbutton_checkedNormalTexture.gft"/>
+			<prop field="halfcheckedPushedTexture" value="@thistheme:CheckButton\halfcheckbutton_checkedPushedTexture.gft"/>
+		</configProp>
+	</ConfigAgent>
+	
+		<ConfigAgent name="LOGON_WINDOW" configType="IGFStandardWin">
+		<configProp>
+			<!--prop field="background">
+				<value>
+					<Texture file="@thistheme:Window\window_bkg.gft"/>
+				</value>
+			</prop-->
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="22, 22, 22, 22"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="true"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="topmost" value="false"/>
+			<prop field="smallIcon" value=""/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="sysButtonOffset" value="-27,27"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="ADPOPUP_WINDOW" configType="IGFStandardWin">
+		<configProp>
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="false"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="topmost" value="false"/>
+			<prop field="smallIcon" value=""/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="sysButtonOffset" value="-0,0"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="OVERSEA_LOGIN_WINDOW" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<!--value>
+					<Texture file="@thistheme:Logon\oversea_login_bkg.png"/>
+				</value-->
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff2f3140">
+						<fill>
+							<Brush clrFrom="0xFF2f3140"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="false"/>
+			<prop field="smallIconSize" value="14,14"/>
+			<prop field="bigIcon"/>
+			<prop field="smallIcon" value="@thistheme:img\logo.png"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 35,0, 0"/>
+			<prop field="titleGap" value="8"/>
+			<prop field="sysButtonOffset" value="-10,3"/>
+			<prop field="titleTextActivateColor" value="0xffacb8c9"/>
+			<prop field="titleTextInactivateColor" value="0xffacb8c9"/>
+			<prop field="titleTextFont" value="#platform.Font.Title"/>
+			<prop field="titleOffset" value="12,10"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="fixSize" value="true"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="LOGON_BOTTUN" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:Logon\btn_logon_down.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:Logon\btn_logon_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:Logon\btn_logon_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:Logon\btn_logon_normal.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="GAME_MIGRATE" configType="IGFStandardWin">
+		<configProp>
+			<!--prop field="background">
+				<value>
+					<Texture file="@thistheme:Window\window_bkg.gft"/>
+				</value>
+			</prop-->
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="22, 22, 22, 22"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="true"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="topmost" value="false"/>
+			<prop field="smallIcon" value=""/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="sysButtonOffset" value="-15,15"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_Checkbutton" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="@thistheme:Logon\Checkbox_Sel_hover.png"/>
+			<prop field="checkedNormalTexture" value="@thistheme:Logon\Checkbox_Sel_nomal.png"/>
+			<prop field="checkedPushedTexture" value="@thistheme:Logon\Checkbox_Sel_down.png"/>
+			<prop field="clrText" value="0x7fffffff"/>
+			<prop field="uncheckedHighlightTexture" value="@thistheme:Logon\Checkbox_hover.png"/>
+			<prop field="uncheckedNormalTexture" value="@thistheme:Logon\Checkbox_normal.png"/>
+			<prop field="uncheckedPushedTexture" value="@thistheme:Logon\Checkbox_down"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="@thistheme:Logon\Checkbox_hover.png"/>
+			<prop field="halfcheckedNormalTexture" value="@thistheme:Logon\Checkbox_normal.png"/>
+			<prop field="halfcheckedPushedTexture" value="@thistheme:Logon\Checkbox_down.png"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="GM_Checkbutton" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="@thistheme:gamemigrate\select_hover.png"/>
+			<prop field="checkedNormalTexture" value="@thistheme:gamemigrate\select_normal.png"/>
+			<prop field="checkedPushedTexture" value="@thistheme:gamemigrate\select_down.png"/>
+			<prop field="clrText" value="0x7fffffff"/>
+			<prop field="uncheckedHighlightTexture" value="@thistheme:gamemigrate\unselect_hover.png"/>
+			<prop field="uncheckedNormalTexture" value="@thistheme:gamemigrate\unselect_normal.png"/>
+			<prop field="uncheckedPushedTexture" value="@thistheme:gamemigrate\unselect_down"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="@thistheme:gamemigrate\unselect_hover.png"/>
+			<prop field="halfcheckedNormalTexture" value="@thistheme:gamemigrate\unselect_normal.png"/>
+			<prop field="halfcheckedPushedTexture" value="@thistheme:gamemigrate\unselect_down.png"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_LISTVIEW" configType="IGFListView">
+		<configProp>
+		  <!-- 列表视图控件config -->
+		  <prop field="itemBgSelect">
+			<value>
+			  <!--Texture file="@thistheme:ListCtrl\listItem_down.png"/-->
+			  <Brush clrFrom="0xff266dff"/>
+			 </value>
+		  </prop>
+		  <prop field="itemBgOdd">
+			<value>
+			  <!--Texture file="@thistheme:ListCtrl\listItem_nomal.png"/-->
+			  <Brush clrFrom="0xff1b1c27"/>
+			</value>
+		  </prop>
+		  <prop field="itemBgEven">
+			<value>
+			  <!--Texture file="@thistheme:ListCtrl\listItem_nomal.png"/-->
+			  <Brush clrFrom="0xff1b1c27"/>
+			</value>
+		  </prop>
+		  <prop field="itemBgMouseOver">
+			<value>
+			  <!--Texture file="@thistheme:ListCtrl\listItem_hover.png"/-->
+			  <Brush clrFrom="0xff266dff"/>
+			</value>
+		  </prop>
+		  <prop field="background">
+				<value>
+					<Brush clrFrom="0xff1b1c27"/>
+				</value>
+			</prop>
+		</configProp>
+  </ConfigAgent>
+  <!--ConfigAgent name="Am_Arrow_Down_Btn" configType="IGFButton">
+		<configProp>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_down_down.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_down_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_down_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_down_normal.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Am_Arrow_Up_Btn" configType="IGFButton">
+		<configProp>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_up_down.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_up_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_up_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\arrow_up_normal.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Am_List_Item_Delete" configType="IGFButton">
+		<configProp>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\Item_Delete_down.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\Item_Delete_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\Item_Delete_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:ListCtrl\Item_Delete_normal.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent-->
+  
+	<ConfigAgent name="AM_frameBorder" configType="IGFFrame" forCommon="TRUE">
+		<configEffect>
+			<IGFPaddingEffect config="AM_frameBorderEffect"/>
+		</configEffect>
+		<configProp>
+			<prop field="padding" value="2,2,2,2"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_frameBorderEffect" configType="IGFPaddingEffect">
+		<configProp>
+			<prop field="padding" value="2,2,2,2"/>
+			<prop field="normalDraw">
+				<value>
+					<!--Texture file="@thistheme:Edit\\Edit_normal.gft"/-->
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff161822">
+						<fill> <Brush clrFrom="0xff393c51"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="mouseOnDraw">
+				<value>
+					<!--Texture file="@thistheme:Edit\\Edit_down.gft"/-->
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff266dff">
+						<fill> <Brush clrFrom="0xff1e202c"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="mouseDownDraw">
+				<value>
+					<!--Texture file="@thistheme:Edit\\Edit_down.gft"/-->
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff266dff">
+						<fill> <Brush clrFrom="0xff1e202c"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_Edit" configType="IGFEdit" comboConfig="AM_frameBorder">
+		<configProp>
+			<prop field="padding" value="2,2,2,2"/>
+			<!--prop field="leftMargin" value="1"/>
+			<prop field="rightMargin" value="0"/-->
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_LoginMenu" configType="IGFMenu">
+		<configProp>
+			<prop field="border" value="1,4,1,4"/>
+			<prop field="layered" value="true"/>
+			<prop field="ncArea" value="0,0,0,0"/>
+			<prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff000000">
+						<fill> <Brush clrFrom="0xff2a2c38"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_TrayMenu" configType="IGFMenu">
+		<configProp>
+			<prop field="border" value="1,6,1,6"/>
+			<prop field="layered" value="true"/>
+			<prop field="ncArea" value="0,0,0,0"/>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:Logon\LoginPopupMenu_tray.gft"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_LoginMenuBtn" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:Logon\LoginMenu_down.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:Logon\LoginMenu_hover.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:Logon\LoginMenu_normal.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:Logon\LoginMenu_normal.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+		<ConfigAgent name="AM_TipCloseBtn" configType="IGFButton">
+		<configProp>
+			<prop field="tabGroup" value="true"/>
+			<prop field="tabStop" value="false"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="zOrder" value="1"/>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\close_nor.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\close_hov.png"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\close_nor.png"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Texture file="@thistheme:button\close_nor.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_MenuItem" configType="IGFMenuItem">
+		<configProp>
+			<!--prop field="border" value="1,1,1,1"/-->
+			<!--prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff2a2c38">
+						<fill> <Brush clrFrom="0xff2a2c38"/> </fill>
+					</Shape>
+				</value>
+			</prop-->
+			<prop field="highlightBackground">
+				<value>
+					<Brush clrFrom="0xff266cff"/>
+				</value>
+			</prop>
+			<prop field="textColor" value="0xe6ffffff"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_MenuItem_New" configType="IGFMenuItem">
+		<configProp>
+			<prop field="topground">
+				<value>
+					<Texture file="@thistheme:button\tag_update_new.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Brush clrFrom="0xff266cff"/>
+				</value>
+			</prop>
+			<prop field="textColor" value="0xe6ffffff"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_vertscrollbar" configType="IGFScrollBar" forCommon="TRUE">
+		<configProp>
+			<prop field="size" value="12,0"/>
+			<prop field="type" value="Vert"/>
+			<prop field="arrowBtnLength" value="4"/>
+			<prop field="animate" value="TRUE"/>
+			<prop field="barNormal">
+				<value>
+					<Texture file="@thistheme:ScrollBar\scrollbar_bar_normal.gft" colorize="true"/>
+				</value>
+			</prop>
+			<prop field="barHover">
+				<value>
+					<Texture file="@thistheme:ScrollBar\scrollbar_bar_highlight.gft" colorize="true"/>
+				</value>
+			</prop>
+			<prop field="barDown">
+				<value>
+					<Texture file="@thistheme:ScrollBar\scrollbar_bar_down.gft" colorize="true"/>
+				</value>
+			</prop>
+			<!--prop field="bkg">
+				<value>
+					<Texture file="@thistheme:ScrollBar\scrollbar_bkg.gft" colorize="true"/>
+				</value>
+			</prop-->
+		</configProp>
+	</ConfigAgent>
+
+ <ConfigAgent name="funbutton" configType="IGFButton" forCommon="TRUE">
+		<configProp>
+			<!--普通按钮控件config-->
+			<prop field="size" value="80,26"/>
+
+			<prop field="animate" value="true"/>
+			<prop field="highlightColor" value="0xffffff"/>
+			<prop field="normalColor" value="0xe1e7f4"/>
+			<prop field="pushedColor" value="0xffffff"/>
+			<prop field="pushedBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0x4e5e7f">
+						<fill> <Brush clrFrom="0x14ffffff"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0x4e5e7f">
+						<fill> <Brush clrFrom="0x14ffffff"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0x4e5e7f">
+						<fill> <Brush clrFrom="0xFF2d394f"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0x4e5e7f">
+						<fill> <Brush clrFrom="0xFF2d394f"/> </fill>
+					</Shape>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+
+	<ConfigAgent name="fold_button" configType="IGFButton">
+    <configProp>
+      <prop field="tabGroup" value="true"/>
+      <prop field="tabStop" value="false"/>
+      <prop field="autoHeight" value="true"/>
+      <prop field="autoWidth" value="true"/>
+      <prop field="animate" value="true"/>
+      <prop field="highlightBackground">
+        <value>
+           <Texture file="@thistheme:hardwarecheck\button\fold_hover.png"/>
+        </value>
+      </prop>
+      <prop field="normalBackground">
+        <value>
+           <Texture file="@thistheme:hardwarecheck\button\fold_normal.png"/>
+        </value>
+      </prop>
+      <prop field="pushedBackground">
+        <value>
+           <Texture file="@thistheme:hardwarecheck\button\fold_down.png"/>
+        </value>
+      </prop>
+    </configProp>
+	</ConfigAgent>
+
+	<ConfigAgent name="unfold_button" configType="IGFButton">
+    <configProp>
+      <prop field="tabGroup" value="true"/>
+      <prop field="tabStop" value="false"/>
+      <prop field="autoHeight" value="true"/>
+      <prop field="autoWidth" value="true"/>
+      <prop field="animate" value="true"/>
+      <prop field="highlightBackground">
+        <value>
+           <Texture file="@thistheme:hardwarecheck\button\unfold_hover.png"/>
+        </value>
+      </prop>
+      <prop field="normalBackground">
+        <value>
+           <Texture file="@thistheme:hardwarecheck\button\unfold_normal.png"/>
+        </value>
+      </prop>
+      <prop field="pushedBackground">
+        <value>
+           <Texture file="@thistheme:hardwarecheck\button\unfold_down.png"/>
+        </value>
+      </prop>
+    </configProp>
+	</ConfigAgent>
+
+	<ConfigAgent name="Link_Static_NoLine" configType="IGFStatic">
+		<configProp>
+			<prop field="cursor" value="hand"/>
+		</configProp>
+		<configEffect>
+			<FontEffect>
+				<normalColor>0xff00c249</normalColor>
+				<highlightColor>0xFF15cf5b</highlightColor>
+				<pushedColor>0xff00c249</pushedColor>
+			</FontEffect>
+		</configEffect>
+	</ConfigAgent>
+	<ConfigAgent name="Normal_Title_Window" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff2f3140">
+						<fill>
+							<Brush clrFrom="0xFF2f3140"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="false"/>
+			<prop field="smallIconSize" value="14,14"/>
+			<prop field="bigIcon"/>
+			<prop field="smallIcon" value="@thistheme:img\logo.png"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 35,0, 0"/>
+			<prop field="titleGap" value="8"/>
+			<prop field="sysButtonOffset" value="-10,3"/>
+			<prop field="titleTextActivateColor" value="0xffacb8c9"/>
+			<prop field="titleTextInactivateColor" value="0xffacb8c9"/>
+			<prop field="titleTextFont" value="#platform.Font.Title"/>
+			<prop field="titleOffset" value="12,10"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="true"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="fixSize" value="true"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Normal_Title_Window_Maxmize" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff2f3140">
+						<fill>
+							<Brush clrFrom="0xFF2f3140"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="false"/>
+			<prop field="smallIconSize" value="14,14"/>
+			<prop field="bigIcon"/>
+			<prop field="smallIcon" value="@thistheme:img\logo.png"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 35,0, 0"/>
+			<prop field="titleGap" value="8"/>
+			<prop field="sysButtonOffset" value="-10,3"/>
+			<prop field="titleTextActivateColor" value="0xffacb8c9"/>
+			<prop field="titleTextInactivateColor" value="0xffacb8c9"/>
+			<prop field="titleTextFont" value="#platform.Font.Title"/>
+			<prop field="titleOffset" value="12,10"/>
+			<prop field="showMaxButton" value="true"/>
+			<prop field="showMinButton" value="true"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="sysButtonConfig" value="aesysbutton_full"/>
+			<prop field="fixSize" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="AM_Confirm_Window_Conf" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff16171f">
+						<fill>
+							<Brush clrFrom="0xff2f3140"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="smallIconSize" value="14,14"/>
+			<prop field="smallIcon" value="@thisres:img\logo.png"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 33, 0, 0"/>
+			<prop field="titleGap" value="8"/>
+			<!--prop field="sysButtonOffset" value="-3,3"/-->
+			<prop field="titleTextActivateColor" value="0xff86878f"/>
+			<prop field="titleTextInactivateColor" value="0xff86878f"/>
+			<prop field="titleTextFont" value="#platform.Font.Title"/>
+			<prop field="titleOffset" value="14,11"/>
+			<!--prop field="sysButtonConfig" value="AMmsgsysbutton"/-->
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Link_Static_NoLine_remotecontrol" configType="IGFStatic">
+		<configProp>
+			<prop field="cursor" value="hand"/>
+		</configProp>
+		<configEffect>
+			<FontEffect>
+				<normalColor>0xff52bcff</normalColor>
+				<highlightColor>0xff52bcff</highlightColor>
+				<pushedColor>0xff52bcff</pushedColor>
+			</FontEffect>
+		</configEffect>
+	</ConfigAgent>
+	<ConfigAgent name="AEREQUIRE_WINDOW" configType="IGFStandardWin">
+		<configProp>
+			<prop field="background">
+				<value>
+					<Texture file="@thistheme:AERequire\bg.png"/>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="22, 22, 22, 22"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="topmost" value="false"/>
+			<prop field="smallIcon" value=""/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="sysButtonOffset" value="-27,27"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="RemoteControlWnd_Conf" configType="IGFStandardWin">
+		<configProp>
+			<prop field="backgroundAnimation" value="false"/>
+			<prop field="border" value="27,23,27,32"/>
+			<prop field="ncArea" value="0,0,0,0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="false"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="layered" value="true"/>
+			<prop field="aero" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="RemoteLogonBtn_Conf" configType="IGFButton">
+		<configProp>
+			<prop field="size" value="90,32"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:RemoteControl\logon_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:RemoteControl\logon_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:RemoteControl\logon_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="WebReloadBtn_Conf" configType="IGFButton">
+		<configProp>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="normalColor" value="0xffffffff"/>
+			<prop field="highlightColor" value="0xffffffff"/>
+			<prop field="pushedColor" value="0xffffffff"/>
+			<prop field="font">
+				<value>
+					<Font height="16"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:button\reload_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:button\reload_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:button\reload_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+		<ConfigAgent name="qrcode_refresh_Conf" configType="IGFButton">
+		<configProp>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:Logon\refresh_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:Logon\refresh_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:Logon\refresh_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="MyGameTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="OverseaMyGameTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="150,144"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\game_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\game_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\game_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="MyGameTabBtnForMultiTab_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_normal.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\game_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="GameStoreTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\store_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\store_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\store_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\store_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\store_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\store_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="OverseaGameStoreTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="150,144"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\store_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\store_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\store_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\store_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\store_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\store_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="OverseaLiveTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="150,144"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\live_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\live_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\live_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\live_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\live_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\OverseaTab\live_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="GiftTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\gift_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\gift_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\gift_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\gift_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\gift_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\gift_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="VideoTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\video_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\video_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\video_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\video_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\video_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\video_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="HotGameTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\hot_game_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\hot_game_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\hot_game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\hot_game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\hot_game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\hot_game_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="NewGameTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="151,60"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\new_game_normal.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\new_game_hover.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\new_game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\new_game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\new_game_down.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:window\tab\new_game_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="QQLogin_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="125,36"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:Logon\qqlogin_unselect.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:Logon\qqlogin_unselect.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:Logon\qqlogin_unselect.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:Logon\qqlogin_select.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:Logon\qqlogin_select.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:Logon\qqlogin_select.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="WXLogin_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="125,36"/>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:Logon\wxlogin_unselect.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:Logon\wxlogin_unselect.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:Logon\wxlogin_unselect.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:Logon\wxlogin_select.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:Logon\wxlogin_select.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:Logon\wxlogin_select.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="MultiTabBtn_Conf" configType="IGFTabButton">
+		<configProp>
+			<prop field="size" value="190,37"/>
+			<prop field="align" value="Left"/>
+			<prop field="border" value="15,0,0,0"/>
+			<prop field="unpushedNormalTextColor" value="0xff87878c"/>
+			<prop field="unpushedHighlightTextColor" value="0xff87878c"/>
+			<prop field="unpushedPushedTextColor" value="0xff87878c"/>
+			<prop field="pushedNormalTextColor" value="0xffffffff"/>
+			<prop field="pushedHighlightTextColor" value="0xffffffff"/>
+			<prop field="pushedPushedTextColor" value="0xffffffff"/>
+			<prop field="pushedFont">
+				<value>
+					<Font height="11"/>
+				</value>
+			</prop>
+			<prop field="unpushedFont">
+				<value>
+					<Font height="11"/>
+				</value>
+			</prop>
+			<prop field="unpushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\tab_button_bkg_normal_unpushed.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\tab_button_bkg_hover_unpushed.png"/>
+				</value>
+			</prop>
+			<prop field="unpushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\tab_button_bkg_down_unpushed.png"/>
+				</value>
+			</prop>
+			<prop field="pushedNormalBkg">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\tab_button_bkg_normal_pushed.png"/>
+				</value>
+			</prop>
+			<prop field="pushedHighlightBkg">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\tab_button_bkg_normal_pushed.png"/>
+				</value>
+			</prop>
+			<prop field="pushedPushedBkg">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\tab_button_bkg_normal_pushed.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="MultiTabCloseBtn_Conf" configType="IGFButton">
+		<configProp>
+			<prop field="autoHeight" value="true"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\close_normal.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\close_hover.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thistheme:webctrl\MultiTab\close_down.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="msgbutton_default" configType="IGFButton">
+		<configProp>
+			<prop field="size" value="92,30"/>
+			<prop field="normalColor" value="0xFFffffff"/>
+			<prop field="highlightColor" value="0xFFffffff"/>
+			<prop field="pushedColor" value="0xFFdfe4ff"/>
+			<prop field="font">
+				<value>
+					<Font height="10" value="#platform.Font.Title"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Brush clrFrom="0xFF1f5aff"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Brush clrFrom="0xFF3173ff"/>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Brush clrFrom="0xFF266cff"/>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Brush clrFrom="0xFF266cff"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="msgbutton1" configType="IGFButton">
+		<configProp>
+			<prop field="size" value="92,30"/>
+			<prop field="normalColor" value="0xFFf0f0f0"/>
+			<prop field="highlightColor" value="0xFFffffff"/>
+			<prop field="pushedColor" value="0xFFdfdfe0"/>
+			<prop field="font">
+				<value>
+					<Font height="10" value="#platform.Font.Title"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff5b5c65">
+						<fill>
+							<Brush clrFrom="0x00000000"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xffc8c8cb">
+						<fill>
+							<Brush clrFrom="0x00000000"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="normalBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff707179">
+						<fill>
+							<Brush clrFrom="0x00000000"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="normalDefaultBackground">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff707179">
+						<fill>
+							<Brush clrFrom="0x00000000"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="buff_gift_tip_config" configType="IGFStandardWin">
+		<configProp>
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="22, 22, 22, 22"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="topmost" value="false"/>
+			<prop field="smallIcon" value=""/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="sysButtonOffset" value="-16,20"/>
+		</configProp>
+	</ConfigAgent>
+</Config>
